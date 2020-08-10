@@ -55,10 +55,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Javascript library used to build the front-end of the application, with a focus toward separating the app into various re-useable components._ |
-|   React Router   | _Used to navigate between the various screens and components that make up the overall application._ |
+|      React       | _Javascript library, used here via the Create-React-App package, used to build the application's front-end.  React's focus is on building speedy and responsive web applications by only updating the site's DOM when necessary, and having the various pieces of an application separated into components that are re-useable and lend themselves to efficient scaling and performance._ |
+|   React Router   | _Used within the React front-end to navigate between various screens/views and components making up the overall application._ |
 | Axios | _Used to pull data into the front-end for rendering on the page, Axios is responsible for efficient interaction between the front-end and the RESTful API being served on the back-end_ |
-|     Ruby on Rails      | _Used to build the back-end of our application where various API endpoints will be accessed to pull data into the front-end for use/display._ |
+|     Ruby on Rails      | _Used to build the back-end of the application, where various API endpoints will be accessed in order to pull data into the front-end for use/display and to manage the database._ |
 |  Ruby Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
@@ -67,7 +67,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+> Basic intended views for various screens:
 
 ![Dummy Link](url)
 
@@ -95,11 +95,12 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+> Stuctural map of how React components are being renedered and the parent/child relationship between them:
+
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> Visual representation of the intended hierarchy of the data architecture and React components making up the application:
 
 ``` structure
 
