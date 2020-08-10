@@ -1,6 +1,6 @@
 # MEMORIZATION STATION
 
-- [Overview](#overview)
+- [Project Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
@@ -20,7 +20,7 @@
 
 # Memorization Station
 
-## Overview
+## Project Overview
 
 _**Memorization Station** - A Metaphorical Mansion of Memory Material._
 
