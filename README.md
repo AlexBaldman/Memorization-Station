@@ -69,33 +69,26 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Basic intended views for various screens:
 
-![Dummy Link](url)
+![Desktop Landing](url)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Desktop Main](url)
 
-- Desktop Hero
+- Desktop Main
 
-![Dummy Link](url)
+![Tablet](url)
 
-- Resource Index
+- Tablet 
 
-![Dummy Link](url)
+![Mobile](url)
 
-- Resource Show
+- Mobile
 
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Stuctural map of how React components are being renedered and the parent/child relationship between them:
+> Visual representation of how React components are being rendered & parent/child relationship between them:
 
 
 #### Component Hierarchy
@@ -107,23 +100,46 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 src
 |__ assets/
       |__ fonts
-      |__ graphics
+      |__ icons
       |__ images
+        |__ people
+        |__ places
+        |__ things
       |__ mockups
+
 |__ components/
+      |__ Main.jsx
+      |__ Layout.jsx
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Navigation.jsx
+      |__ People.jsx
+      |__ Places.jsx
+      |__ Things.jsx
+
+
+|__ screens/
+      |__ Main.jsx
+      |__ Welcome.jsx
+      |__ MemorySystem.jsx
+
 |__ services/
+    |__ utilities.js
+    |__ apiConfig.js
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+> Further breakdown & detail regarding components making up the application:
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|   Main  | functional |   n   |   n   | _The main component will serve as the container for the body of the application._       |
+
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
+|  Navigation  | functional |   n   |   n   | _The nav component will contain links used to navigate to different views within the application._       |
+
 |   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
