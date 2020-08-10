@@ -19,10 +19,11 @@
 <br>
 
 # Memorization Station
+> _**A Metaphorical Mansion of Memory Material.**_
 
 ## Project Overview
 
-_**Memorization Station** - A Metaphorical Mansion of Memory Material._
+
 
 _An application designed to serve as an intuitive tool for building and storing 
 
