@@ -1,6 +1,3 @@
-# memorization-station
-A mansion for your memory.
-
 # PROJECT 4 README <!-- omit in toc -->
 
 > The Project Planning section **should be completed** for your project pitch with instructors.
@@ -25,16 +22,10 @@ A mansion for your memory.
 
 <br>
 
-# Memorization Station
-
 ## Overview
 
-_**Memorization Station** - A Metaphorical Mansion of Memory Material._
+_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
-_An application designed to serve as an intuitive tool for building and storing 
-
-Memory systems have been used to aid in retaining and recalling important information about the world throughout history. 
-The key insight and basic fundamental principle of most of these systems is that we can remember most efficiently when engaging the visual cortex.  
 
 <br>
 
