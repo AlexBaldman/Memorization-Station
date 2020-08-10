@@ -35,7 +35,7 @@ The key insight and basic fundamental principle of most of these systems is that
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+> The Minimum Viable Product will be the foundational version of the application with basic functionality and design, to be built upon as new updates are made to the app.
 
 _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
@@ -133,16 +133,24 @@ src
 
 > Further breakdown & detail regarding components making up the application:
 
+
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+
 |   Main  | functional |   n   |   n   | _The main component will serve as the container for the body of the application._       |
 
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
+
 |  Navigation  | functional |   n   |   n   | _The nav component will contain links used to navigate to different views within the application._       |
 
 |   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
+
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
+
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+
+
+
 
 #### Time Estimates
 
@@ -152,9 +160,14 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
+| Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -162,7 +175,15 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+> A model of the data structuring for the API on the back-end:
+
+
+
+
+
+
+
+
 
 <br>
 
@@ -170,14 +191,25 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Ideas for possible implementation Post-MVP (after completing a Minimum Viable Product):
+
+- Idea for the future.
+- Idea for whenever.
+- Idea for probably never.
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> This section will include brief code snippets and notes highlighting functionality I found interesting or am proud of, along with a brief description of the code.
+
+
+
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> Any major issues will be cataloged here along with their resolution for future referral and learning from mistakes.
+
+
+
+
