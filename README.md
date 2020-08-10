@@ -1,4 +1,4 @@
-# MEMORIZATION STATION
+# Memorization Station
 
 - [Project Overview](#overview)
 - [MVP](#mvp)
@@ -22,31 +22,30 @@
 
 > _**A Metaphorical Mansion of Memory Material.**_
 
-## Project Overview
-
-
-
-_An application designed to serve as an intuitive tool for building and storing of
-
-Memory systems have been used to aid in retaining and recalling important information about the world throughout history. 
-The key insight and basic fundamental principle of most of these systems is that we can remember most efficiently when engaging the visual cortex.  
+## Overview
+_An application designed to aid in the building of memorization systems. A user is able to store charts of data listing mental associations with numbers, people, places, etc. as they build out personalized memory systems used to remember various types of information._
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product will be the foundational version of the application with basic functionality and design, to be built upon as new updates are made to the app.
+> The Minimum Viable Product will be the foundational version of the application with basic functionality and design, with additional functions and styling being added Post-MVP.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The MVP for **Memorization Station** will be for it to store some of my own personal charts of data that I've been working on, of associations of numbers with various celebrities/well-known figures, etc. with the ability to edit, update, and delete the data through the site._
+
+## Post-MVP
+_Post-MVP ideas for the project are plentiful.  Searching for celebrities photos to use as images for the people associations.  Being able to create journeys using a Map API and store your locations, which are used in memory systems as loci, or locational storage points for bits of information.  Gamifying certain aspects using flash cards, adding playing cards, dice, etc.  So many possibilities.
 
 <br>
 
 ### Goals
 
-- _Build a Ruby on Rails API to serve as a back-end server for application data._
-- _Build a functioning front-end using the ReactJS framework._
-- _Allow the creation of useful materials to use as reference when learning/building systems for memorization of information._
+- _Build a Ruby on Rails API to serve as a back-end server for application data_
+- _Seed server with my personal data / charts_
+- _Build a functioning front-end client using ReactJS_
+- _Allow for the storage of data and creation of useful new materials to use as references/associations when learning and building out systems for memorization of information._
 - _Increase ability to retain and recall information, helping to speed up learning overall._
+- _Add innovative, creative, and quirky new ways of building out these systems, gamifying the process in diffferent areas and make process that can be tedious a lot more fun._
 
 
 <br>
@@ -59,7 +58,6 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 |   React Router   | _Used within the React front-end to navigate between various screens/views and components making up the overall application._ |
 | Axios | _Used to pull data into the front-end for rendering on the page, Axios is responsible for efficient interaction between the front-end and the RESTful API being served on the back-end_ |
 |     Ruby on Rails      | _Used to build the back-end of the application, where various API endpoints will be accessed in order to pull data into the front-end for use/display and to manage the database._ |
-|  Ruby Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -69,19 +67,15 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Basic intended views for various screens:
 
-![Desktop Landing](url)
-
-- Desktop Landing
-
 ![Desktop Main](url)
 
-- Desktop Main
+- Desktop
 
-![Tablet](url)
+![Tablet Main](url)
 
 - Tablet 
 
-![Mobile](url)
+![Mobile Main](url)
 
 - Mobile
 
@@ -90,6 +84,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Visual representation of how React components are being rendered & parent/child relationship between them:
 
+![Component Tree](url)
 
 #### Component Hierarchy
 
@@ -105,22 +100,27 @@ src
         |__ people
         |__ places
         |__ things
+        |__ symbols
       |__ mockups
 
 |__ components/
       |__ Main.jsx
-      |__ Layout.jsx
       |__ Header.jsx
       |__ Footer.jsx
-      |__ Navigation.jsx
-      |__ People.jsx
-      |__ Places.jsx
+      |__ Nav.jsx
+      |__ Display.jsx
+      |__ Edit.jsx
       |__ Things.jsx
+
 
 
 |__ screens/
       |__ Main.jsx
-      |__ Welcome.jsx
+      |__ Numbers.jsx
+      |__ Places.jsx
+      |__ People.jsx
+      |__ Things.jsx
+      |__ Create.jsx
       |__ MemorySystem.jsx
 
 |__ services/
@@ -143,7 +143,7 @@ src
 
 |  Navigation  | functional |   n   |   n   | _The nav component will contain links used to navigate to different views within the application._       |
 
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
+|   Footer    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
 
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
 
@@ -158,7 +158,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Set up Rails Server   |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
 | Action to do        |    M     |     1 hrs      |     1 hrs     |     TBD     |
@@ -209,7 +209,5 @@ src
 ## Code Issues & Resolutions
 
 > Any major issues will be cataloged here along with their resolution for future referral and learning from mistakes.
-
-
 
 
