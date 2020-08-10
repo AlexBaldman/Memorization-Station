@@ -19,13 +19,14 @@
 <br>
 
 # Memorization Station
+
 > _**A Metaphorical Mansion of Memory Material.**_
 
 ## Project Overview
 
 
 
-_An application designed to serve as an intuitive tool for building and storing 
+_An application designed to serve as an intuitive tool for building and storing of
 
 Memory systems have been used to aid in retaining and recalling important information about the world throughout history. 
 The key insight and basic fundamental principle of most of these systems is that we can remember most efficiently when engaging the visual cortex.  
@@ -42,25 +43,23 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Build a Ruby on Rails API to serve as a back-end server for application data._
+- _Build a functioning front-end using the ReactJS framework._
+- _Allow the creation of useful materials to use as reference when learning/building systems for memorization of information._
+- _Increase ability to retain and recall information, helping to speed up learning overall._
+
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Javascript library used to build the front-end of the application, with a focus toward separating the app into various re-useable components._ |
+|   React Router   | _Used to navigate between the various screens and components that make up the overall application._ |
+| Axios | _Used to pull data into the front-end for rendering on the page, Axios is responsible for efficient interaction between the front-end and the RESTful API being served on the back-end_ |
+|     Ruby on Rails      | _Used to build the back-end of our application where various API endpoints will be accessed to pull data into the front-end for use/display._ |
+|  Ruby Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
