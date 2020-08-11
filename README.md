@@ -21,16 +21,15 @@
 
 ## Overview
 
-_**Memorization Station** is a web application designed to spark interest in the mind, memory, and how various systems that have been developed and used throughout history can be used to improve one's ability to absorb and recall information. 
+_**Memorization Station** is a web application designed to spark interest in learning about the mind, memory, and how various systems that have been developed and used throughout history can be used to improve one's ability to absorb and recall information. 
 
-Its basic functionality at MVP will be to store charts/tables of Memory Objects aid in the building of memorization systems. Users will have the ability to build and store  to store charts of data listing mental associations with numbers, people, places, etc. as they build out personalized memory systems used to remember various types of information._
+_Its basic functionality at MVP will be to store charts/tables of "memory objects" and generally aid in the building of memorization systems. Users will have the ability to build and store charts of data listing mental associations with numbers, people, places, etc. as they build out different aspects of a personalized memory system, used to encode and recall various types of information._
 
-- **Features:** 
-    - **Goals:**
-      - To spark people's interest in learning about memory,ive users a basic understanding of memory systems, including 
+  - **Goals:**
+      - To spark people's interest in learning about memory, and give users a basic understanding of memory systems and the ability to build some basic charts of associations.
 
     - **Challenges:** 
-      - I believe I have a good understanding of how the different technologies are working together, but implementing all the necessary steps on my own .
+      - I believe I have a good understanding of how the different technologies are working together, but implementing all the necessary steps on my own on an invividual basis is definitely going to require me to cement my understanding of many of the details I haven't had much practice with yet.
 
 <br>
   
@@ -72,17 +71,17 @@ _**Memorization Station** in its MVP version should serve as a bit of an introdu
 
 > Basic intended views for various screens:
 
-![Desktop Main](url)
+![Desktop Main](https://i.imgur.com/ThVmSlT.png)
 
-- Desktop
+- Desktop Main
 
-![Tablet Main](url)
+![Tablet Main](https://i.imgur.com/ZOjzh0S.png)
 
-- Tablet 
+- Tablet Main
 
-![Mobile Main](url)
+![Mobile Main](https://i.imgur.com/ZkI7whz.png)
 
-- Mobile
+- Mobile Main
 
 
 #### Component Tree
@@ -126,7 +125,7 @@ src
       |__ LoginSignup.jsx
       |__ CreateObjects.jsx
       |__ UpdateObjects.jsx
-      |__ Charts.jsx
+      |__ ShowCharts.jsx
 
 |__ services/
     |__ utilities.js
@@ -138,17 +137,12 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-
 |   Main  | functional |   n   |   n   | _The main component will serve as the container for the body of the application._       |
-
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-
+|   Footer    |   class    |   n   |   n   | _The footer will hold some general information about the site (and perhaps the nav if layout were to change)._      |
 |  Navigation  | functional |   n   |   n   | _The nav component will contain links used to navigate to different views within the application._       |
-|   Footer    |   class    |   y   |   n   | _The footer will hold some general information about the site (and perhaps the nav if layout were to change)._      |
-
-| Create Objects | functional |   n   |   y   | _The cards will render the post info via props._                 |
-
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| Create Objects | functional |   n   |   y   | _The user will enter data to create an object._                 |
+| Show Charts   |  functional  |  y  |  y  | _The user will enter data to create an object._   | 
 
 
 
@@ -169,7 +163,7 @@ src
 | Build out screens/views        |    M     |     3 hrs      |     TBD     |     TBD     |
 | Basic layout & styling        |    M     |     3 hrs      |     TBD     |     TBD     |
 | Figuring things out and learning by doing...        |    Priceless     |     Priceless      |     Priceless     |     Priceless     |
-| TOTAL               |          |     6 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     25 hrs      |     TBD     |     TBD     |
 
 <br>
 
@@ -179,7 +173,7 @@ src
 
 > A model of the data structuring for the API on the back-end:
 
-![ERD Model](url)
+![ERD Model](https://i.imgur.com/JKFeDr0.png)
 
 
 <br>
