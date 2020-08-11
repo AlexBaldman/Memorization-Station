@@ -5,7 +5,7 @@
 - [MVP](#mvp)
   - [Goals](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
+  - [Client (Front End)](#client )
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
     - [Component Hierarchy](#component-hierarchy)
@@ -35,16 +35,16 @@ _Its basic functionality at MVP will be to store charts/tables of "memory object
   
 ## MVP 
 
-_**Memorization Station** in its MVP version should serve as a bit of an introduction to memory systems, and have the basic functionality of allowing a user to log in and create/store/edit basic charts/tables of "memory objects" of various types.
+_**Memorization Station** in its MVP version should serve as a bit of an introduction to memory systems, and have the basic functionality of allowing a user to log in and create/store/edit basic "memory objects" to be held in charts/tables of various types._
 
 <br>
 
 ### Goals
 
-- _Build a Ruby on Rails API to serve as a back-end server for application data_
-- _Seed server with personal data / charts_
-- _Build an elegant frontend client using create-react-app_
-- _Allow for the storage of data and creation of useful new materials to use as references/associations when learning and building out systems for memorization of information._
+- _Build a Ruby on Rails API to serve as a back-end server for application data._
+- _Seed server with personal data / charts._
+- _Build an elegant front end client in ReactJS using create-react-app._
+- _Allow for the storage of data and creation of useful new materials for use as references/associations when learning and building out systems for memorization of information._
 - _Increase ability to retain and recall information, helping to speed up learning overall._
 - _Add innovative, creative, and quirky new ways of building out these systems, gamifying the process in different areas and make process that can be tedious a lot more fun._
 
@@ -55,11 +55,12 @@ _**Memorization Station** in its MVP version should serve as a bit of an introdu
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Javascript library, used here via the Create-React-App package, used to build the application's front-end.  React's focus is on building speedy and responsive web applications by only updating the site's DOM when necessary, and having the various pieces of an application separated into components that are re-useable and lend themselves to efficient scaling and performance._ |
-|   React Router   | _Used within the React frontend to navigate between various screens/views and components making up the overall application._ |
-| Axios | _Used to pull data into the front-end for rendering on the page, Axios is responsible for efficient interaction between the front-end and the RESTful API being served on the back-end_ |
-|     Ruby on Rails      | _Used to build the back-end of the application, where various API endpoints will be accessed in order to pull data into the front-end for use/display and to manage the database._ |
-|     Rails Router      | _Recognizing browser URLs on the backend of the app and dispatches them to the controller actions requested._ |
+|      React       | _Javascript library, used here via the Create-React-App package, used to build the application's front end.  React's focus is on building speedy and responsive web applications by only updating the site's DOM when necessary, and having the various pieces of an application separated into components that are re-useable and lend themselves to efficient scaling and performance._ |
+|   React Router   | _Used within the React   to navigate between various screens/views and components making up the overall application._ |
+| Axios | _Used to pull data into the  for rendering on the page, Axios is responsible for efficient interaction between the front end and the RESTful API being served on the back end_ |
+|     Ruby on Rails      | _Used to build the back end of the application, where various API endpoints will be exposed to allow the front end to interact with the server and to manage the database._ |
+|     Rails Router      | _Recognizes browser URLs on the application's back end and dispatches them to the controller actions requested._ |
+|    Postgres   | Architecture and management of the PSQL database._ |
 
 
 
@@ -71,28 +72,30 @@ _**Memorization Station** in its MVP version should serve as a bit of an introdu
 
 > Basic intended views for various screens:
 
-![Desktop Main](https://i.imgur.com/ThVmSlT.png)
+![Desktop](https://i.imgur.com/ThVmSlT.png)
 
-- Desktop Main
+- Desktop
 
-![Tablet Main](https://i.imgur.com/ZOjzh0S.png)
+![Tablet](https://i.imgur.com/ZOjzh0S.png)
 
-- Tablet Main
+- Tablet
 
 ![Mobile Main](https://i.imgur.com/ZkI7whz.png)
 
-- Mobile Main
+- Mobile
+
+#### Wireframes - Screens / Views:
+
+![Wireflow](url)
+
+- Wireflow / Siteframe
 
 
 #### Component Tree
 
-> Visual representation of how React components are being rendered & parent/child relationship between them:
-
 ![Component Tree](url)
 
 #### Component Hierarchy
-
-> Visual representation of the intended hierarchy of the data architecture and React components making up the application:
 
 ``` structure
 
@@ -110,12 +113,12 @@ src
 |__ components/
       |__ Main.jsx
       |__ Header.jsx
-      |__ Footer.jsx
       |__ Nav.jsx
+      |__ Footer.jsx
       |__ Login.jsx
-      |__ Signup.jsx
+      |__ CreateAccount.jsx
       |__ CreateObjects.jsx
-      |__ ShowCharts.jsx
+      |__ DisplayCharts.jsx
 
 
 
