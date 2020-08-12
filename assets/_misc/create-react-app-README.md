@@ -1,5 +1,5 @@
 # Memorization Station
-> _**A Metaphorical Mansion of Memory Material.**_
+> _**A Metaphorical Mansion for Memory Material.**_
 
 - [Project Overview](#overview)
 - [MVP](#mvp)
@@ -21,15 +21,15 @@
 
 ## Overview
 
-_**Memorization Station** is a web application designed to spark interest in learning about the mind, memory, and how various systems that have been developed and used throughout history can be used to improve one's ability to absorb and recall information. 
+_**Memorization Station** is a web application designed to spark interest in learning about the mind, memory, and how various systems, which have been developed and used in many cultures throughout history, can be used to improve ability to absorb and recall information. 
 
-_Its basic functionality at MVP will be to store charts/tables of "memory objects" and generally aid in the building of memorization systems. Users will have the ability to build and store charts of data listing mental associations with numbers, people, places, etc. as they build out different aspects of a personalized memory system, used to encode and recall various types of information._
+_Its basic functionality at MVP will be to store charts/tables of "memory objects" and generally aid in the building of memorization systems. Users will be able to build and store charts of their own data.  Data will be in the form of "memory objects", or items  associations with numbers, people, places, etc. as they build out different aspects of a personalized memory system, used to encode and recall various types of information._
 
   - **Goals:**
       - To spark people's interest in learning about memory, and give users a basic understanding of memory systems and the ability to build some basic charts of associations.
 
     - **Challenges:** 
-      - I believe I have a good understanding of how the different technologies are working together, but implementing all the necessary steps on my own on an invividual basis is definitely going to require me to cement my understanding of many of the details I haven't had much practice with yet.
+      - I believe I have a good understanding of how the different technologies are working together, but implementing all the necessary steps on my own is definitely going to require me to cement my understanding of details I haven't had much practice with yet.
 
 <br>
   
