@@ -42,3 +42,4 @@ Your manifest contains:
     12:   <body>
   
 app/views/layouts/application.html.erb:9
+Started POST "/__web_console/repl_sessions/50a6fa9ecb0ed17a6513ba856949bace/trace" for ::1 at 2020-08-12 07:21:59 -0400
