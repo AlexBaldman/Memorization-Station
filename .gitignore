@@ -11,6 +11,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
+/tmp/cache/*
 !/log/.keep
 !/tmp/.keep
 # Ignore uploaded files in development.
@@ -22,4 +23,4 @@
 /config/master.key
 
 # Ignore node_modules in client and
-/client/node_modules
+/client/node_modules/*
