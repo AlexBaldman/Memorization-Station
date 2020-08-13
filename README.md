@@ -109,7 +109,6 @@ src
         |__ things
         |__ symbols
       |__ mockups
-
 |__ components/
       |__ Main.jsx
       |__ Header.jsx
@@ -119,9 +118,6 @@ src
       |__ CreateAccount.jsx
       |__ CreateObjects.jsx
       |__ DisplayCharts.jsx
-
-
-
 |__ screens/
       |__ Main.jsx
       |__ About.jsx
@@ -129,7 +125,6 @@ src
       |__ CreateObjects.jsx
       |__ UpdateObjects.jsx
       |__ ShowCharts.jsx
-
 |__ services/
     |__ utilities.js
     |__ apiConfig.js
@@ -176,7 +171,7 @@ src
 
 > A model of the data structuring for the API on the back-end:
 
-![ERD Model](https://i.imgur.com/JKFeDr0.png)
+![ERD Model](https://i.imgur.com/zDlRhr5.png)
 
 
 <br>
