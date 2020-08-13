@@ -20,3 +20,6 @@
 .byebug_history
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore node_modules in client and
+/client/node_modules
