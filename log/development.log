@@ -1,5 +1,6 @@
   [1m[35m (358.6ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_development" ENCODING = 'unicode'[0m
   [1m[35m (83.2ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_test" ENCODING = 'unicode'[0m
+<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to CreateUsers (20200813201411)
@@ -7,3 +8,36 @@ Migrating to CreateUsers (20200813201411)
   [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+=======
+  [1m[35m (443.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (59.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-13 18:17:54.728708"], ["updated_at", "2020-08-13 18:17:54.728708"]]
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (41.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Memorization_Station_development"[0m
+  [1m[35m (45.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Memorization_Station_test"[0m
+  [1m[35m (135.2ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_development" ENCODING = 'unicode'[0m
+  [1m[35m (78.2ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_test" ENCODING = 'unicode'[0m
+  [1m[35m (25.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200813191131)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200813191131"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-13 19:49:56.721746"], ["updated_at", "2020-08-13 19:49:56.721746"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+>>>>>>> d798c02e0a5153a1e68eb0dba3935a9212425e41
