@@ -6,19 +6,21 @@ export const getAllObjects = async () => {
 }
 
 export const getOneObject = async (id) => {
-  const resp = await api.get(`/objects/${id}`);
+  const resp = await api.get(`/memory_objects/${id}`);
   return resp.data;
 }
 
-// not sure if I can use [name] in this way so it can handle updating any key?
+// [name]
+// not sure if I can use the 'computed property' [name] in this way 
+// so it can handle updating any key?  like we would in a handleChange perhaps
 
-export const postObject = async (objectData) => {
-  const resp = await api.post('/memory_objects', { [name]: objectData });
+export const postObject = async (memory_objectData) => {
+  const resp = await api.post('/memory_objects', { name: memory_objectData });
   return resp.data;
 }
 
-export const putObject = async (id, objectData) => {
-  const resp = await api.put(`/memory_objects/${id}`, { [name]: objectData });
+export const putObject = async (id, memory_objectData) => {
+  const resp = await api.put(`/memory_objects/${id}`, { name: memory_objectData });
   return resp.data;
 }
 
