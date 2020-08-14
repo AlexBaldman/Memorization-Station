@@ -10,4 +10,5 @@ Chart.destroy_all
 User.destroy_all
 
 
-@admin = User.create(username: 'Alex')
+@admin = User.create(username: 'Alex', email: 'alexlbeckerman@gmail.com', password: '123456')
+
