@@ -33,6 +33,25 @@ class ChartsController < ApplicationController
     end
   end
 
+  def add_object
+    @chart = Chart.find(params[:id])
+    @object = MemoryObject.find(params[:memory_object_id])
+
+    @chart.objects << @object
+
+    render json: @object, include: :chart 
+  end
+
+    def add_flavor
+      @food = Food.find(params[:id])
+      @flavor = Flavor.find(params[:flavor_id])
+  
+      @food.flavors << @flavor
+  
+      render json: @food, include: :flavors
+    end
+  
+
   # DELETE /charts/1
   def destroy
     @chart.destroy
