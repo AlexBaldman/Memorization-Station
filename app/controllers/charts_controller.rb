@@ -42,16 +42,6 @@ class ChartsController < ApplicationController
     render json: @object, include: :chart 
   end
 
-    def add_flavor
-      @food = Food.find(params[:id])
-      @flavor = Flavor.find(params[:flavor_id])
-  
-      @food.flavors << @flavor
-  
-      render json: @food, include: :flavors
-    end
-  
-
   # DELETE /charts/1
   def destroy
     @chart.destroy
