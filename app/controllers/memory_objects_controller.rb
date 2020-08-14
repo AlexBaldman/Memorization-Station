@@ -3,7 +3,7 @@ class MemoryObjectsController < ApplicationController
 
   # GET /memory_objects
   def index
-    @memory_objects = MemoryObject.all
+    @memory_objects = MemoryObjects.all
 
     render json: @memory_objects
   end

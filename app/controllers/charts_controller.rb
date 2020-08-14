@@ -34,8 +34,8 @@ class ChartsController < ApplicationController
   end
 
   def add_object
-    @chart = Chart.find(params[:id])
-    @object = MemoryObject.find(params[:memory_object_id])
+    @chart = Charts.find(params[:id])
+    @object = MemoryObjects.find(params[:memory_object_id])
 
     @chart.objects << @object
 
