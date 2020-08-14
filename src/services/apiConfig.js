@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-const Url = 'http://localhost:3000'
-
-// the baseUrl needs to be replaced once server deployed, obviously
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://git.heroku.com/memorization-station-api.git' : 'http://localhost:3000' 
 
 const api = axios.create({
   baseURL: baseUrl

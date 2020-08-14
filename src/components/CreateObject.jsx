@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { postObject } from '../services/objects';
 
-export default function CreateFood(props) {
+export default function CreateObject(props) {
   const [formData, setFormData] = useState({
     name: ""
   })
@@ -13,8 +13,8 @@ export default function CreateFood(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newObject = await postFood(formData);
-    props.setFoods([
+    const newObject = await postObject(formData);
+    props.setObjects([
       ...props.memory_objects,
       newObject
     ])

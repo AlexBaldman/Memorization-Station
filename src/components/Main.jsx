@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom';
-import { getAllCharts } from '../services/charts';
-import { getAllObjects } from '../services/objects';
-import Login from './Login';
-import CreateUser from './CreateUser';
+import React from 'react';
+// import React, { useState, useEffect } from 'react'
+// import { Route } from 'react-router-dom';
+// import { getAllCharts } from '../services/charts';
+// import { getAllObjects } from '../services/objects';
+// import Login from './Login';
+// import CreateUser from './CreateUser';
 // import ShowCharts from './ShowCharts';
 // import ShowObjects from './ShowObjects';
 // import CreateObject from './CreateObject';
@@ -16,29 +17,30 @@ import CreateUser from './CreateUser';
 
 
 export default function Main(props) {
-  const { setCurrentUser } = props;
+  // const { setCurrentUser } = props;
 
-  const [charts, setCharts] = useState([]);
-  const [objects, setObjects] = useState([]);
+  // const [charts, setCharts] = useState([]);
+  // const [objects, setObjects] = useState([]);
 
-  useEffect(() => {
-    getCharts();
-    getObjects();
-  }, [])
+  // useEffect(() => {
+  //   getCharts();
+  //   getObjects();
+  // }, [])
 
-  const getCharts = async () => {
-    const chartsList = await getAllCharts();
-    setCharts(chartsList);
-  }
+  // const getCharts = async () => {
+  //   const chartsList = await getAllCharts();
+  //   setCharts(chartsList);
+  // }
 
-  const getObjects = async () => {
-    const objectsList = await getAllObjects();
-    setObjects(objectsList);
-  }
+  // const getObjects = async () => {
+  //   const objectsList = await getAllObjects();
+  //   setObjects(objectsList);
+  // }
 
   return (
     <main>
       <div>
+        <h1>It's Alive!</h1>
       </div>
       {/* <Route path='/login' render={(props) => (
         <Login
