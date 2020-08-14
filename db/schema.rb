@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_13_212204) do
+ActiveRecord::Schema.define(version: 2020_08_14_152540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,21 @@ ActiveRecord::Schema.define(version: 2020_08_13_212204) do
     t.index ["user_id"], name: "index_charts_on_user_id"
   end
 
+  create_table "memory_objects", force: :cascade do |t|
+    t.string "type"
+    t.string "number"
+    t.string "initials"
+    t.string "name"
+    t.string "description"
+    t.string "image_url"
+    t.bigint "user_id", null: false
+    t.bigint "chart_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chart_id"], name: "index_memory_objects_on_chart_id"
+    t.index ["user_id"], name: "index_memory_objects_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
@@ -34,4 +49,6 @@ ActiveRecord::Schema.define(version: 2020_08_13_212204) do
   end
 
   add_foreign_key "charts", "users"
+  add_foreign_key "memory_objects", "charts"
+  add_foreign_key "memory_objects", "users"
 end
