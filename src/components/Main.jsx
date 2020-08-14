@@ -33,12 +33,14 @@ export default function Main(props) {
 
   const getObjects = async () => {
     const objectsList = await getAllObjects();
-    setFoods(objectsList);
+    setObjects(objectsList);
   }
 
   return (
     <main>
-      <Route path='/login' render={(props) => (
+      <div>
+      </div>
+      {/* <Route path='/login' render={(props) => (
         <Login
           {...props}
           setCurrentUser={setCurrentUser}
@@ -80,7 +82,7 @@ export default function Main(props) {
           objects={objects}
           setObjects={setObjects}
         />
-      )} />
+      )} /> */}
     </main>
   )
 }
