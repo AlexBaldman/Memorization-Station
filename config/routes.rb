@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/memory_objects', to: 'memory_objects#index'
   get '/memory_objects/:id', to: 'memory_objects#show'
   post '/memory_objects/:id', to: 'memory_objects#create'
+  put '/charts/:id/memory_objects/:memory_objects_id', to: 'charts#add_object'
 
 
   # get '/memory_objects/:id' to 'memory_object#show'
