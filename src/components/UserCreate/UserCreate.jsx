@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { registerUser } from '../../services/auth';
 
-export default function CreateUser(props) {
+export default function UserCreate(props) {
   const [formData, setFormData] = useState({
     username: "",
     email: "",

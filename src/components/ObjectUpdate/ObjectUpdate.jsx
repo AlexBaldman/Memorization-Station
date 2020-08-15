@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { putObject } from '../../services/objects'
 
-export default function UpdateObject(props) {
+export default function ObjectUpdate(props) {
   const [formData, setFormData] = useState({
     name: ""
   })
@@ -31,7 +31,7 @@ export default function UpdateObject(props) {
     const newObject = await putObject(id, formData);
     props.setObjects(
       props.memory_objects.map((memoryObject) => {
-        return memoryObject.id === parseInt(id) ? newObject : foodItem
+        return memoryObject.id === parseInt(id) ? newObject : memoryObject
       })
     )
     props.history.push('/memory_objects')
@@ -52,8 +52,6 @@ export default function UpdateObject(props) {
     </form>
   )
 }
-
-
 
 // Need to set the form to set all the different keys to the inputted values
 // Again, is it possible to use a computed property here?
