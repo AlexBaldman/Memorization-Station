@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { postObject } from '../../services/objects';
 
-export default function CreateObject(props) {
+export default function ObjectCreate(props) {
   const [formData, setFormData] = useState({
     name: ""
   })

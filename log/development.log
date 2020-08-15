@@ -173,3 +173,71 @@ Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 750)
   [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
   [1m[36mUser Create (12.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Alex"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$TFTkh6gj9eKI6sebcox5BukURjSb3K8iu8dR9vaPpvOj35iHtGQFS"], ["created_at", "2020-08-15 21:26:24.417014"], ["updated_at", "2020-08-15 21:26:24.417014"]]
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-08-15 18:06:27 -0400
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 309)
+Completed 200 OK in 18ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 1618)
+
+
+Started GET "/users" for ::1 at 2020-08-15 18:06:30 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 209)
+
+
+Started GET "/charts" for ::1 at 2020-08-15 18:06:39 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (12.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 2.6ms | ActiveRecord: 14.4ms | Allocations: 3189)
+
+
+Started GET "/charts/1" for ::1 at 2020-08-15 18:06:47 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:53:in `set_chart'
+Completed 404 Not Found in 32ms (ActiveRecord: 17.1ms | Allocations: 2667)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Chart with 'id'=1):
+  
+app/controllers/charts_controller.rb:53:in `set_chart'
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveTypeColumnFromCharts (20200815221215)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.8ms)[0m  [1m[35mALTER TABLE "charts" DROP COLUMN "type"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveTypeColumnFromCharts (20200815221215)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7383178035287198760)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveTypeColumnFromMemoryObjects (20200815221215)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.9ms)[0m  [1m[35mALTER TABLE "memory_objects" DROP COLUMN "type"[0m
+  [1m[36mprimary::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200815221215"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7383178035287198760)[0m
+  [1m[35m (24.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (1.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Destroy (16.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Alex"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$GFHRuGdmoclM7TxuDuUHl.GTXfhYdY.PWIQERuh1UVHoQfqA20OJu"], ["created_at", "2020-08-15 22:16:33.924631"], ["updated_at", "2020-08-15 22:16:33.924631"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m

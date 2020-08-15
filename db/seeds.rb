@@ -13,7 +13,7 @@ User.destroy_all
 
 @people_chart = Chart.create(name: 'Memory System People', description: 'Famous People Associations for Numbers 00-99', image_url: '')
 
-@person01 = MemoryObject.create(type: 'person', number: '01', initials: 'OA', name: '', description: '', image_url: '')
+@person01 = MemoryObject.create(number: '01', initials: 'OA', name: '', description: '', image_url: '')
 
 
 # EXAMPLES:
