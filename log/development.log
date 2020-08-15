@@ -164,3 +164,12 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 750)
 
 
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (21.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (17.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (12.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Alex"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$TFTkh6gj9eKI6sebcox5BukURjSb3K8iu8dR9vaPpvOj35iHtGQFS"], ["created_at", "2020-08-15 21:26:24.417014"], ["updated_at", "2020-08-15 21:26:24.417014"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m

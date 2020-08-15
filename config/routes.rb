@@ -5,8 +5,16 @@ Rails.application.routes.draw do
 
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
+  get 'profile', to: 'users#show'
+  post '/users/:id', to: 'users#create'
+  post '/charts/:id', to: 'charts#create'
+  get 'charts', to: 'charts#index'
+  get '/charts/:id', to: 'charts#show'
+  get '/charts/new', to: 'charts#new'
+  get '/memory_objects', to: 'memory_objects#index'
+  get '/memory_objects/:id', to: 'memory_objects#show'
+  post '/memory_objects/:id', to: 'memory_objects#create'
 
-  get '/charts/:id', to: 'chart#show'
 
   # get '/memory_objects/:id' to 'memory_object#show'
   # get '/memory_objects/:id' to: 'objects#show'
@@ -19,3 +27,4 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
 end
+
