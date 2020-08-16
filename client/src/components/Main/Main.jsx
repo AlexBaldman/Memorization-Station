@@ -1,12 +1,8 @@
-import React from 'react'
-// import React, { useState, useEffect } from 'react'
-// import { Route } from 'react-router-dom';
-// import { getAllCharts } from '../services/charts';
-// import { getAllObjects } from '../services/objects';
-import Header from '../Header'
-import Nav from '../Nav'
-import Footer from '../Footer
-// import Login from '../Login';
+import React, { useState, useEffect } from 'react'
+import { Route } from 'react-router-dom';
+import { getAllCharts } from '../../services/charts';
+import { getAllObjects } from '../../services/objects';
+import Login from '../Login/Login';
 // import UserCreate from '../UserCreate';
 // import ShowCharts from '../ChartsShow';
 // import ShowObjects from './ObjectsShow';
@@ -19,39 +15,42 @@ import Footer from '../Footer
 
 export default function Main(props) {
   
-  // const { setCurrentUser } = props;
+  const { setCurrentUser } = props;
 
-  // const [charts, setCharts] = useState([]);
-  // const [objects, setObjects] = useState([]);
+  const [charts, setCharts] = useState([]);
+  const [objects, setObjects] = useState([]);
 
-  // useEffect(() => {
-  //   getCharts();
-  //   getObjects();
-  // }, [])
+  useEffect(() => {
+    getCharts();
+    getObjects();
+  }, [])
 
-  // const getCharts = async () => {
-  //   const chartsList = await getAllCharts();
-  //   setCharts(chartsList);
-  // }
+  const getCharts = async () => {
+    const chartsList = await getAllCharts();
+    setCharts(chartsList);
+  }
 
-  // const getObjects = async () => {
-  //   const objectsList = await getAllObjects();
-  //   setObjects(objectsList);
-  // }
-
+  const getObjects = async () => {
+    const objectsList = await getAllObjects();
+    setObjects(objectsList);
+  }
 
 
     return (
       <main>
-        <div className='main-content'>
+        <p>I am the maiinnnnnn</p>
+        <Route path='/login' render={(props) => (
+            <Login
+              {...props}
+              setCurrentUser={setCurrentUser}
+            />
+        )}/>
 
-        </div>
       </main>
-      {/* <Route path='/login' render={(props) => (
-        <Login
-          {...props}
-          setCurrentUser={setCurrentUser}
-        />
+        
+        
+     
+      /* 
       )} />
       <Route path='/createuser' render={(props) => (
         <Register
@@ -59,11 +58,7 @@ export default function Main(props) {
           setCurrentUser={setCurrentUser}
         />
       )} />
-      <Route path='/charts' render={() => (
-        <ShowCharts
-          charts={charts}
-        />
-      )} />
+      
       <Route exact path='/foods' render={() => (
         <ShowObjects
           objects={objects}
@@ -89,8 +84,13 @@ export default function Main(props) {
           objects={objects}
           setObjects={setObjects}
         />
-      )} /> */}
+      )} /> */
  
     )
 }
+
+
+
+
+
 

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { verifyUser } from './services/auth';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Nav from './components/Nav/Nav';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -18,9 +18,6 @@ function App() {
       setCurrentUser(userData);
     }
 
-
-
-
   return (
     <div className = "App">
       <Header
@@ -28,7 +25,7 @@ function App() {
         setCurrentUser={setCurrentUser}
       />
       <Nav />
-      <Main
+      <Main 
         setCurrentUser={setCurrentUser}
       />
       <Footer />

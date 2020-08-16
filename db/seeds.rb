@@ -9,13 +9,22 @@ MemoryObject.destroy_all
 Chart.destroy_all
 User.destroy_all
 
-@Alex = User.create(username: 'Alex', email: 'alexlbeckerman@gmail.com', password: '123456')
+@admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
+puts "#{User.count} users created!"
 
-@people_chart = Chart.create(name: 'Memory System People', description: 'Famous People Associations for Numbers 00-99', image_url: '')
+@people = Chart.create(name: 'chart1', description: 'Famous People Associations for Numbers 00-99', image_url: '')
+puts "#{Chart.count} charts created!"
 
-@person01 = MemoryObject.create(number: '01', initials: 'OA', name: '', description: '', image_url: '')
+@ozzie = MemoryObject.create(name: 'Ozzie Osbourne', number: '00', initials: 'OO', description: 'Ozzie biting the head off a bat', image_url: '')
+@annie = MemoryObject.create(name: 'Orphan Annie', number: '01', initials: 'OA', description: 'Orphan Annie singing a song on Broadway', image_url: 'http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg')
+puts "#{MemoryObject.count} memory objects created!"
 
+# @chart1.memory_objects.push(@memory_object00, @memory_object01)
 
+# NEED TO CREATE A FIELD TO HOLD MEMORY_OBJECTS WITHIN CHARTS
+# SO I CAN PUSH THESE OBJECTS THERE? 
+# OR DO THEY ONLY LINK BY ID ??? 
+ 
 # EXAMPLES:
 
 # MemoryObject.create(type: 'person', number: '', initials: '', name: '', description: '', image_url: '')
@@ -51,3 +60,23 @@ User.destroy_all
 #     t.datetime "updated_at", precision: 6, null: false
 #     t.index ["user_id"], name: "index_charts_on_user_id"
 #   end
+
+
+# Flavor.destroy_all
+# Food.destroy_all
+# User.destroy_all
+
+# @admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
+# puts "#{User.count} users created"
+
+# @pizza = Food.create!(name: 'Pizza', user: @admin)
+# puts "#{Food.count} foods created"
+
+# @salty = Flavor.create!(name: "salty")
+# @sweet = Flavor.create!(name: "sweet")
+# @umami = Flavor.create!(name: "umami")
+# @sour = Flavor.create!(name: "sour")
+# @bitter = Flavor.create!(name: "bitter")
+# puts "#{Flavor.count} flavors created"
+
+# @pizza.flavors.push(@salty, @sweet, @umami)

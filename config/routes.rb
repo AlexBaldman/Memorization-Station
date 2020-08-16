@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
-  get 'profile', to: 'users#show'
+  get 'user', to: 'users#show'
   post '/users/:id', to: 'users#create'
   post '/charts/:id', to: 'charts#create'
   get 'charts', to: 'charts#index'

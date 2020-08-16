@@ -6,6 +6,7 @@ class MemoryObjectsController < ApplicationController
     @memory_objects = MemoryObjects.all
 
     render json: @memory_objects
+    puts @memory_objects
   end
 
   # GET /memory_objects/1
@@ -16,6 +17,7 @@ class MemoryObjectsController < ApplicationController
   # POST /memory_objects
   def create
     @memory_object = MemoryObject.new(memory_object_params)
+    @user = @current_user
 
     if @memory_object.save
       render json: @memory_object, status: :created, location: @memory_object
@@ -46,6 +48,6 @@ class MemoryObjectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def memory_object_params
-      params.require(:memory_object).permit(:type, :name, :number, :initials, :description, :image_url, :user_id, :chart_id)
+      params.require(:memory_object).permit(:name, :number, :initials, :description, :image_url, :user_id, :chart_id)
     end
 end

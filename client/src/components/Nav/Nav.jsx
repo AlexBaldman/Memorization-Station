@@ -5,10 +5,11 @@ export default function Nav() {
 
   return (
     <h2>|     
-        <Route path="/" exact><Link to="/">Home</Link></Route>     |     
-        <Link to="./Charts">Charts</Link>     |
-        <Link to="./Objects">Objects</Link> 
-        <Link to="./About">About</Link>     
+        <Link to="/">  Home  </Link>     |   
+        <Link to="./UserCreate">   Create User   </Link>    |     
+        <Link to="./Charts">  Charts   </Link>      |
+        <Link to="./Objects">   Objects   </Link>     |
+        <Link to="./About">   About   </Link>     |
     </h2>
     )
 

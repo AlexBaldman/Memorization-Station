@@ -16,6 +16,7 @@ class ChartsController < ApplicationController
   # POST /charts
   def create
     @chart = Chart.new(chart_params)
+    @chart.user = @current_user
 
     if @chart.save
       render json: @chart, status: :created, location: @chart
