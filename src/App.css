@@ -18,7 +18,8 @@
   display: flex;
   justify-content: space-around;
   text-align: center;
-  background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg');
+  background-color: yellow;
+  /* background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
