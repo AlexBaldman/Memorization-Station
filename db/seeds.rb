@@ -10,14 +10,14 @@ Chart.destroy_all
 User.destroy_all
 
 @admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
+alex = User.create(username: 'alex', email: 'alexlbeckerman@gmail.com', password: '123456')
 puts "#{User.count} users created!"
 
-@chart = Chart.create(name: 'chart1', description: 'People', image_url: 'https://townsquare.media/site/295/files/2015/01/ozzy.jpg')
+chart1 = Chart.create!(name: 'chart1', description: 'People', image_url: 'https://townsquare.media/site/295/files/2015/01/ozzy.jpg', user: @admin)
 puts "#{Chart.count} charts created!"
 
-@ozzie = MemoryObject.create(name: 'Ozzie Osbourne', number: '00', initials: 'OO', description: 'Ozzie biting the head off a bat', image_url: 'https://townsquare.media/site/295/files/2015/01/ozzy.jpg')
-
-@annie = MemoryObject.create(name: 'Orphan Annie', number: '01', initials: 'OA', description: 'Orphan Annie singing a song on Broadway', image_url: 'http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg')
+ozzie = MemoryObject.create!(name: 'Ozzie Osbourne', number: '00', initials: 'OO', description: 'Ozzie biting the head off a bat', image_url: 'https://townsquare.media/site/295/files/2015/01/ozzy.jpg', user: @admin, chart: chart1)
+annie = MemoryObject.create!(name: 'Orphan Annie', number: '01', initials: 'OA', description: 'Orphan Annie singing a song on Broadway', image_url: 'http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg', user: @admin, chart: chart1)
 puts "#{MemoryObject.count} memory objects created!"
 
 

@@ -6,9 +6,8 @@ export default function Header() {
         <>
             <div className="header">
                 <h1>Memorization Station</h1>
-                <p><Link to="./Login">  Login  </Link> / <Link to="./Register">   Register  </Link> 
-                    <br/>   
-                </p>
+                <p><Link to="/Login">  Login  </Link> | <Link to="/Register">   Register  </Link></p>
+                <br/>   
             </div>
         </>
     )
