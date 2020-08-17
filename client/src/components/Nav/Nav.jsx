@@ -1,16 +1,25 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
 
   return (
-    <h2>|     
-        <Link to="/">  Home  </Link>     |   
-        <Link to="./UserCreate">   Create User   </Link>    |     
-        <Link to="./Charts">  Charts   </Link>      |
-        <Link to="./Objects">   Objects   </Link>     |
-        <Link to="./About">   About   </Link>     |
-    </h2>
+    <div>
+      <nav>
+        <h2>|     
+          <Link to="/">  Home  </Link>      |
+
+          <Link to="/Charts">  Charts   </Link>      |
+
+          <Link to="/Objects">   Objects   </Link>     |
+
+          <Link to="/objects/new">   New Object   </Link>     |
+
+          <Link to="/About">   About   </Link>     |
+        </h2>
+
+      </nav>
+    </div>
     )
 
 }

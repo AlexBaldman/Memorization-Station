@@ -26,6 +26,7 @@ function App() {
       />
       <Nav />
       <Main 
+        currentUser={currentUser}
         setCurrentUser={setCurrentUser}
       />
       <Footer />

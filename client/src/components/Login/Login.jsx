@@ -25,7 +25,9 @@ export default function Login(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Login</h3>
+      
+      <h2> Login:</h2>
+
       <label>
         Username:
         <input
@@ -35,6 +37,17 @@ export default function Login(props) {
           onChange={handleChange}
         />
       </label>
+
+      <label>
+        Email:
+        <input
+          type="text"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </label>
+
       <label>
         Password:
         <input
@@ -44,8 +57,11 @@ export default function Login(props) {
           onChange={handleChange}
         />
       </label>
-      <Link to='/createuser'>Register</Link>
-      <button>Submit</button>
+
+      <button>Submit</button><br/>
+      <br/>
+      <Link to='/register'> Or click here to reguster! </Link>
+     
     </form>
   )
 }

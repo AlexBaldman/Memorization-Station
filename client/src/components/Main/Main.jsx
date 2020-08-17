@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { getAllCharts } from '../../services/charts';
 import { getAllObjects } from '../../services/objects';
+import Home from '../Home/Home'
 import Login from '../Login/Login';
-import UserCreate from '../UserCreate/UserCreate';
+import Register from '../Register/Register';
+import Charts from '../Charts/Charts'
+import Objects from '../Objects/Objects';
 import ObjectCreate from '../ObjectCreate/ObjectCreate';
 import ObjectUpdate from '../ObjectUpdate/ObjectUpdate';
 import About from '../About/About'
-// import ShowCharts from '../ChartsShow';
-// import ShowObjects from './ObjectsShow';
-// import MemoryObject from './MemoryObject'
 
 // double check all import names and relative locations //
 
@@ -38,41 +38,61 @@ export default function Main(props) {
 
 
     return (
-      <main>
-        <Route path='/login' render={(props) => (
-          <Login
-            {...props}
-            setCurrentUser={setCurrentUser}
-            />
-        )}/>
+      <main className="main">
+        <Switch>
+        
+          <Route path='/' exact component={Home}  />
 
-        <Route path='/about' render={() => (
-          <About />
-        )}/>
+          <Route path='/login' render={(props) => (
+            <Login
+              {...props}
+              setCurrentUser={setCurrentUser}
+              />
+          )}/>
 
-        <Route path='/createuser' render={(props) => (
-          <UserCreate
-            {...props}
-            setCurrentUser={setCurrentUser}
-            />
-        )} />
-      
-   
-        <Route path='/objects/new' render={(props) => (
-          <ObjectCreate
-            {...props}
-            setObjects={setObjects}
-            objects={objects}
-            />
-        )} />
+          <Route path='/register' render={(props) => (
+            <Register
+              {...props}
+              setCurrentUser={setCurrentUser}
+              />
+          )} />
 
-        <Route path='/objects/:id/edit' render={(props) => (
-          <ObjectUpdate
-            {...props}
-            objects={objects}
-            setObjects={setObjects}
-            />
-        )} /> 
+          <Route path='/about' component={About} />
+        
+          <Route path='/charts' render={(props) => (
+            <Charts
+              {...props}
+              objects={objects}
+              setObjects={setObjects}
+              />
+          )} />
+
+          <Route path='/objects' render={(props) => (
+            <Objects
+              {...props}
+              objects={objects}
+              setObjects={setObjects}
+              />
+          )} />
+        
+
+          <Route path='/objects/new' render={(props) => (
+            <ObjectCreate
+              {...props}
+              objects={objects}
+              setObjects={setObjects}
+              />
+          )} />
+
+          <Route path='/objects/:id/edit' render={(props) => (
+            <ObjectUpdate
+              {...props}
+              objects={objects}
+              setObjects={setObjects}
+              />
+          )} /> 
+
+        </Switch>
 
       {/* <Route exact path='/objects/:id' render={(props) => (
         <MemoryObject
