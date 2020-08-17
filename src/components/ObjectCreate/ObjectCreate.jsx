@@ -38,7 +38,7 @@ export default function ObjectCreate(props) {
           value={formData.number}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
       <label>
         Initials:
         <input
@@ -46,7 +46,7 @@ export default function ObjectCreate(props) {
           value={formData.initials}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
       <label>
         Name:
         <input
@@ -54,7 +54,7 @@ export default function ObjectCreate(props) {
           value={formData.name}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
       <label>
         Description:
         <input
@@ -62,7 +62,7 @@ export default function ObjectCreate(props) {
           value={formData.description}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
       <label>
         Image URL:
         <input
@@ -70,7 +70,7 @@ export default function ObjectCreate(props) {
           value={formData.image_url}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
       <label>
         Chart:
         <input
@@ -78,7 +78,7 @@ export default function ObjectCreate(props) {
           value={formData.chart_id}
           onChange={handleChange}
         />
-      </label>
+      </label><br/>
         <button>Submit</button>
     </form>
   )
