@@ -36,11 +36,11 @@ class ChartsController < ApplicationController
 
   def add_object
     @chart = Chart.find(params[:id])
-    @object = MemoryObject.find(params[:memory_object_id])
+    @memory_object = MemoryObject.where(params[:chart_id])
 
-    @chart.objects << @object
+    @chart.memory_objects << @memory_object
 
-    render json: @object, include: :chart 
+    render json: @chart, include: :memory_object 
   end
 
   # DELETE /charts/1
