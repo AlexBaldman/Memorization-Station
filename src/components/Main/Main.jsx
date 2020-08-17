@@ -3,12 +3,13 @@ import { Route } from 'react-router-dom';
 import { getAllCharts } from '../../services/charts';
 import { getAllObjects } from '../../services/objects';
 import Login from '../Login/Login';
-// import UserCreate from '../UserCreate';
+import UserCreate from '../UserCreate/UserCreate';
+import ObjectCreate from '../ObjectCreate/ObjectCreate';
+import ObjectUpdate from '../ObjectUpdate/ObjectUpdate';
+import About from '../About/About'
 // import ShowCharts from '../ChartsShow';
 // import ShowObjects from './ObjectsShow';
-// import CreateObject from './ObjectsCreate';
 // import MemoryObject from './MemoryObject'
-// import UpdateObject from './UpdateObject';
 
 // double check all import names and relative locations //
 
@@ -38,54 +39,56 @@ export default function Main(props) {
 
     return (
       <main>
-        <p>I am the maiinnnnnn</p>
         <Route path='/login' render={(props) => (
-            <Login
-              {...props}
-              setCurrentUser={setCurrentUser}
+          <Login
+            {...props}
+            setCurrentUser={setCurrentUser}
             />
         )}/>
 
-      </main>
-        
-        
-     
-      /* 
-      )} />
-      <Route path='/createuser' render={(props) => (
-        <Register
-          {...props}
-          setCurrentUser={setCurrentUser}
-        />
-      )} />
+        <Route path='/about' render={() => (
+          <About />
+        )}/>
+
+        <Route path='/createuser' render={(props) => (
+          <UserCreate
+            {...props}
+            setCurrentUser={setCurrentUser}
+            />
+        )} />
       
-      <Route exact path='/foods' render={() => (
-        <ShowObjects
-          objects={objects}
-          setObjects={setObjects}
-        />
-      )} />
-      <Route path='/objects/new' render={(props) => (
-        <CreateObject
-          {...props}
-          setObjects={setObjects}
-          objects={objects}
-        />
-      )} />
-      <Route exact path='/objects/:id' render={(props) => (
+   
+        <Route path='/objects/new' render={(props) => (
+          <ObjectCreate
+            {...props}
+            setObjects={setObjects}
+            objects={objects}
+            />
+        )} />
+
+        <Route path='/objects/:id/edit' render={(props) => (
+          <ObjectUpdate
+            {...props}
+            objects={objects}
+            setObjects={setObjects}
+            />
+        )} /> 
+
+      {/* <Route exact path='/objects/:id' render={(props) => (
         <MemoryObject
           {...props}
-          flavors={flavors}
-        />
-      )} />
-      <Route path='/objects/:id/edit' render={(props) => (
-        <ObjectUpdate
-          {...props}
           objects={objects}
-          setObjects={setObjects}
-        />
-      )} /> */
- 
+          />
+      )} /> */}
+
+     {/* <Route exact path='/objects' render={() => (
+          <Objects
+            objects={objects}
+            setObjects={setObjects}
+            />
+        )} /> */}
+
+      </main>
     )
 }
 

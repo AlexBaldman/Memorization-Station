@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-export default function ObjectsShow() {
+export default function Objects() {
     
 
 
