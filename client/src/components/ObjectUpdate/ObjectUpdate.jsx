@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import { putObject } from '../../services/objects'
 
 export default function ObjectUpdate(props) {
   const [formData, setFormData] = useState({
-    name: ""
+    number: "",
+    initials: "",
+    name: "",
+    description: "",
+    image_url: ""
   })
 
   useEffect(() => {
@@ -16,7 +21,13 @@ export default function ObjectUpdate(props) {
       return memoryObject.id === parseInt(props.match.params.id)
     })
     if (memoryObject) {
-      setFormData({ name: memory_object.name })
+      setFormData({ 
+        number: memoryObject.number,
+        initials: memoryObject.initials,
+        name: memoryObject.name,
+        description: memoryObject.description,
+        image_url: memoryObject.image_url
+      })
     }
   }
 
@@ -41,6 +52,22 @@ export default function ObjectUpdate(props) {
     <form onSubmit={handleSubmit}>
       <h3>Update Object</h3>
       <label>
+        Number:
+        <input
+          type="text"
+          value={formData.number}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Initials:
+        <input
+          type="text"
+          value={formData.initials}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
         Name:
         <input
           type="text"
@@ -48,10 +75,36 @@ export default function ObjectUpdate(props) {
           onChange={handleChange}
         />
       </label>
+      <label>
+        Description:
+        <input
+          type="text"
+          value={formData.description}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Image URL:
+        <input
+          type="text"
+          value={formData.image_url}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Chart:
+        <input
+          type="text"
+          value={formData.chart_id}
+          onChange={handleChange}
+        />
+      </label>
       <button>Submit</button>
     </form>
   )
 }
+
+
 
 // Need to set the form to set all the different keys to the inputted values
 // Again, is it possible to use a computed property here?

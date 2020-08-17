@@ -3,7 +3,7 @@ class MemoryObjectsController < ApplicationController
 
   # GET /memory_objects
   def index
-    @memory_objects = MemoryObjects.all
+    @memory_objects = MemoryObject.all
 
     render json: @memory_objects
     puts @memory_objects
@@ -17,7 +17,7 @@ class MemoryObjectsController < ApplicationController
   # POST /memory_objects
   def create
     @memory_object = MemoryObject.new(memory_object_params)
-    @user = @current_user
+    # @memory_object.user = @current_user
 
     if @memory_object.save
       render json: @memory_object, status: :created, location: @memory_object
