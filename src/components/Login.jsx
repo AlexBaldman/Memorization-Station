@@ -58,9 +58,9 @@ export default function Login(props) {
         />
       </label>
 
-      <button>Submit</button><br/>
+      <button onSubmit={handleSubmit}>Submit</button><br/>
       <br/>
-      <Link to='/register'> Or click here to reguster! </Link>
+      <Link to='/register'> Or click here to sign up for a new account! </Link>
      
     </form>
   )

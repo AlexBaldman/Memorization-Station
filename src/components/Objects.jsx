@@ -18,12 +18,12 @@ export default function Objects(props) {
         {props.objects.map((memoryObject) => (
           <>
             <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>{memoryObject.name}</Link>
-            <Link to={`/memory_objects/${memoryObject.id}/edit`}><button>edit</button></Link>
-            <button onClick={() => handleClick(memoryObject.id)}>delete</button>
+            <Link to={`/memory_objects/${memoryObject.id}/edit`}><button>edit object</button></Link>
+            <button onClick={() => handleClick(memoryObject.id)}>Delete Object</button>
             <br />
          </>
     ))}
-    <Link to='/memory_objects/new'><button>Create</button></Link>
+    <Link to='/memory_objects/new'><button>Create New Memory Object</button></Link>
   </div>
     )
 }

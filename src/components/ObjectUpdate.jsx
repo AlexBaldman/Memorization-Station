@@ -20,22 +20,29 @@ export default function ObjectUpdate(props) {
 
     const memoryObject = props.objects.find((memoryObject) => {
       return memoryObject.id === parseInt(props.match.params.id)
-    })
-    if (memoryObject) {
-      setFormData({ 
-        number: memoryObject.number,
-        initials: memoryObject.initials,
-        name: memoryObject.name,
-        description: memoryObject.description,
-        image_url: memoryObject.image_url,
-        chart_id: memoryObject.chart_id
       })
-    }
+        if (memoryObject) {
+          setFormData({ 
+            number: memoryObject.number,
+            initials: memoryObject.initials,
+            name: memoryObject.name,
+            description: memoryObject.description,
+            image_url: memoryObject.image_url,
+            chart_id: memoryObject.chart_id
+          })
+        }
   }
+
+  // const handleChange = (e) => {
+  //   const { value } = e.target;
+  //   setFormData({ name: value })
+  // }
 
   const handleChange = (e) => {
     const { value } = e.target;
-    setFormData({ name: value })
+    setFormData({
+     value
+    })
   }
 
   const handleSubmit = async (e) => {

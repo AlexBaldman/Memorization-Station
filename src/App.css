@@ -4,13 +4,14 @@
 
 .header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: pink;
+  text-decoration: none;
 }
 
 .main {
@@ -19,9 +20,11 @@
   justify-content: space-around;
   text-align: center;
   background-color: yellow;
-  /* background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg'); */
+  background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  font-size: calc(10px + 2vmin);
 }
 
 .home-content {
