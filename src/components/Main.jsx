@@ -6,6 +6,7 @@ import Home from './Home';
 import Login from './Login';
 import Register from './Register';
 import Charts from './Charts';
+import Chart from './Chart';
 import Objects from './Objects';
 import ObjectCreate from './ObjectCreate';
 import ObjectUpdate from './ObjectUpdate';
@@ -38,8 +39,9 @@ export default function Main(props) {
 
     return (
       <main className="main">
-        <Switch>
         
+        <Switch>
+
           <Route path='/' exact component={Home}  />
 
           <Route path='/login' render={(props) => (
@@ -58,9 +60,18 @@ export default function Main(props) {
 
           <Route path='/about' component={About} />
         
-          <Route path='/charts' render={(props) => (
+          <Route path='/charts' exact render={(props) => (
             <Charts
               {...props}
+              charts={charts}
+              setCharts={setCharts}
+              />
+          )} /> 
+
+          <Route path='/charts/:id' render={(props) => (
+            <Chart
+              {...props}
+              objects={objects}
               charts={charts}
               setCharts={setCharts}
               />
@@ -73,9 +84,8 @@ export default function Main(props) {
               setObjects={setObjects}
               />
           )} />
-        
 
-          <Route path='/memory_objects/new' render={(props) => (
+          <Route path='/memory_objects/:id/new' render={(props) => (
             <ObjectCreate
               {...props}
               objects={objects}

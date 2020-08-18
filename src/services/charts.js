@@ -5,3 +5,7 @@ export const getAllCharts = async () => {
   return resp.data;
 }
 
+export const getOneChart = async (id) => {
+  const resp = await api.get(`/charts/${id}`);
+  return resp.data;
+}

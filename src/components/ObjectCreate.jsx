@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { postObject } from '../services/objects';
 
@@ -8,14 +8,18 @@ export default function ObjectCreate(props) {
     initials: "",
     name: "",
     description: "",
-    image_url: ""
+    image_url: "",
+    chart_id: ""
   })
 
-  // NOT SURE IF NEED COMPUTED PROPERTY - DO I NEED ON ON [name] BELOW TO WORK AS INTENDED?
+  useEffect(() => {
+    setFormData({chart_id: props.match.params.id});
+    
+  }, [])
 
   const handleChange = (e) => {
-    const { value } = e.target;
-    setFormData({ name: value })
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value })
   }
 
   const handleSubmit = async (e) => {
@@ -37,6 +41,7 @@ export default function ObjectCreate(props) {
           Number:
           <input
             type="text"
+            name="number"
             value={formData.number}
             onChange={handleChange}
           />
@@ -45,6 +50,7 @@ export default function ObjectCreate(props) {
           Initials:
           <input
             type="text"
+            name="initials"
             value={formData.initials}
             onChange={handleChange}
           />
@@ -53,6 +59,7 @@ export default function ObjectCreate(props) {
           Name:
           <input
             type="text"
+            name="name"
             value={formData.name}
             onChange={handleChange}
           />
@@ -61,6 +68,7 @@ export default function ObjectCreate(props) {
           Description:
           <input
             type="text"
+            name="description"
             value={formData.description}
             onChange={handleChange}
           />
@@ -69,15 +77,8 @@ export default function ObjectCreate(props) {
           Image URL:
           <input
             type="text"
+            name="image_url"
             value={formData.image_url}
-            onChange={handleChange}
-          />
-        </label><br/>
-        <label>
-          Chart:
-          <input
-            type="text"
-            value={formData.chart_id}
             onChange={handleChange}
           />
         </label><br/>

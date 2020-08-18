@@ -15,12 +15,12 @@ export const getOneObject = async (id) => {
 // so it can handle updating any key?  like we would in a handleChange perhaps
 
 export const postObject = async (memory_objectData) => {
-  const resp = await api.post('/memory_objects', { name: memory_objectData });
+  const resp = await api.post('/memory_objects', { memory_object: memory_objectData });
   return resp.data;
 }
 
 export const putObject = async (id, memory_objectData) => {
-  const resp = await api.put(`/memory_objects/${id}`, { name: memory_objectData });
+  const resp = await api.put(`/memory_objects/${id}`, { memory_object: memory_objectData });
   return resp.data;
 }
 
@@ -30,8 +30,7 @@ export const destroyObject = async (id) => {
 }
 
 // Don't think the below will work this way, need to think through more thoroughly
-
-export const addToChart = async(chartId, memory_objectId) => {
-  const resp = await api.put(`/charts/${chartId}/memory_objects/${memory_objectId}`);
-  return resp.data;
-}
+// export const addToChart = async(chartId, memory_objectId) => {
+//   const resp = await api.put(`/charts/${chartId}/memory_objects/${memory_objectId}`);
+//   return resp.data;
+// }
