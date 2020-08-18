@@ -39,12 +39,10 @@ export default function ObjectUpdate(props) {
   // }
 
   const handleChange = (e) => {
-    const { value } = e.target;
-    setFormData({
-     value
-    })
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value })
   }
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const {id} = props.match.params;
@@ -63,7 +61,8 @@ export default function ObjectUpdate(props) {
       <label>
         Number:
         <input
-          type="string"
+          type="text"
+          name="number"
           value={formData.number}
           onChange={handleChange}
         />
@@ -71,7 +70,8 @@ export default function ObjectUpdate(props) {
       <label>
         Initials:
         <input
-          type="string"
+          type="text"
+          name="initials"
           value={formData.initials}
           onChange={handleChange}
         />
@@ -79,7 +79,8 @@ export default function ObjectUpdate(props) {
       <label>
         Name:
         <input
-          type="string"
+          type="text"
+          name="name"
           value={formData.name}
           onChange={handleChange}
         />
@@ -87,7 +88,8 @@ export default function ObjectUpdate(props) {
       <label>
         Description:
         <input
-          type="string"
+          type="text"
+          name="description"
           value={formData.description}
           onChange={handleChange}
         />
@@ -95,16 +97,9 @@ export default function ObjectUpdate(props) {
       <label>
         Image URL:
         <input
-          type="string"
+          type="text"
+          name="image_url"
           value={formData.image_url}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Chart:
-        <input
-          type="string"
-          value={formData.chart_id}
           onChange={handleChange}
         />
       </label>

@@ -16,8 +16,6 @@ export default function Nav() {
 
           <Link to="/memory_objects/new">   Create Object   </Link>     |
 
-          <Link to="/memory_objects/:id/edit">   Update Object   </Link>     |
-
           <Link to="/About">   About   </Link>     |
 
         </h2>
