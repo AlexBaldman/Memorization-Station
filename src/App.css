@@ -24,12 +24,24 @@
   background-size: cover;
 }
 
+.home-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 35vw;
+  flex-flow: column;
+
+}
+
 .footer {
   display: flex;
   background-color: orange;
   min-height: 10vh;
   margin-bottom: -50px;
   justify-content: space-around;
+  color: white;
+  text-align: right;
+  justify-content: center;
 }
 
 nav {
@@ -42,6 +54,10 @@ nav {
   text-decoration: none;
 }
 
+h3 {
+  display: flex;
+  align-items: center;
+}
 
 form {
   display: flex;
