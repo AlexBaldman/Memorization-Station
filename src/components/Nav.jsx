@@ -9,11 +9,13 @@ export default function Nav() {
         <h2>|     
           <Link to="/">  Home  </Link>      |
 
-          <Link to="/Charts">  Charts   </Link>      |
+          <Link to="/charts">  Charts   </Link>      |
 
-          <Link to="/Objects">   Objects   </Link>     |
+          <Link to="/memory_objects">   Objects   </Link>     |
 
-          <Link to="/objects/new">   New Object   </Link>     |
+          <Link to="/memory_objects/new">   Create Object   </Link>     |
+
+          <Link to="/memory_objects/:id/edit">   Update Object   </Link>     |
 
           <Link to="/About">   About   </Link>     |
         </h2>

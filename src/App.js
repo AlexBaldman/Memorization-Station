@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { verifyUser } from './services/auth';
-import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
-import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Main from './components/Main';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
