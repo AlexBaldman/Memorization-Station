@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
-  get 'user', to: 'users#show'
+  get 'users', to: 'users#index'
+  get 'users/:id', to: 'users#show'
   post '/users/:id', to: 'users#create'
   post '/charts/:id', to: 'charts#create'
   get 'charts', to: 'charts#index'
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
   get '/memory_objects', to: 'memory_objects#index'
   get '/memory_objects/:id', to: 'memory_objects#show'
   post '/memory_objects/:id', to: 'memory_objects#create'
-  put '/charts/:charts_id/memory_objects/:memory_objects_id', to: 'charts#add_object'
+  put '/charts/:id/memory_objects/:memory_objects_id', to: 'charts#add_object'
 
 
   # put '/charts/:charts_id/memory_object/:id' to: 'charts#add_object'

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import { putObject } from '../../services/objects'
+import { putObject } from '../services/objects'
 
 export default function ObjectUpdate(props) {
   const [formData, setFormData] = useState({
@@ -8,16 +8,17 @@ export default function ObjectUpdate(props) {
     initials: "",
     name: "",
     description: "",
-    image_url: ""
+    image_url: "",
+    chart_id: ""
   })
 
   useEffect(() => {
     defaultFormData()
-  }, [props.memory_objects])
+  }, [props.objects])
 
   const defaultFormData = () => {
 
-    const memoryObject = props.memory_objects.find((memoryObject) => {
+    const memoryObject = props.objects.find((memoryObject) => {
       return memoryObject.id === parseInt(props.match.params.id)
     })
     if (memoryObject) {
@@ -26,7 +27,8 @@ export default function ObjectUpdate(props) {
         initials: memoryObject.initials,
         name: memoryObject.name,
         description: memoryObject.description,
-        image_url: memoryObject.image_url
+        image_url: memoryObject.image_url,
+        chart_id: memoryObject.chart_id
       })
     }
   }
@@ -41,7 +43,7 @@ export default function ObjectUpdate(props) {
     const {id} = props.match.params;
     const newObject = await putObject(id, formData);
     props.setObjects(
-      props.memory_objects.map((memoryObject) => {
+      props.objects.map((memoryObject) => {
         return memoryObject.id === parseInt(id) ? newObject : memoryObject
       })
     )
@@ -54,7 +56,7 @@ export default function ObjectUpdate(props) {
       <label>
         Number:
         <input
-          type="text"
+          type="string"
           value={formData.number}
           onChange={handleChange}
         />
@@ -62,7 +64,7 @@ export default function ObjectUpdate(props) {
       <label>
         Initials:
         <input
-          type="text"
+          type="string"
           value={formData.initials}
           onChange={handleChange}
         />
@@ -70,7 +72,7 @@ export default function ObjectUpdate(props) {
       <label>
         Name:
         <input
-          type="text"
+          type="string"
           value={formData.name}
           onChange={handleChange}
         />
@@ -78,7 +80,7 @@ export default function ObjectUpdate(props) {
       <label>
         Description:
         <input
-          type="text"
+          type="string"
           value={formData.description}
           onChange={handleChange}
         />
@@ -86,7 +88,7 @@ export default function ObjectUpdate(props) {
       <label>
         Image URL:
         <input
-          type="text"
+          type="string"
           value={formData.image_url}
           onChange={handleChange}
         />
@@ -94,7 +96,7 @@ export default function ObjectUpdate(props) {
       <label>
         Chart:
         <input
-          type="text"
+          type="string"
           value={formData.chart_id}
           onChange={handleChange}
         />

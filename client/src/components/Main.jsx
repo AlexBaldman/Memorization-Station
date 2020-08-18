@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom';
-import { getAllCharts } from '../../services/charts';
-import { getAllObjects } from '../../services/objects';
-import Home from '../Home/Home'
-import Login from '../Login/Login';
-import Register from '../Register/Register';
-import Charts from '../Charts/Charts'
-import Objects from '../Objects/Objects';
-import ObjectCreate from '../ObjectCreate/ObjectCreate';
-import ObjectUpdate from '../ObjectUpdate/ObjectUpdate';
-import About from '../About/About'
+import { getAllCharts } from '../services/charts';
+import { getAllObjects } from '../services/objects';
+import Home from './Home';
+import Login from './Login';
+import Register from './Register';
+import Charts from './Charts';
+import Objects from './Objects';
+import ObjectCreate from './ObjectCreate';
+import ObjectUpdate from './ObjectUpdate';
+import About from './About';
 
 // double check all import names and relative locations //
-
 
 export default function Main(props) {
   
@@ -62,12 +61,12 @@ export default function Main(props) {
           <Route path='/charts' render={(props) => (
             <Charts
               {...props}
-              objects={objects}
-              setObjects={setObjects}
+              charts={charts}
+              setCharts={setCharts}
               />
-          )} />
+          )} /> 
 
-          <Route path='/objects' render={(props) => (
+          <Route path='/memory_objects' exact render={(props) => (
             <Objects
               {...props}
               objects={objects}
@@ -76,7 +75,7 @@ export default function Main(props) {
           )} />
         
 
-          <Route path='/objects/new' render={(props) => (
+          <Route path='/memory_objects/new' render={(props) => (
             <ObjectCreate
               {...props}
               objects={objects}
@@ -84,7 +83,7 @@ export default function Main(props) {
               />
           )} />
 
-          <Route path='/objects/:id/edit' render={(props) => (
+          <Route path='/memory_objects/:id/edit' render={(props) => (
             <ObjectUpdate
               {...props}
               objects={objects}
