@@ -30,9 +30,9 @@ export default function ObjectCreate(props) {
 
   return (
     <>
-      <h3>Create Object</h3>
-      <form onSubmit={handleSubmit}>
       
+      <form onSubmit={handleSubmit}>
+      <h3>Create Object</h3>
         <label>
           Number:
           <input

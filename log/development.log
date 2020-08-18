@@ -2049,3 +2049,45 @@ Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.3ms | Allocations: 1347)
 Completed 200 OK in 10ms (Views: 2.2ms | ActiveRecord: 7.0ms | Allocations: 2357)
 
 
+Started GET "/memory_objects/" for ::1 at 2020-08-17 20:40:04 -0400
+Started GET "/charts" for ::1 at 2020-08-17 20:40:04 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (1.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 1.5ms | Allocations: 2003)
+
+
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.8ms | Allocations: 2124)
+
+
+Started GET "/charts" for ::1 at 2020-08-17 20:41:16 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-17 20:41:16 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (4.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.7ms | Allocations: 1884)
+
+
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 4.3ms | Allocations: 2242)
+
+
+Started GET "/charts" for ::1 at 2020-08-17 20:41:38 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-17 20:41:38 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (3.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 3.3ms | Allocations: 1116)
+
+
+  [1m[36mMemoryObject Load (11.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 2.4ms | ActiveRecord: 11.8ms | Allocations: 2357)
+
+
