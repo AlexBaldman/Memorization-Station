@@ -6,7 +6,8 @@ export default function Nav() {
   return (
     <div>
       <nav>
-        <h2>|     
+        <h2>
+        |     
           <Link to="/">  Home  </Link>      |
 
           <Link to="/charts">  Charts   </Link>      |
@@ -18,6 +19,7 @@ export default function Nav() {
           <Link to="/memory_objects/:id/edit">   Update Object   </Link>     |
 
           <Link to="/About">   About   </Link>     |
+
         </h2>
 
       </nav>
