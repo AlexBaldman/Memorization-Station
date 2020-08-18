@@ -1,4 +1,5 @@
 class MemoryObjectsController < ApplicationController
+  before_action :authorize_request, only: :create
   before_action :set_memory_object, only: [:show, :update, :destroy]
 
   # GET /memory_objects
@@ -17,7 +18,7 @@ class MemoryObjectsController < ApplicationController
   # POST /memory_objects
   def create
     @memory_object = MemoryObject.new(memory_object_params)
-    # @memory_object.user = @current_user
+    @memory_object.user = @current_user
 
     if @memory_object.save
       render json: @memory_object, status: :created, location: @memory_object

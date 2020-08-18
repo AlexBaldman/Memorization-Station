@@ -2630,3 +2630,249 @@ Completed 404 Not Found in 6ms (ActiveRecord: 0.6ms | Allocations: 711)
 ActiveRecord::RecordNotFound (Couldn't find MemoryObject with 'id'=:id):
   
 app/controllers/memory_objects_controller.rb:46:in `set_memory_object'
+Started GET "/charts" for ::1 at 2020-08-18 13:48:34 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-18 13:48:34 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (16.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (8.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 49.4ms | ActiveRecord: 16.3ms | Allocations: 2254)
+
+
+Completed 200 OK in 60ms (Views: 50.3ms | ActiveRecord: 8.7ms | Allocations: 2255)
+
+
+Started GET "/" for ::1 at 2020-08-18 13:50:05 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 41.3ms | Allocations: 190)
+Completed 200 OK in 110ms (Views: 72.7ms | ActiveRecord: 0.0ms | Allocations: 752)
+
+
+Started GET "/users" for ::1 at 2020-08-18 13:50:10 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/memory_objects" for ::1 at 2020-08-18 13:50:32 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (0.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.6ms | Allocations: 1222)
+
+
+Started GET "/charts" for ::1 at 2020-08-18 13:50:43 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (2.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.2ms | Allocations: 991)
+
+
+Started GET "/memory_objects" for ::1 at 2020-08-18 13:51:01 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (0.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 1222)
+
+
+Started GET "/memory_objects/1" for ::1 at 2020-08-18 13:51:13 -0400
+Processing by MemoryObjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMemoryObject Load (0.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:46:in `set_memory_object'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 874)
+
+
+Started GET "/memory_objects/2" for ::1 at 2020-08-18 13:51:18 -0400
+Processing by MemoryObjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMemoryObject Load (1.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:46:in `set_memory_object'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 842)
+
+
+Started GET "/charts" for ::1 at 2020-08-18 13:51:28 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 991)
+
+
+Started GET "/charts/2" for ::1 at 2020-08-18 13:51:36 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mChart Load (18.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:54:in `set_chart'
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 18.9ms | Allocations: 906)
+
+
+Started POST "/users" for ::1 at 2020-08-18 13:55:57 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"testyguy", "email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (11.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "testyguy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (17.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "testyguy"], ["email", "test@gmail.com"], ["password_digest", "$2a$12$ntPOpK.6H4OPEhMokOHT8eYxZnonnD89qB0kRtdbzGt7NmMn/lCrG"], ["created_at", "2020-08-18 17:55:57.998389"], ["updated_at", "2020-08-18 17:55:57.998389"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 416ms (Views: 1.2ms | ActiveRecord: 35.6ms | Allocations: 5362)
+
+
+Started POST "/auth/login" for ::1 at 2020-08-18 13:56:34 -0400
+Processing by AuthenticationController#login as */*
+  Parameters: {"user"=>{"username"=>"testyguy", "email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "authentication"=>{"user"=>{"username"=>"testyguy", "email"=>"test@gmail.com", "password"=>"[FILTERED]"}}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.0ms | Allocations: 1413)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2020-08-18 13:58:04 -0400
+Processing by AuthenticationController#login as */*
+  Parameters: {"authentication"=>{"username"=>"testyguy", "email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "testyguy"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 330ms (Views: 0.5ms | ActiveRecord: 42.7ms | Allocations: 7063)
+
+
+Started POST "/charts" for ::1 at 2020-08-18 14:02:37 -0400
+Processing by ChartsController#create as */*
+  Parameters: {"chart"=>{"name"=>"newChart", "description"=>"chart to test with Shay", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}}
+[31mUnpermitted parameter: :image_url[0m
+Completed 422 Unprocessable Entity in 114ms (Views: 1.3ms | ActiveRecord: 80.6ms | Allocations: 5494)
+
+
+Started POST "/charts" for ::1 at 2020-08-18 14:04:40 -0400
+Processing by ChartsController#create as */*
+  Parameters: {"chart"=>{"name"=>"newChart", "description"=>"chart to test with Shay", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+  [1m[36mChart Create (36.7ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "newChart"], ["description", "chart to test with Shay"], ["image_url", "https://townsquare.media/site/295/files/2015/01/ozzy.jpg"], ["user_id", 23], ["created_at", "2020-08-18 18:04:40.648111"], ["updated_at", "2020-08-18 18:04:40.648111"]]
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+Completed 201 Created in 99ms (Views: 9.7ms | ActiveRecord: 49.5ms | Allocations: 14004)
+
+
+Started PUT "/charts/3" for ::1 at 2020-08-18 14:05:57 -0400
+Processing by ChartsController#update as */*
+  Parameters: {"chart"=>{"name"=>"newChart", "description"=>"Shay to test with chart", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}, "id"=>"3"}
+  [1m[36mChart Load (7.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/charts_controller.rb:31:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:31:in `update'
+  [1m[36mChart Update (16.4ms)[0m  [1m[33mUPDATE "charts" SET "description" = $1, "updated_at" = $2 WHERE "charts"."id" = $3[0m  [["description", "Shay to test with chart"], ["updated_at", "2020-08-18 18:05:57.693761"], ["id", 3]]
+  ↳ app/controllers/charts_controller.rb:31:in `update'
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/charts_controller.rb:31:in `update'
+Completed 200 OK in 58ms (Views: 0.6ms | ActiveRecord: 32.9ms | Allocations: 4915)
+
+
+Started DELETE "/charts/3" for ::1 at 2020-08-18 14:06:13 -0400
+Processing by ChartsController#destroy as */*
+  Parameters: {"chart"=>{"name"=>"newChart", "description"=>"Shay to test with chart", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}, "id"=>"3"}
+  [1m[36mChart Load (0.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/charts_controller.rb:49:in `destroy'
+  [1m[36mMemoryObject Load (1.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 3]]
+  ↳ app/controllers/charts_controller.rb:49:in `destroy'
+  [1m[36mChart Destroy (1.1ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/charts_controller.rb:49:in `destroy'
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/charts_controller.rb:49:in `destroy'
+Completed 204 No Content in 82ms (ActiveRecord: 9.8ms | Allocations: 7368)
+
+
+Started POST "/charts" for ::1 at 2020-08-18 14:07:03 -0400
+Processing by ChartsController#create as */*
+  Parameters: {"chart"=>{"name"=>"newChart", "description"=>"Shay to test with chart", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+  [1m[36mChart Create (29.7ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "newChart"], ["description", "Shay to test with chart"], ["image_url", "https://townsquare.media/site/295/files/2015/01/ozzy.jpg"], ["user_id", 23], ["created_at", "2020-08-18 18:07:03.535450"], ["updated_at", "2020-08-18 18:07:03.535450"]]
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/charts_controller.rb:22:in `create'
+Completed 201 Created in 49ms (Views: 1.0ms | ActiveRecord: 39.3ms | Allocations: 3381)
+
+
+Started POST "/memory_objects" for ::1 at 2020-08-18 14:09:17 -0400
+Processing by MemoryObjectsController#create as */*
+  Parameters: {"memory_object"=>{"number"=>"15", "initials"=>"AE", "name"=>"Albert Einstein", "description"=>"Writing on a chalkboard", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}}
+Completed 422 Unprocessable Entity in 35ms (Views: 0.9ms | ActiveRecord: 4.5ms | Allocations: 7255)
+
+
+Started POST "/memory_objects" for ::1 at 2020-08-18 14:10:15 -0400
+Processing by MemoryObjectsController#create as */*
+  Parameters: {"memory_object"=>{"number"=>"15", "initials"=>"AE", "name"=>"Albert Einstein", "description"=>"Writing on a chalkboard", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 422 Unprocessable Entity in 57ms (Views: 0.9ms | ActiveRecord: 16.0ms | Allocations: 14874)
+
+
+Started POST "/memory_objects" for ::1 at 2020-08-18 14:11:49 -0400
+Processing by MemoryObjectsController#create as */*
+  Parameters: {"memory_object"=>{"number"=>"15", "initials"=>"AE", "name"=>"Albert Einstein", "description"=>"Writing on a chalkboard", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg", "chart_id"=>"4"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/memory_objects_controller.rb:23:in `create'
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:23:in `create'
+  [1m[36mMemoryObject Create (5.8ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "15"], ["initials", "AE"], ["name", "Albert Einstein"], ["description", "Writing on a chalkboard"], ["image_url", "https://townsquare.media/site/295/files/2015/01/ozzy.jpg"], ["user_id", 23], ["chart_id", 4], ["created_at", "2020-08-18 18:11:49.668532"], ["updated_at", "2020-08-18 18:11:49.668532"]]
+  ↳ app/controllers/memory_objects_controller.rb:23:in `create'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/memory_objects_controller.rb:23:in `create'
+Completed 201 Created in 83ms (Views: 2.4ms | ActiveRecord: 26.6ms | Allocations: 9612)
+
+
+Started PUT "/memory_objects/3" for ::1 at 2020-08-18 14:12:32 -0400
+Processing by MemoryObjectsController#update as */*
+  Parameters: {"memory_object"=>{"number"=>"15", "initials"=>"AE", "name"=>"Albert Einstein", "description"=>"Writing on a blackboard", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg", "chart_id"=>"4"}, "id"=>"3"}
+  [1m[36mMemoryObject Load (4.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:47:in `set_memory_object'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/memory_objects_controller.rb:32:in `update'
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:32:in `update'
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:32:in `update'
+  [1m[36mMemoryObject Update (0.6ms)[0m  [1m[33mUPDATE "memory_objects" SET "description" = $1, "updated_at" = $2 WHERE "memory_objects"."id" = $3[0m  [["description", "Writing on a blackboard"], ["updated_at", "2020-08-18 18:12:32.553751"], ["id", 3]]
+  ↳ app/controllers/memory_objects_controller.rb:32:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/memory_objects_controller.rb:32:in `update'
+Completed 200 OK in 95ms (Views: 0.3ms | ActiveRecord: 10.0ms | Allocations: 6087)
+
+
+Started DELETE "/memory_objects/3" for ::1 at 2020-08-18 14:12:47 -0400
+Processing by MemoryObjectsController#destroy as */*
+  Parameters: {"memory_object"=>{"number"=>"15", "initials"=>"AE", "name"=>"Albert Einstein", "description"=>"Writing on a blackboard", "image_url"=>"https://townsquare.media/site/295/files/2015/01/ozzy.jpg", "chart_id"=>"4"}, "id"=>"3"}
+  [1m[36mMemoryObject Load (0.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:47:in `set_memory_object'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 2.8ms | Allocations: 2524)
+
+

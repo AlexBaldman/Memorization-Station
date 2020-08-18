@@ -1,4 +1,5 @@
 class ChartsController < ApplicationController
+  before_action :authorize_request, only: :create
   before_action :set_chart, only: [:show, :update, :destroy]
 
   # GET /charts
@@ -56,6 +57,6 @@ class ChartsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def chart_params
-      params.require(:chart).permit(:name, :description, :user_id)
+      params.require(:chart).permit(:name, :description, :image_url)
     end
 end
