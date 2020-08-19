@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import { postObject } from '../services/objects';
 
 export default function ObjectCreate(props) {
@@ -34,56 +33,57 @@ export default function ObjectCreate(props) {
 
   return (
     <>
-      
-      <form onSubmit={handleSubmit}>
-      <h3>Create Object</h3>
-        <label>
-          Number:
-          <input
-            type="text"
-            name="number"
-            value={formData.number}
-            onChange={handleChange}
-          />
-        </label><br/>
-        <label>
-          Initials:
-          <input
-            type="text"
-            name="initials"
-            value={formData.initials}
-            onChange={handleChange}
-          />
-        </label><br/>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </label><br/>
-        <label>
-          Description:
-          <input
-            type="text"
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-          />
-        </label><br/>
-        <label>
-          Image URL:
-          <input
-            type="text"
-            name="image_url"
-            value={formData.image_url}
-            onChange={handleChange}
-          />
-        </label><br/>
+      <div className="objects">
+        <form onSubmit={handleSubmit}>
+          <h1>Create Object</h1>
+          <label>
+            Number:
+            <input
+              type="text"
+              name="number"
+              value={formData.number}
+              onChange={handleChange}
+            />
+          </label><br/>
+          <label>
+            Initials:
+            <input
+              type="text"
+              name="initials"
+              value={formData.initials}
+              onChange={handleChange}
+            />
+          </label><br/>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label><br/>
+          <label>
+            Description:
+            <input
+              type="text"
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
+            />
+          </label><br/>
+          <label>
+            Image URL:
+            <input
+              type="text"
+              name="image_url"
+              value={formData.image_url}
+              onChange={handleChange}
+            />
+          </label><br/>
           <button>Submit</button>
-      </form>
+        </form>
+      </div>
     </>
   )
 }

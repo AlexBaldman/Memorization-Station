@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg');
+
 }
 
 .header {
@@ -20,10 +22,9 @@
   justify-content: space-around;
   text-align: center;
   background-color: yellow;
-  background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgb(79, 31, 82);
   font-size: calc(10px + 2vmin);
 }
 
@@ -33,6 +34,7 @@
   text-align: center;
   max-width: 35vw;
   flex-flow: column;
+  text-size-adjust: 80%;
 
 }
 
@@ -55,6 +57,18 @@ nav {
   background: rgb(83, 88, 82);
   color: white;
   text-decoration: none;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 20px 20px;
+	border-radius: 40px;
+	color: #333;
+	background: #fff;
+  margin-bottom: 50px;
+  margin-top: 50px;
+	box-shadow: 0 3px 40px 0 #0000003b;
 }
 
 h3 {
