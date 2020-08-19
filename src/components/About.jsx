@@ -3,8 +3,8 @@ import React from 'react'
 export default function About () {
     
     return (
-      <div className='about'>
-        <h1>About</h1>
+      <div className='home-content'>
+        <div className="title-container"><h2>About</h2></div>
         <p>
           Memory Systems have been used by many of the most brilliant people throughout history to improve their ability to recall information.
         </p>

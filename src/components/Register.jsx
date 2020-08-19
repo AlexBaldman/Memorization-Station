@@ -26,7 +26,7 @@ export default function Register(props) {
   return (
     <div className="register">
       <form onSubmit={handleSubmit}>
-        <h3>Register</h3>
+        <div className="title-container"><h2>Register</h2></div>
         <label>
           Username:
           <input
