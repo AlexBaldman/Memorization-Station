@@ -13,8 +13,11 @@ export default function Objects(props) {
   
   
   return (
-    <div className="objects">
-      <h3>Memory Objects</h3>
+    <div className="home-content">
+      <div className="title-container">
+        <h2>Memory Objects</h2>
+      </div>
+      
         {props.objects.map((memoryObject) => (
           <>
             <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>{memoryObject.name}</Link>

@@ -6,18 +6,15 @@ export default function Nav() {
   return (
     <div>
       <nav>
-        <h2>
-        |     
-          <Link to="/">  Home  </Link>      |
+       
+            
+          <Link to="/"><button>Home</button></Link> 
 
-          <Link to="/About">   About   </Link>     |
+          <Link to="/About"><button>About</button></Link>
 
-          <Link to="/charts">  Charts   </Link>      |
+          <Link to="/charts"><button>Charts</button></Link> 
 
-          <Link to="/memory_objects">   Objects   </Link>     |
-          
-
-        </h2>
+          <Link to="/memory_objects"><button>Objects</button></Link>
 
       </nav>
     </div>

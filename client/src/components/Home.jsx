@@ -4,7 +4,7 @@ export default function Home () {
     
     return (
       <div className='home-content'>
-        <h2>Home</h2>
+        <div className='title-container'><h2>Home</h2></div>
 
         <p>The human mind is an amazing thing.  In fact, it is the most complex object in the universe that we are 
         currently aware of, and yet we still are only just breaking the surface in terms of understanding the mechanisms behind how it actually works.</p>

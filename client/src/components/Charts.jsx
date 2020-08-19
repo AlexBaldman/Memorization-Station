@@ -7,14 +7,15 @@ export default function Charts(props) {
 
 
     return (
-        <div>
-            <h3>Charts</h3>
+        <div className="hone-content">
+            <div className="title-container"><h2>Charts</h2></div>
             {props.charts.map((chart) => (
                 <>
-                    <h1>{chart.name}</h1>
-                    <p>{chart.description}</p>
-                    <Link to={`/charts/${chart.id}`} > {chart.name} </Link>
-                    {/* <img src={chart.image_url} /> */}
+                    <div className="chart-card">
+                        <p>{chart.description}</p>
+                        <Link to={`/charts/${chart.id}`}> {chart.description} </Link>
+                        {/* <img src={chart.image_url} /> */}
+                    </div>
                 </>
             ))}
             

@@ -24,46 +24,47 @@ export default function Login(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      
-      <h2> Login:</h2>
+      <div className="main">
+        <form onSubmit={handleSubmit}>
+          
+          <div className="title-container"><h2> Login </h2></div>
 
-      <label>
-        Username:
-        <input
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
+          <label>
+            Username:
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+            />
+          </label>
 
-      <label>
-        Email:
-        <input
-          type="text"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </label>
+          <label>
+            Email:
+            <input
+              type="text"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
 
-      <label>
-        Password:
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+          </label>
 
-      <button onSubmit={handleSubmit}>Submit</button><br/>
-      <br/>
-      <h3><Link to='/register'> Or click here to sign up for a new account! </Link></h3>
-      <br/>
-      
-     
-    </form>
+          <button onSubmit={handleSubmit}>Submit</button>
+          <Link to='/register'><button>Create a account! </button></Link>
+          <br/>
+          
+        
+        </form>
+      </div>
   )
 }
