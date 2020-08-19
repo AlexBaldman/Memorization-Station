@@ -7,9 +7,9 @@ export default function Charts(props) {
 
 
     return (
-        <div className="charts">
+        <div>
             <h3>Charts</h3>
-                {props.charts.map((chart) => (
+            {props.charts.map((chart) => (
                 <>
                     <h1>{chart.name}</h1>
                     <p>{chart.description}</p>

@@ -13,7 +13,7 @@ export default function Objects(props) {
   
   
   return (
-    <div>
+    <div className="objects">
       <h3>Memory Objects</h3>
         {props.objects.map((memoryObject) => (
           <>
@@ -23,7 +23,6 @@ export default function Objects(props) {
             <br />
          </>
     ))}
-    <Link to='/memory_objects/new'><button>Create New Memory Object</button></Link>
   </div>
     )
 }

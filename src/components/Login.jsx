@@ -60,7 +60,9 @@ export default function Login(props) {
 
       <button onSubmit={handleSubmit}>Submit</button><br/>
       <br/>
-      <Link to='/register'> Or click here to sign up for a new account! </Link>
+      <h3><Link to='/register'> Or click here to sign up for a new account! </Link></h3>
+      <br/>
+      
      
     </form>
   )

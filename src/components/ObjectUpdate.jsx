@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import { putObject } from '../services/objects'
 
 export default function ObjectUpdate(props) {
@@ -18,8 +17,8 @@ export default function ObjectUpdate(props) {
 
   const defaultFormData = () => {
 
-    const memoryObject = props.objects.find((memoryObject) => {
-      return memoryObject.id === parseInt(props.match.params.id)
+  const memoryObject = props.objects.find((memoryObject) => {
+    return memoryObject.id === parseInt(props.match.params.id)
       })
         if (memoryObject) {
           setFormData({ 
@@ -33,16 +32,11 @@ export default function ObjectUpdate(props) {
         }
   }
 
-  // const handleChange = (e) => {
-  //   const { value } = e.target;
-  //   setFormData({ name: value })
-  // }
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value })
   }
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const {id} = props.match.params;
@@ -56,14 +50,16 @@ export default function ObjectUpdate(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Update Object</h3>
-      <label>
-        Number:
-        <input
-          type="text"
-          name="number"
-          value={formData.number}
+    <div className="objects">
+      <form onSubmit={handleSubmit}>
+        
+        <h3>Update Object</h3>
+        <label>
+          Number:
+          <input
+            type="text"
+            name="number"
+            value={formData.number}
           onChange={handleChange}
         />
       </label>
@@ -104,20 +100,8 @@ export default function ObjectUpdate(props) {
         />
       </label>
       <button>Submit</button>
-    </form>
+
+      </form>
+    </div>
   )
 }
-
-
-
-// Need to set the form to set all the different keys to the inputted values
-// Again, is it possible to use a computed property here?
-// Perhaps something similar to what's happening below, from login:
-
-// const handleChange = (e) => {
-//   const { name, value } = e.target;
-//   setFormData({
-//     ...formData,
-//     [name]: value
-//   })
-// }

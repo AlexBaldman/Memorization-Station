@@ -12,8 +12,6 @@ import ObjectCreate from './ObjectCreate';
 import ObjectUpdate from './ObjectUpdate';
 import About from './About';
 
-// double check all import names and relative locations //
-
 export default function Main(props) {
   
   const { setCurrentUser } = props;
@@ -102,20 +100,6 @@ export default function Main(props) {
           )} /> 
 
         </Switch>
-
-      {/* <Route exact path='/objects/:id' render={(props) => (
-        <MemoryObject
-          {...props}
-          objects={objects}
-          />
-      )} /> */}
-
-     {/* <Route exact path='/objects' render={() => (
-          <Objects
-            objects={objects}
-            setObjects={setObjects}
-            />
-        )} /> */}
 
       </main>
     )

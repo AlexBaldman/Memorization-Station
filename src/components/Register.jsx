@@ -24,36 +24,38 @@ export default function Register(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Register</h3>
-      <label>
-        Username:
-        <input
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Email:
-        <input
-          type="text"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Password:
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
-    </form>
+    <div className="register">
+      <form onSubmit={handleSubmit}>
+        <h3>Register</h3>
+        <label>
+          Username:
+          <input
+            type="text"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Email:
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </label>
+        <button>Submit</button>
+      </form>
+    </div>
   )
 }

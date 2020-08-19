@@ -1,5 +1,5 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import { getOneChart } from '../services/charts'
 
@@ -29,10 +29,10 @@ export default function Chart(props) {
 
             {chart && 
                 <>
-                    <Link to={`/memory_objects/${chart.id}/new`}> Add Memory Object </Link>
                     <h2>{chart.name}</h2>
                     <h3>{chart.description}</h3>
                     <img src={chart.image_url} />
+                    <Link to={`/memory_objects/${chart.id}/new`}> <button>Add Memory Object</button> </Link>
                 </>
             }
             {objects &&
