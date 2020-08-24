@@ -17,13 +17,6 @@ Rails.application.routes.draw do
   post '/memory_objects/:id', to: 'memory_objects#create'
   put '/charts/:id/memory_objects/:memory_objects_id', to: 'charts#add_object'
 
-
-  # put '/charts/:charts_id/memory_object/:id' to: 'charts#add_object'
-
-  # NEED TO FIGURE OUT - SERVER WOULD NOT START WITH THE ABOVE UNCOMMENTED
-
-
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
 end

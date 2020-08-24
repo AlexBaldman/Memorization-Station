@@ -13,19 +13,26 @@ export default function Objects(props) {
   
   
   return (
-    <div className="home-content">
+    <div className="card">
       <div className="title-container">
-        <h2>Memory Objects</h2>
+        <h2> memory objects </h2>
       </div>
-      
+
         {props.objects.map((memoryObject) => (
           <>
-            <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>{memoryObject.name}</Link>
-            <Link to={`/memory_objects/${memoryObject.id}/edit`}><button>edit object</button></Link>
-            <button onClick={() => handleClick(memoryObject.id)}>Delete Object</button>
-            <br />
+            <div className='card'>
+                <h1>{memoryObject.name}</h1>
+                <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>
+                  <img src={memoryObject.image_url} alt={ "memory object image" } /> 
+                </Link>
+                <h2>{memoryObject.description}</h2>
+              <button>
+              <Link to={`/memory_objects/${memoryObject.id}/edit`} > edit object </Link></button>
+              <button onClick={() => handleClick(memoryObject.id)} > delete Object </button>
+            </div>
          </>
     ))}
-  </div>
+
+      </div>
     )
 }

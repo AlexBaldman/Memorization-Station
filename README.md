@@ -35,7 +35,7 @@ _Its basic functionality at MVP will be to store charts/tables of "memory object
   
 ## MVP 
 
-_**Memorization Station** in its MVP version should serve as a bit of an introduction to memory systems, and have the basic functionality of allowing a user to log in and create/store/edit basic "memory objects" to be held in charts/tables of various types._
+_**Memorization Station** in its MVP version should serve as a bit of an introduction to memory systems, and have the basic functionality of allowing a user to log in and create/store/edit basic "memory objects" to be held in charts/tables of various types, making up memory palaces, journeys, etc._
 
 <br>
 
