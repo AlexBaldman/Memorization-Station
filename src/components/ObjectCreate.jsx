@@ -33,9 +33,9 @@ export default function ObjectCreate(props) {
 
   return (
     <>
-      <div className="objects">
+      <div className="content">
         <form onSubmit={handleSubmit}>
-          <h1>Create Object</h1>
+          <h2>create object</h2>
           <label>
             Number:
             <input

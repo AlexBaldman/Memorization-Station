@@ -50,10 +50,10 @@ export default function ObjectUpdate(props) {
   }
 
   return (
-    <div className="objects">
+    <div className="content">
       <form onSubmit={handleSubmit}>
         
-        <h3>Update Object</h3>
+        <h3>edit object</h3>
         <label>
           Number:
           <input

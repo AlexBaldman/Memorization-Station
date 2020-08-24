@@ -1,23 +1,33 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { destroyChart } from '../services/charts';
+
 
 export default function Charts(props) {
 
 
+// class ChartTitle {
+//     style=
 
+// }
 
     return (
-        <div className="hone-content">
-            <div className="title-container"><h2>Charts</h2></div>
+        <div className="">
+            <div className="title-container">
+                <h1> charts </h1>
+            </div>
+            <div className="charts">
             {props.charts.map((chart) => (
                 <>
-                    <div className="chart-card">
-                        <p>{chart.description}</p>
-                        <Link to={`/charts/${chart.id}`}> {chart.description} </Link>
-                        {/* <img src={chart.image_url} /> */}
+                    <div className="card">
+                        <h1>{chart.name}</h1> 
+                        <Link to={`/charts/${chart.id}`}> 
+                            <img src={chart.image_url} /> 
+                        </Link>
                     </div>
                 </>
             ))}
+            </div>
             
         </div>
     )

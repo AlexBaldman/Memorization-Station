@@ -19,23 +19,21 @@ function App() {
     }
 
   return (
+    <>
     <div className="App">
-
       <Header
         currentUser={currentUser}
         setCurrentUser={setCurrentUser}
       />
-
       <Nav />
-
       <Main 
         currentUser={currentUser}
         setCurrentUser={setCurrentUser}
       />
-      
       <Footer />
 
     </div>
+    </>
   );
 }
 

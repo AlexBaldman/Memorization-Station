@@ -23,14 +23,21 @@ export default function Login(props) {
     props.history.push('/')
   }
 
+// TO DO :
+  // use if / else or ternary or something to:
+  // if not logged in, 
+  // display login form 
+  // if logged in, 
+  // show user_image_url
+  // (user_image_url would need to be added to the user table in database using a migration)
+
   return (
-      <div className="main">
+      <div>
         <form onSubmit={handleSubmit}>
           
-          <div className="title-container"><h2> Login </h2></div>
-
+          <div className="title-container"><h2> login </h2></div>
           <label>
-            Username:
+            username:
             <input
               type="text"
               name="username"
@@ -40,7 +47,7 @@ export default function Login(props) {
           </label>
 
           <label>
-            Email:
+            e-mail:
             <input
               type="text"
               name="email"
@@ -50,7 +57,7 @@ export default function Login(props) {
           </label>
 
           <label>
-            Password:
+            password:
             <input
               type="password"
               name="password"
@@ -59,7 +66,7 @@ export default function Login(props) {
             />
           </label>
 
-          <button onSubmit={handleSubmit}>Submit</button>
+          <button>Submit</button>
           <Link to='/register'><button>Create a account! </button></Link>
           <br/>
           

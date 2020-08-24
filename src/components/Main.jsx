@@ -5,8 +5,10 @@ import { getAllObjects } from '../services/objects';
 import Home from './Home';
 import Login from './Login';
 import Register from './Register';
-import Charts from './Charts';
 import Chart from './Chart';
+import Charts from './Charts';
+import ChartEdit from './ChartEdit'
+import ChartCreate from './ChartCreate';
 import Objects from './Objects';
 import ObjectCreate from './ObjectCreate';
 import ObjectUpdate from './ObjectUpdate';
@@ -47,60 +49,84 @@ export default function Main(props) {
               {...props}
               setCurrentUser={setCurrentUser}
               />
-          )}/>
+            )}/>
 
           <Route path='/register' render={(props) => (
             <Register
               {...props}
               setCurrentUser={setCurrentUser}
               />
-          )} />
+            )} />
 
           <Route path='/about' component={About} />
-        
+
+          <Route path='/charts/:id' render={(props) => (
+            <Chart
+              {...props}
+              objects={objects}
+              setObjects={setObjects}
+              charts={charts}
+              setCharts={setCharts}
+              />
+            )} /> 
+
           <Route path='/charts' exact render={(props) => (
             <Charts
               {...props}
               charts={charts}
               setCharts={setCharts}
               />
-          )} /> 
+            )} /> 
 
-          <Route path='/charts/:id' render={(props) => (
-            <Chart
+          <Route path='/charts/new' exact render={(props) => (
+            <ChartCreate
               {...props}
-              objects={objects}
               charts={charts}
               setCharts={setCharts}
               />
-          )} /> 
+            )} /> 
 
-          <Route path='/memory_objects' exact render={(props) => (
-            <Objects
+          <Route path='/charts/:id/edit' render={(props) => (
+            <ChartEdit
               {...props}
               objects={objects}
               setObjects={setObjects}
+              charts={charts}
+              setCharts={setCharts}
               />
-          )} />
+            )} /> 
+            
+          <Route path='/memory_objects' exact render={(props) => (
+            <Objects
+              {...props}
+              charts={charts}
+              setCharts={setCharts}
+              objects={objects}
+              setObjects={setObjects}
+              />
+            )} />
 
           <Route path='/memory_objects/:id/new' render={(props) => (
             <ObjectCreate
               {...props}
+              charts={charts}
+              setCharts={setCharts}
+              objects={objects}
+              setObjects={setObjects}
+              />
+           )} />
+
+          <Route path='/memory_objects/:id/edit' render={(props) => (
+            <ObjectUpdate
+              {...props}
+              charts={charts}
+              setCharts={setCharts}
               objects={objects}
               setObjects={setObjects}
               />
           )} />
 
-          <Route path='/memory_objects/:id/edit' render={(props) => (
-            <ObjectUpdate
-              {...props}
-              objects={objects}
-              setObjects={setObjects}
-              />
-          )} /> 
-
         </Switch>
-
       </main>
     )
 }

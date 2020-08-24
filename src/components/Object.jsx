@@ -1,24 +1,23 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import { getOneChart } from '../services/charts'
+import { getOneObject } from '../services/objects'
 
 
-export default function Chart(props) {
-    const [chart, setChart] = useState(null)
+export default function Object(props) {
     const [objects, setObjects] = useState([])
 
     useEffect(() => {
-        getChart();
+        getObject();
         
       }, [])
     
-    const getChart = async () => {
-        const newChart = await getOneChart(props.match.params.id)
+    const getObject = async () => {
+        const object = await getOneObject(props.match.params.id)
         const objectArray = props.objects.filter(obj => {
-        return obj.chart_id === newChart.id
+        return obj.memory_object.id === memory_object.id
         })
-        setChart(newChart)
+        setObject(newObject)
         setObjects(objectArray)
     }
 
@@ -26,14 +25,14 @@ export default function Chart(props) {
     return (
         <> 
             <div className="content">
-                <div className="title-container"> chart </div>
+                <div className="title-container"> charts </div>
 
-                {chart && 
+                {object && 
                     <>
                     <div className="card">
-                        <h1>{chart.name}</h1>
-                        <p>{chart.description}</p>
-                        <img src={chart.image_url} />
+                        <h1>{object.name}</h1>
+                        <p>{object.description}</p>
+                        <img src={object.image_url} />
                         <Link to={`/memory_objects/${chart.id}/new`}> 
                             <button>Add Memory Object</button><br/>
                         </Link>

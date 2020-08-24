@@ -1,117 +1,190 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&family=Mouse+Memoirs&family=Pacifico&family=Proza+Libre:ital,wght@1,800&display=swap');
 
 .App {
   text-align: center;
-  background-image: url('https://www.amle.org/Portals/0///EasyDNNNews/889/784784p888EDNmain889iStock-490433128_DW.jpg');
-}
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-	min-height: 80vh;
-	background-color: #101010;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  background-color: lightgrey;
 }
 
 .app-title {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Pacifico", cursive;
+  // max-width: 500px;
+  font-size: 1em;
+  border: black 1px;
+  border: solid orange 10px;
+  border-radius: 15px;
   display: flex;
+  min-width: 300px;
   flex-flow: column;
+  color: red;
+  border: solid white 10px;
+  padding: black 10px;
 }
+
 .header {
-  background-color: dimgray;
-  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Pacifico', cursive;
+  min-height: 10vh;
+  max-height: 20vh;
+  flex-flow: column;
+  align-items: top;
   justify-content: center;
-  font-size: calc(10px + 1vmin);
-  color: pink;
-  text-decoration: none;
+  font-size: calc(4px + 2vmin);
+  color: mintcream;
+  border-color: blue;
+}
+
+.title-container {
+  font-family: "IBM Plex Mono", monospace;
+  // background-image: url('./assets/images/brain-transparent-2.jpeg');
+  background-size: cover;  
+  // border-radius: 30px;
+  margin: 0 auto;
+  max-width: 30vw;
+  max-height: 30vw;
+  shape-rendering: triangle;
+  margin-top: 0;
+  padding: 20px;
+  color: hotpink;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.card {
+  // border-radius: 20px;
+  // max-width: 70vw;
+  height: 250px;
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  flex-flow: row wrap;
+  // flex-shrink: 1;
+  outline: dotted red;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.login-register {
+  max-width: 50px;
+  max-height: 50px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex: 1;
+  align-self: right;
 }
 
 .main {
-  min-height: 50vh;
+  min-height: 85vh;
+  max-height: 50%;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center; 
   text-align: center;
   background-color: rgb(205, 232, 210);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: rgb(79, 31, 82);
-  font-size: calc(10px + 2vmin);
+  font-size: calc(2vmin);
 }
 
-.home-content {
+.content {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  max-width: 60vw;
-  flex-flow: column;
-  flex-grow: 1;
-  text-size-adjust: 50%;
-}
-
-.title-container {
-  background-color: rgb(220, 176, 176);
-  border-radius: 60px;
-  padding: 10px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  color: grey;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  max-width: 60vw;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  text-size-adjust: 80%;
 }
 
-// .chart-card {
-//   align-items: center;
-//   display: flex;
-//   justify-content: center;
-// }
+.chart-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px;
+  border-color: red;
+  border-radius: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column;
+}
 
 .footer {
   display: flex;
-  background-color: rgb(203, 43, 144);
-  min-height: 10vh;
+  background-image: url(https://i.pinimg.com/236x/b2/ba/e0/b2bae0228c560b0751ebb837363ab31c.jpg);
+  background-size: center;
+  max-height: 10%;
   min-width: 100%;
   color: white;
-  text-align: right;
-  justify-content: flex-end;
+  align-items: bottom;
+  justify-content: bottom left;
   position: sticky;
   bottom: 0; 
-  background: 
-  linear-gradient(rgba(84, 90, 162, 0.6), rgba(0,0,0,.6)),
-  url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center,
-  linear-gradient(#c95bc6, #2b5876);
+}
+
+.nav-button {
+  font-family: "Pacifico";
+  // text-emphasis: bold;
+  background-color: hotpink;
+	color: white;
+  background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
   background-size: cover;
+  // background-margin: 0 0;
+  // justify-content: center;
+  // flex-grow: 2;
+  // border: 10px 0 #7e17178a;
+  &:hover {
+    color: yellow;
+    background-color: yellow;
+    box-shadow: 20px 20px 20px 0;
+  }
 }
-h3 {
-  color: purple;
+
+.button-submit {
+  border: red dotted 2px;
+  &:hover {
+    color: rgb(212, 57, 106);
+    background-color: yellow;
+    box-shadow: 5px 5px 5px 5px orange;
+  }
 }
+
 img {
-  max-width: 30%;
+  min-width: 18vw;
+  max-width: 20vw;
+  padding: 1vh;
+  margin: 1vh;
 }
+
 nav {
   display: flex;
+  background-color: transparent;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 10vh;
-  background: rgb(83, 88, 82);
+  min-height: 8vh;
+  max-height: 10vh;
   color: white;
   text-decoration: none;
 }
 
 button {
-  border: none;
-  font-family: "Lucida Grande";
+  // border: none;
+  font-family: "Roboto";
   text-emphasis: bold;
-	padding: 20px 20px;
-	border-radius: 150px;
+	padding: 15px 15px;
+	border-radius: 30px;
 	color: #333;
-  background: #fff;
-  margin-left: 50px;
+  // background: #fff;
+  margin-left: 20px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
   box-shadow: 0 3px 40px 0 #7e17178a;
   &:hover {
     color: rgb(212, 57, 106);
@@ -120,27 +193,21 @@ button {
   }
 }
 
-h3 {
-  display: flex;
-  align-items: center;
-}
-
 form {
+  border-radius: 10px;
+  background-color: mintcream;
   display: flex;
   flex-flow: column; 
-  align-items: left;
+  align-items: center;
   justify-content: center;
 }
 
 @media screen and (max-width: 700px) {
   .main {
-    background-color: white;
+    background-color: lightblue;
   }
   .footer {
     display: none;
-  }
-  nav {
-    flex-shrink: 0;
   }
 
 }
@@ -148,11 +215,6 @@ form {
 @media only screen and (max-width: 1000px) {
   body {
     background-image: none;
-  }
-
-  nav {
-    background: 
-    linear-gradient(#c95bc6, #2b5876);
   }
 
   .footer {
