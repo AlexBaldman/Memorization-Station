@@ -12,9 +12,10 @@ export default function Nav(props) {
     history.push('/');
   }
 
-  return (
-    <div>
-      <nav>
+  return ( 
+    <>
+
+      <nav className="nav">
      
           <Link to="/"><button className="nav-button"> home </button></Link> 
 
@@ -25,25 +26,29 @@ export default function Nav(props) {
           <Link to="/memory_objects"><button className="nav-button"> objects </button></Link>
 
           <div className="login-register">
-                    <Link to="/Login"><button className="user-button"> login </button></Link>
-                    <Link to="/Register"><button className="user-button"> register </button></Link>
+              <Link to="/Login">
+                <button className="user-button"> login </button>
+              </Link>
+              <Link to="/Register">
+                <button className="user-button"> register </button>
+              </Link>
           </div>
 
           <div className="login-register">
-                {props.currentUser
-                 ? (
-                    <>
-                      <p>{props.currentUser.username}</p>
-                      <button onClick={handleLogout}> {"Logout"} </button>
-                    </>
-                        ) : (
-                          "not logged in"
-                        )
-                    }
+                {props.currentUser ? 
+                    ( <>
+                        <p>{props.currentUser.username}</p>
+                        <button onClick={handleLogout}> logout </button>
+                      </> 
+                    ) : 
+                    ( "not logged in" )
+                }
           </div> 
+
       </nav>
-    </div>
-    )
+
+    </> 
+  )
 
 }
 

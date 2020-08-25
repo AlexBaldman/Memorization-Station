@@ -4,10 +4,12 @@ export default function Home () {
     
     return (
       <div className="content">
+
         <div className='title-container'>
           <h2>home</h2>
         </div>
-        <div>
+
+        <div className='page-content'>
           <p>
             Memorization Station is a place to learn more about memorization systems, 
             how they are structured and used, and to provide tools for building your own charts

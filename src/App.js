@@ -20,19 +20,31 @@ function App() {
 
   return (
     <>
-    <div className="App">
-      <Header
-        currentUser={currentUser}
-        setCurrentUser={setCurrentUser}
-      />
-      <Nav />
-      <Main 
-        currentUser={currentUser}
-        setCurrentUser={setCurrentUser}
-      />
-      <Footer />
 
-    </div>
+      <div className="App">
+
+        <Header
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
+
+        <Nav 
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
+
+        <Main 
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
+
+        <Footer 
+          currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
+        />
+        
+      </div>
+
     </>
   );
 }
