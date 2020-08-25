@@ -7,11 +7,13 @@ export default function Header() {
 
     return (
         <>
+            
             <div className="header">
-                
+
                 <div className="nav-button">
                     <h1>Memorization Station</h1>
                 </div>
+
             </div>
         </>
     )
