@@ -167,14 +167,14 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             description: 'jabbin super fast jabs with the best of em',
             image_url: '____', 
             chart: @peopleChart,
-            USER: @alex 
+            user: @alex     
         },
         { 
             number: '05',
             initials: 'OE',
             name: 'Dmar Epps',
             description: 'coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)',
-            image_url: '_____', 
+            image_url: 'https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg', 
             chart: @peopleChart,
             user: @alex 
         },
