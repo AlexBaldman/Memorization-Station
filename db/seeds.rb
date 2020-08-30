@@ -1,5 +1,3 @@
-#                                   #
-# __________seeds.rb_______________#
 
 # This file contains the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command,
@@ -21,14 +19,15 @@ User.destroy_all
 
 @admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
 @alex = User.create(username: 'alexBaldman', email: 'alexlbeckerman@gmail.com', password: '123456')
-puts `Great job, if I do say so myself!  #{User.count} users created!`
+# puts `#{User.count} users created!`
 #--------------------------------
 
 # ___Create some Charts, and tell us how many were created___:
 
 @peopleChart = Chart.create(name: 'People', description: 'memory system people', image_url: 'https://jeffwarren.org/wp-content/uploads/thinker.jpg', user: @alex)
-@numberChart = Chart.create(name: 'Numbers 0-10', description: 'memory system numbers 0-10')
-puts `Great success! #{Chart.count} charts created!`
+@numberChart = Chart.create(name: 'Numbers 0-10', description: 'memory system numbers 0-10', image_url: 'https://specials-images.forbesimg.com/imageserve/1135400792/960x0.jpg?fit=scale', user: @alex)
+# puts `#{Chart.count} charts created!`
+
 #--------------------------------
 
 # ___Create some Numbers to seed in NumberChart, and tell us how many were created___:
@@ -38,15 +37,15 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '0',
             name: 'zero',
-            description: 'donut'
+            description: 'donut',
             image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCRSVzxfuyH253ftSos6cwasbRU6rR80qpeg&usqp=CAU',
-            chart: @numberChart,
+            chart_id: @numberChart,
             user: @alex
         },
         {
             number: '1',
             name: 'one',
-            description: 'pencil'
+            description: 'pencil',
             image_url: 'https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg',
             chart: @numberChart,
             user: @alex
@@ -54,7 +53,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '2',
             name: 'two',
-            description: 'swan'
+            description: 'swan',
             image_url: 'https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif',
             chart: @numberChart,
             user: @alex
@@ -62,7 +61,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '3',
             name: 'three',
-            description: 'handcuffs'
+            description: 'handcuffs',
             image_url: 'https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg',
             chart: @numberChart,
             user: @alex
@@ -70,7 +69,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '4',
             name: 'four',
-            description: 'sailboat'
+            description: 'sailboat',
             image_url: 'https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png',
             chart: @numberChart,
             user: @alex
@@ -78,7 +77,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '5',
             name: 'five',
-            description: 'hook'
+            description: 'hook',
             image_url: 'https://www.memory-improvement-tips.com/images/hook.jpg',
             chart: @numberChart,
             user: @alex
@@ -86,7 +85,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '6',
             name: 'six',
-            description: 'elephant trunk'
+            description: 'elephant trunk',
             image_url: 'https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg',
             chart: @numberChart,
             user: @alex
@@ -94,7 +93,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '7',
             name: 'seven',
-            description: 'axe'
+            description: 'axe',
             image_url: 'https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg',
             chart: @numberChart,
             user: @alex
@@ -102,7 +101,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '8',
             name: 'eight',
-            description: 'hourglass'
+            description: 'hourglass',
             image_url: 'https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg',
             chart: @numberChart,
             user: @alex
@@ -110,7 +109,7 @@ puts `Great success! #{Chart.count} charts created!`
         {
             number: '9',
             name: 'nine',
-            description: 'balloon'
+            description: 'balloon',
             image_url: 'https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg',
             chart: @numberChart,
             user: @alex
@@ -118,12 +117,13 @@ puts `Great success! #{Chart.count} charts created!`
     ]
 )
 
-puts `Mathematical!  #{MemoryObject.count} numbers created!`
+# puts `Mathematical!  #{MemoryObject.count} numbers created!`
 # --------------------------------
 
 # Create some People to seed in PeopleChart:
 
-@people = MemoryObject.create([
+@people = MemoryObject.create(
+    [
         { 
             name: 'Ozzie Osbourne', 
             number: '00', 
@@ -147,7 +147,7 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             number: '02', 
             initials: 'OB', 
             description: 'weilding a lightsaber looking like a beard model', 
-            image_url: '__________', 
+            image_url: 'https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg', 
             user: @alex, 
             chart: @peopleChart 
         },
@@ -156,16 +156,17 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             number: '03', 
             initials: 'OC', 
             description: 'sacking Tom Brady so hard he might die', 
-            image_url: 'https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg', user: @alex, 
+            image_url: 'https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg', 
+            user: @alex, 
             chart: @peopleChart,
-            user: @alex 
+            
         },
         { 
             number: '04',
             initials: 'OD',
             name: 'Oscar De La Hoya',
             description: 'jabbin super fast jabs with the best of em',
-            image_url: '____', 
+            image_url: 'https://www.ringtv.com/wp-content/uploads/2018/05/Oscar-De-La-Hoya-vs.-Yori-Boy-Campas-YouTube.jpg', 
             chart: @peopleChart,
             user: @alex     
         },
@@ -183,7 +184,7 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             initials: 'OS',
             name: 'OJ Simpson',
             description: 'trying to put on that pesky glove',
-            image_url: '______',
+            image_url: 'https://lovelace-media.imgix.net/getty/51988708.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -192,7 +193,7 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             initials: 'OG',
             name: 'Oscar the Grouch',
             description: 'yelling at folks on the sidewalk froom his trashcan',
-            image_url: '_____________',
+            image_url: 'https://media.washtimes.com/media/image/2015/07/17/Oscar.jpg',
             chart: @peopleChart,
             user: @alex
         },{
@@ -200,7 +201,7 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             initials: 'OH',
             name: 'Owen Hart',
             description: 'falling from the ceiling, unfortunately',
-            image_url: '_____',
+            image_url: 'https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/6/5/4/1326654_owendiveinjapan_964702.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -209,7 +210,7 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             initials: 'ON',
             name: 'Oliver North',
             description: 'lying to Congress about Iran Contra or some other shadiness',
-            image_url: '______',
+            image_url: 'https://www.dw.com/image/39165037_401.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -218,31 +219,33 @@ puts `Mathematical!  #{MemoryObject.count} numbers created!`
             initials: 'AO',
             name: 'Annie Oakley',
             description: 'shooting off some six shooters with ease',
-            image_url: '______',
+            image_url: 'https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg',
             chart: @peopleChart,
             user: @alex
-        },
-        {
-            number: '11',
-            initials: 'AA',
-            name: 'Andre Agassi',
-            description: 'hitting a tennisball super hard with a headband holding on his wig super tight',
-            image_url: '______',
-            chart: @peopleChart,
-            user: @alex
-        },
-        {
-            number: '12',
-            initials: 'AB',
-            name: 'Al Bundy',
-            description: 'sittin on the couch with his hands down his pants watching TV',
-            image_url: '______',
-            chart: @peopleChart,
-            user: @alex
-        },
-]
+        }
+        # },
+        # {
+        #     number: '11',
+        #     initials: 'AA',
+        #     name: 'Andre Agassi',
+        #     description: 'hitting a tennisball super hard with a headband holding on his wig super tight',
+        #     image_url: 'https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg',
+        #     chart: @peopleChart,
+        #     user: @alex
+        # },
+        # {
+        #     number: '12',
+        #     initials: 'AB',
+        #     name: 'Al Bundy',
+        #     description: 'sittin on the couch with his hands down his pants watching TV',
+        #     image_url: 'https://memegenerator.net/img/images/15027148.jpg',
+        #     chart: @peopleChart,
+        #     user: @alex
+        # }
+    ]
+)
 
-puts `Look at those beautiful bastards!  You just created #{MemoryObject.count} people!  You're like some sort of God!`
+# puts `Look at those beautiful bastards!  You just created #{MemoryObject.count} people!  You're like some sort of God!`
 # ____________________________
 
 ## template JSON:

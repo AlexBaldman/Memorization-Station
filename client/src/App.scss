@@ -82,12 +82,11 @@
 }
 
 .main {
- 
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   min-height: 85vh;
-  max-height: 50%;
-  align-items: center; 
+  // max-height: 50%;
+  // align-items: center; 
   justify-content: center;
   text-align: center;
   background-color: rgb(205, 232, 210);
@@ -106,7 +105,7 @@
 }
 
 .chart-card {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   border: 5px;
@@ -149,7 +148,7 @@
   &:hover {
     color: yellow;
     background-color: yellow;
-    box-shadow: 20px 20px 20px 0;
+    box-shadow: 20px 20px 20px 20px;
   }
 }
 
