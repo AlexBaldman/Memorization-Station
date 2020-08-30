@@ -22,20 +22,20 @@ export default function Objects(props) {
           {props.objects.map((memoryObject) => (
             <>
 
-              <div className='card'>
+              <div className=''>
 
                   <h1>{memoryObject.name}</h1>
                   <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>
                     <img src={memoryObject.image_url} alt={ "memory object image" } /> 
                   </Link>
                   <h2>{memoryObject.description}</h2>
-                  <button>
+                  <button className='nav-button'>
                     <Link to={`/memory_objects/${memoryObject.id}/edit`}> 
                       edit object 
                     </Link>
                   </button>
 
-                  <button onClick={() => handleClick(memoryObject.id)}> 
+                  <button className="nav-button" onClick={() => handleClick(memoryObject.id)}> 
                     delete Object 
                   </button>
 

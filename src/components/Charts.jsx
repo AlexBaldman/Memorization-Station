@@ -19,11 +19,13 @@ export default function Charts(props) {
             <div className="charts">
             {props.charts.map((chart) => (
                 <>
-                    <div className="card">
-                        <h1>{chart.name}</h1> 
+                    <div className="">
+                        <ul>
+                            <li>{chart.name}</li>
                         <Link to={`/charts/${chart.id}`}> 
                             <img src={chart.image_url} /> 
                         </Link>
+                        </ul>
                     </div>
                 </>
             ))}
