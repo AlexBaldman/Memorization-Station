@@ -39,7 +39,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '0',
             name: 'zero',
             description: 'donut'
-            image_url: '_____',
+            image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCRSVzxfuyH253ftSos6cwasbRU6rR80qpeg&usqp=CAU',
             chart: @numberChart,
             user: @alex
         },
@@ -47,7 +47,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '1',
             name: 'one',
             description: 'pencil'
-            image_url: '_____',
+            image_url: 'https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg',
             chart: @numberChart,
             user: @alex
         },
@@ -55,7 +55,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '2',
             name: 'two',
             description: 'swan'
-            image_url: '_____',
+            image_url: 'https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif',
             chart: @numberChart,
             user: @alex
         },
@@ -63,7 +63,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '3',
             name: 'three',
             description: 'handcuffs'
-            image_url: '_____',
+            image_url: 'https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg',
             chart: @numberChart,
             user: @alex
         },
@@ -71,7 +71,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '4',
             name: 'four',
             description: 'sailboat'
-            image_url: '_____',
+            image_url: 'https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png',
             chart: @numberChart,
             user: @alex
         },
@@ -79,15 +79,15 @@ puts `Great success! #{Chart.count} charts created!`
             number: '5',
             name: 'five',
             description: 'hook'
-            image_url: '_____',
+            image_url: 'https://www.memory-improvement-tips.com/images/hook.jpg',
             chart: @numberChart,
             user: @alex
         },
         {
             number: '6',
             name: 'six',
-            description: 'pencil'
-            image_url: '_____',
+            description: 'elephant trunk'
+            image_url: 'https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg',
             chart: @numberChart,
             user: @alex
         },
@@ -95,7 +95,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '7',
             name: 'seven',
             description: 'axe'
-            image_url: '_____',
+            image_url: 'https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg',
             chart: @numberChart,
             user: @alex
         },
@@ -103,7 +103,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '8',
             name: 'eight',
             description: 'hourglass'
-            image_url: '_____',
+            image_url: 'https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg',
             chart: @numberChart,
             user: @alex
         },
@@ -111,7 +111,7 @@ puts `Great success! #{Chart.count} charts created!`
             number: '9',
             name: 'nine',
             description: 'balloon'
-            image_url: '_____',
+            image_url: 'https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg',
             chart: @numberChart,
             user: @alex
         }
