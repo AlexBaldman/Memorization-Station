@@ -5,27 +5,19 @@ import { destroyChart } from '../services/charts';
 
 export default function Charts(props) {
 
-
-// class ChartTitle {
-//     style=
-
-// }
-
     return (
         <div className="">
             <div className="title-container">
-                <h1> charts </h1>
+                <h1> memory charts </h1>
             </div>
             <div className="charts">
             {props.charts.map((chart) => (
                 <>
                     <div className="">
-                        <ul>
-                            <li>{chart.name}</li>
+                        <h2>{chart.name}</h2>
                         <Link to={`/charts/${chart.id}`}> 
                             <img src={chart.image_url} /> 
                         </Link>
-                        </ul>
                     </div>
                 </>
             ))}
