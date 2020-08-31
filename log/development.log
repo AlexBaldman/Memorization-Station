@@ -31107,3 +31107,83 @@ Completed 200 OK in 345ms (Views: 13.9ms | ActiveRecord: 322.9ms | Allocations: 
 Completed 200 OK in 350ms (Views: 23.5ms | ActiveRecord: 323.4ms | Allocations: 18605)
 
 
+Started GET "/charts" for ::1 at 2020-08-31 12:34:21 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-31 12:34:21 -0400
+Started GET "/auth/verify" for ::1 at 2020-08-31 12:34:21 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 493)
+
+
+  [1m[36mChart Load (15.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 39ms (Views: 18.3ms | ActiveRecord: 15.9ms | Allocations: 1597)
+
+
+  [1m[36mMemoryObject Load (38.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 50ms (Views: 10.2ms | ActiveRecord: 38.8ms | Allocations: 6073)
+
+
+Started GET "/charts/24" for ::1 at 2020-08-31 12:34:52 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mChart Load (6.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 161ms (Views: 0.3ms | ActiveRecord: 6.8ms | Allocations: 2672)
+
+
+Started GET "/charts/24" for ::1 at 2020-08-31 12:35:33 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-31 12:35:33 -0400
+Started GET "/auth/verify" for ::1 at 2020-08-31 12:35:33 -0400
+Started GET "/charts" for ::1 at 2020-08-31 12:35:33 -0400
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"24"}
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+  [1m[36mChart Load (29.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 45ms (Views: 4.8ms | ActiveRecord: 29.8ms | Allocations: 1263)
+
+
+  [1m[36mMemoryObject Load (85.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 123ms (Views: 27.4ms | ActiveRecord: 85.2ms | Allocations: 6154)
+
+
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 1191)
+
+
+Started GET "/charts/24" for ::1 at 2020-08-31 12:35:48 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mChart Load (0.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 31ms (Views: 1.1ms | ActiveRecord: 23.6ms | Allocations: 832)
+
+
+Started GET "/charts/24" for ::1 at 2020-08-31 12:35:55 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started GET "/charts/24" for ::1 at 2020-08-31 12:36:12 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mChart Load (1.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.4ms | Allocations: 799)
+
+
