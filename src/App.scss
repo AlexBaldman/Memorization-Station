@@ -83,11 +83,11 @@
 
 .main {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   min-height: 85vh;
   // max-height: 50%;
   // align-items: center; 
-  justify-content: center;
+  // justify-content: center;
   text-align: center;
   background-color: rgb(205, 232, 210);
   color: rgb(79, 31, 82);
@@ -162,10 +162,10 @@
 }
 
 img {
-  min-width: 18vw;
-  max-width: 20vw;
-  padding: 1vh;
-  margin: 1vh;
+  height: 15rem;
+  width: 15rem;
+  // padding: 1vh;
+  // margin: 1vh;
 }
 
 nav {
