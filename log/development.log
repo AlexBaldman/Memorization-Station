@@ -31187,3 +31187,885 @@ Processing by ChartsController#show as HTML
 Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.4ms | Allocations: 799)
 
 
+  [1m[35m (50.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (24.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[35m (43.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (169.0ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 161]]
+  [1m[35m (148.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (8.0ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 162]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.4ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 163]]
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (26.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 164]]
+  [1m[35m (45.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 165]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 166]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 167]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 168]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 169]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 170]]
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (1.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 171]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 172]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 173]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (3.0ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 174]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 175]]
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 176]]
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 177]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.4ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 178]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 179]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 180]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 24]]
+  [1m[36mChart Destroy (130.7ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 24]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 25]]
+  [1m[36mChart Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 25]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (35.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 45]]
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 45]]
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 45]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 46]]
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 46]]
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 46]]
+  [1m[35m (26.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "admin"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (104.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "admin"], ["email", "admin@email.com"], ["password_digest", "$2a$12$XyyprtlHu8A0oK9AN08fAerm464syLpTaTJs6PcOqW/dt8qVLu0qi"], ["created_at", "2020-08-31 17:57:52.812582"], ["updated_at", "2020-08-31 17:57:52.812582"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (20.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "alexBaldman"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$rC/GiFJqnPYhTQt9IwwrjuWNAPdwWW6zKkosuOr2K0/rW5nO3/1Ee"], ["created_at", "2020-08-31 17:57:53.153328"], ["updated_at", "2020-08-31 17:57:53.153328"]]
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (21.8ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "People"], ["description", "memory system people"], ["image_url", "https://jeffwarren.org/wp-content/uploads/thinker.jpg"], ["user_id", 48], ["created_at", "2020-08-31 17:57:53.171823"], ["updated_at", "2020-08-31 17:57:53.171823"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.3ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Numbers 0-10"], ["description", "memory system numbers 0-10"], ["image_url", "https://specials-images.forbesimg.com/imageserve/1135400792/960x0.jpg?fit=scale"], ["user_id", 48], ["created_at", "2020-08-31 17:57:53.229321"], ["updated_at", "2020-08-31 17:57:53.229321"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (104.9ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "1"], ["name", "one"], ["description", "pencil"], ["image_url", "https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.240939"], ["updated_at", "2020-08-31 17:57:53.240939"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "2"], ["name", "two"], ["description", "swan"], ["image_url", "https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.464068"], ["updated_at", "2020-08-31 17:57:53.464068"]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "3"], ["name", "three"], ["description", "handcuffs"], ["image_url", "https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.479822"], ["updated_at", "2020-08-31 17:57:53.479822"]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "4"], ["name", "four"], ["description", "sailboat"], ["image_url", "https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.503220"], ["updated_at", "2020-08-31 17:57:53.503220"]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "5"], ["name", "five"], ["description", "hook"], ["image_url", "https://www.memory-improvement-tips.com/images/hook.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.522970"], ["updated_at", "2020-08-31 17:57:53.522970"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "6"], ["name", "six"], ["description", "elephant trunk"], ["image_url", "https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.526578"], ["updated_at", "2020-08-31 17:57:53.526578"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "7"], ["name", "seven"], ["description", "axe"], ["image_url", "https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.529918"], ["updated_at", "2020-08-31 17:57:53.529918"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "8"], ["name", "eight"], ["description", "hourglass"], ["image_url", "https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.533222"], ["updated_at", "2020-08-31 17:57:53.533222"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "9"], ["name", "nine"], ["description", "balloon"], ["image_url", "https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg"], ["user_id", 48], ["chart_id", 27], ["created_at", "2020-08-31 17:57:53.536080"], ["updated_at", "2020-08-31 17:57:53.536080"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "00"], ["initials", "OO"], ["name", "Ozzie Osbourne"], ["description", "biting the head off a bat like a proper psycho"], ["image_url", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a1e8f0e-aa17-4fea-8d97-26c41ceb9068/d3it68t-a60b9db6-c313-4bef-902c-a18958495b8e.jpg/v1/fill/w_600,h_893,q_75,strp/ozzy_osbourne_caricature_by_andrej2249_d3it68t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04OTMiLCJwYXRoIjoiXC9mXC80YTFlOGYwZS1hYTE3LTRmZWEtOGQ5Ny0yNmM0MWNlYjkwNjhcL2QzaXQ2OHQtYTYwYjlkYjYtYzMxMy00YmVmLTkwMmMtYTE4OTU4NDk1YjhlLmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ov9hS0oOiMdnCoyHyHYPf8Jya7f-WqZkYFF32Y4-WRI"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.538928"], ["updated_at", "2020-08-31 17:57:53.538928"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "01"], ["initials", "OA"], ["name", "Orphan Annie"], ["description", "performing a musical number"], ["image_url", "http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.542471"], ["updated_at", "2020-08-31 17:57:53.542471"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "02"], ["initials", "OB"], ["name", "Obi-Wan Kenobi"], ["description", "weilding a lightsaber looking like a beard model"], ["image_url", "https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.545143"], ["updated_at", "2020-08-31 17:57:53.545143"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "03"], ["initials", "OC"], ["name", "Osi Umenyiora"], ["description", "sacking Tom Brady so hard he might die"], ["image_url", "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.548322"], ["updated_at", "2020-08-31 17:57:53.548322"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "04"], ["initials", "OD"], ["name", "Oscar De La Hoya"], ["description", "jabbin super fast jabs with the best of em"], ["image_url", "https://www.ringtv.com/wp-content/uploads/2018/05/Oscar-De-La-Hoya-vs.-Yori-Boy-Campas-YouTube.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.551338"], ["updated_at", "2020-08-31 17:57:53.551338"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "05"], ["initials", "OE"], ["name", "Dmar Epps"], ["description", "coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)"], ["image_url", "https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.554826"], ["updated_at", "2020-08-31 17:57:53.554826"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (1.8ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "06"], ["initials", "OS"], ["name", "OJ Simpson"], ["description", "trying to put on that pesky glove"], ["image_url", "https://lovelace-media.imgix.net/getty/51988708.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.560723"], ["updated_at", "2020-08-31 17:57:53.560723"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.6ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "07"], ["initials", "OG"], ["name", "Oscar the Grouch"], ["description", "yelling at folks on the sidewalk froom his trashcan"], ["image_url", "https://media.washtimes.com/media/image/2015/07/17/Oscar.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.567744"], ["updated_at", "2020-08-31 17:57:53.567744"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (1.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "08"], ["initials", "OH"], ["name", "Owen Hart"], ["description", "falling from the ceiling, unfortunately"], ["image_url", "https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/6/5/4/1326654_owendiveinjapan_964702.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.574630"], ["updated_at", "2020-08-31 17:57:53.574630"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "09"], ["initials", "ON"], ["name", "Oliver North"], ["description", "lying to Congress about Iran Contra or some other shadiness"], ["image_url", "https://www.dw.com/image/39165037_401.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.591057"], ["updated_at", "2020-08-31 17:57:53.591057"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "10"], ["initials", "AO"], ["name", "Annie Oakley"], ["description", "shooting off some six shooters with ease"], ["image_url", "https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.596768"], ["updated_at", "2020-08-31 17:57:53.596768"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.7ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "11"], ["initials", "AA"], ["name", "Andre Agassi"], ["description", "hitting a tennisball super hard with a headband holding on his wig super tight"], ["image_url", "https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.603179"], ["updated_at", "2020-08-31 17:57:53.603179"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (1.1ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "12"], ["initials", "AB"], ["name", "Al Bundy"], ["description", "sittin on the couch with his hands down his pants watching TV"], ["image_url", "https://memegenerator.net/img/images/15027148.jpg"], ["user_id", 48], ["chart_id", 26], ["created_at", "2020-08-31 17:57:53.610022"], ["updated_at", "2020-08-31 17:57:53.610022"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (6.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (5.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 181]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 182]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 183]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.7ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 184]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 185]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 186]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 187]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 188]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (1.0ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 189]]
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 190]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 191]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.8ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 192]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 193]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 194]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 195]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.8ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 196]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.5ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 197]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 198]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 199]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 200]]
+  [1m[35m (14.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 201]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 202]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 26]]
+  [1m[36mChart Destroy (3.7ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 27]]
+  [1m[36mChart Destroy (0.7ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 47]]
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 47]]
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 48]]
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 48]]
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "admin"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (7.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "admin"], ["email", "admin@email.com"], ["password_digest", "$2a$12$7qVrwHDEVb.FNPfeAwZxIO5OvVspZyAQ9ABGxyGfpS/jLQ5tclPrm"], ["created_at", "2020-08-31 19:20:09.031476"], ["updated_at", "2020-08-31 19:20:09.031476"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "alexBaldman"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$V9ZYGyDh8PWoy4R92S3rde8tXg9sMac9Y9JdtRrwRhrzoKwbksKWG"], ["created_at", "2020-08-31 19:20:09.268465"], ["updated_at", "2020-08-31 19:20:09.268465"]]
+  [1m[35m (25.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (19.2ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "People"], ["description", "memory system people"], ["image_url", "https://jeffwarren.org/wp-content/uploads/thinker.jpg"], ["user_id", 50], ["created_at", "2020-08-31 19:20:09.300309"], ["updated_at", "2020-08-31 19:20:09.300309"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.4ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Numbers 0-10"], ["description", "memory system numbers 0-10"], ["image_url", "https://specials-images.forbesimg.com/imageserve/1135400792/960x0.jpg?fit=scale"], ["user_id", 50], ["created_at", "2020-08-31 19:20:09.324036"], ["updated_at", "2020-08-31 19:20:09.324036"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (50.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "1"], ["name", "one"], ["description", "pencil"], ["image_url", "https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.335559"], ["updated_at", "2020-08-31 19:20:09.335559"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "2"], ["name", "two"], ["description", "swan"], ["image_url", "https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.390411"], ["updated_at", "2020-08-31 19:20:09.390411"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "3"], ["name", "three"], ["description", "handcuffs"], ["image_url", "https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.394826"], ["updated_at", "2020-08-31 19:20:09.394826"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "4"], ["name", "four"], ["description", "sailboat"], ["image_url", "https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.399297"], ["updated_at", "2020-08-31 19:20:09.399297"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.6ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "5"], ["name", "five"], ["description", "hook"], ["image_url", "https://www.memory-improvement-tips.com/images/hook.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.404562"], ["updated_at", "2020-08-31 19:20:09.404562"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "6"], ["name", "six"], ["description", "elephant trunk"], ["image_url", "https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.416461"], ["updated_at", "2020-08-31 19:20:09.416461"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "7"], ["name", "seven"], ["description", "axe"], ["image_url", "https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.421302"], ["updated_at", "2020-08-31 19:20:09.421302"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "8"], ["name", "eight"], ["description", "hourglass"], ["image_url", "https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.425322"], ["updated_at", "2020-08-31 19:20:09.425322"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "9"], ["name", "nine"], ["description", "balloon"], ["image_url", "https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg"], ["user_id", 50], ["chart_id", 29], ["created_at", "2020-08-31 19:20:09.428891"], ["updated_at", "2020-08-31 19:20:09.428891"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "00"], ["initials", "OO"], ["name", "Ozzie Osbourne"], ["description", "biting the head off a bat like a proper psycho"], ["image_url", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a1e8f0e-aa17-4fea-8d97-26c41ceb9068/d3it68t-a60b9db6-c313-4bef-902c-a18958495b8e.jpg/v1/fill/w_600,h_893,q_75,strp/ozzy_osbourne_caricature_by_andrej2249_d3it68t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04OTMiLCJwYXRoIjoiXC9mXC80YTFlOGYwZS1hYTE3LTRmZWEtOGQ5Ny0yNmM0MWNlYjkwNjhcL2QzaXQ2OHQtYTYwYjlkYjYtYzMxMy00YmVmLTkwMmMtYTE4OTU4NDk1YjhlLmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ov9hS0oOiMdnCoyHyHYPf8Jya7f-WqZkYFF32Y4-WRI"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.432071"], ["updated_at", "2020-08-31 19:20:09.432071"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "01"], ["initials", "OA"], ["name", "Orphan Annie"], ["description", "performing a musical number"], ["image_url", "http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.435387"], ["updated_at", "2020-08-31 19:20:09.435387"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "02"], ["initials", "OB"], ["name", "Obi-Wan Kenobi"], ["description", "weilding a lightsaber looking like a beard model"], ["image_url", "https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.441454"], ["updated_at", "2020-08-31 19:20:09.441454"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "03"], ["initials", "OC"], ["name", "Osi Umenyiora"], ["description", "sacking Tom Brady so hard he might die"], ["image_url", "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.449572"], ["updated_at", "2020-08-31 19:20:09.449572"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "04"], ["initials", "OD"], ["name", "Oscar De La Hoya"], ["description", "jabbin super fast jabs with the best of em"], ["image_url", "https://www.ringtv.com/wp-content/uploads/2018/05/Oscar-De-La-Hoya-vs.-Yori-Boy-Campas-YouTube.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.457955"], ["updated_at", "2020-08-31 19:20:09.457955"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "05"], ["initials", "OE"], ["name", "Dmar Epps"], ["description", "coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)"], ["image_url", "https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.466411"], ["updated_at", "2020-08-31 19:20:09.466411"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "06"], ["initials", "OS"], ["name", "OJ Simpson"], ["description", "trying to put on that pesky glove"], ["image_url", "https://lovelace-media.imgix.net/getty/51988708.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.473918"], ["updated_at", "2020-08-31 19:20:09.473918"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "07"], ["initials", "OG"], ["name", "Oscar the Grouch"], ["description", "yelling at folks on the sidewalk froom his trashcan"], ["image_url", "https://media.washtimes.com/media/image/2015/07/17/Oscar.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.480542"], ["updated_at", "2020-08-31 19:20:09.480542"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "08"], ["initials", "OH"], ["name", "Owen Hart"], ["description", "falling from the ceiling, unfortunately"], ["image_url", "https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/6/5/4/1326654_owendiveinjapan_964702.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.489267"], ["updated_at", "2020-08-31 19:20:09.489267"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "09"], ["initials", "ON"], ["name", "Oliver North"], ["description", "lying to Congress about Iran Contra or some other shadiness"], ["image_url", "https://www.dw.com/image/39165037_401.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.502822"], ["updated_at", "2020-08-31 19:20:09.502822"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "10"], ["initials", "AO"], ["name", "Annie Oakley"], ["description", "shooting off some six shooters with ease"], ["image_url", "https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.505890"], ["updated_at", "2020-08-31 19:20:09.505890"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (1.0ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "11"], ["initials", "AA"], ["name", "Andre Agassi"], ["description", "hitting a tennisball super hard with a headband holding on his wig super tight"], ["image_url", "https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.509363"], ["updated_at", "2020-08-31 19:20:09.509363"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "12"], ["initials", "AB"], ["name", "Al Bundy"], ["description", "sittin on the couch with his hands down his pants watching TV"], ["image_url", "https://memegenerator.net/img/images/15027148.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.513158"], ["updated_at", "2020-08-31 19:20:09.513158"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "13"], ["initials", "AC"], ["name", "Aleister Crowley"], ["description", "doing magick, drawing a pentagram or something evil seeming"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/81jRzG7gmyL._AC_SL1500_.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.516203"], ["updated_at", "2020-08-31 19:20:09.516203"]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "14"], ["initials", "AD"], ["name", "Abner Doubleday"], ["description", "inventing baseball"], ["image_url", "https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/04/09152649/Ridiculous-6-John-Turturro-Abner-Doubleday.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.531280"], ["updated_at", "2020-08-31 19:20:09.531280"]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "15"], ["initials", "AE"], ["name", "Albert Einstein"], ["description", "writing out physics formulas on a chalkboard"], ["image_url", "https://s3.amazonaws.com/holdenluntz.com/wp-content/uploads/20200625181753/keystone-press-agency_albert-einstein-writing-blackboard.jpeg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.545219"], ["updated_at", "2020-08-31 19:20:09.545219"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "16"], ["initials", "AS"], ["name", "Arnold Schwartzenegger"], ["description", "pumping iron / flexing"], ["image_url", "https://i.pinimg.com/originals/48/0e/bc/480ebc56b3ef355b3b84e42e00a3071a.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.548538"], ["updated_at", "2020-08-31 19:20:09.548538"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "17"], ["initials", "AG"], ["name", "Ali G"], ["description", "BOOYAKASHA! finger snap"], ["image_url", "https://media1.tenor.com/images/67993b95e090778b512b9a5446d02f5c/tenor.gif?itemid=3411330"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.551573"], ["updated_at", "2020-08-31 19:20:09.551573"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "18"], ["initials", "AH"], ["name", "Adolf Hitler"], ["description", "doing a Nazi salute / heiling himself"], ["image_url", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hitler_salute_in_front_of_lamppost.jpg/240px-Hitler_salute_in_front_of_lamppost.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.555052"], ["updated_at", "2020-08-31 19:20:09.555052"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "19"], ["initials", "AN"], ["name", "Aaron Neville"], ["description", "singing super vibrato-ish"], ["image_url", "https://www.offbeat.com/wp-content/uploads/2016/01/aaronneville.goldengrichardiii.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.558283"], ["updated_at", "2020-08-31 19:20:09.558283"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "20"], ["initials", "BO"], ["name", "Barack Obama"], ["description", "making fun of Donald Trump at the White House Press Dinner"], ["image_url", "https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-superJumbo.jpg"], ["user_id", 50], ["chart_id", 28], ["created_at", "2020-08-31 19:20:09.561570"], ["updated_at", "2020-08-31 19:20:09.561570"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (8552.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Memorization_Station_development"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "Memorization_Station_test" ENCODING = 'unicode'[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35mSQL (6.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (21.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "charts" CASCADE[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "charts" ("id" bigserial primary key, "name" character varying, "description" character varying, "image_url" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_charts_on_user_id" ON "charts"  ("user_id")[0m
+  [1m[35m (8.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "memory_objects" CASCADE[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "memory_objects" ("id" bigserial primary key, "number" character varying, "initials" character varying, "name" character varying, "description" character varying, "image_url" character varying, "user_id" bigint NOT NULL, "chart_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX  "index_memory_objects_on_chart_id" ON "memory_objects"  ("chart_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_memory_objects_on_user_id" ON "memory_objects"  ("user_id")[0m
+  [1m[35m (15.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "charts" ADD CONSTRAINT "fk_rails_adf4c771f2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "memory_objects" ADD CONSTRAINT "fk_rails_343ffa8c48"
+FOREIGN KEY ("chart_id")
+  REFERENCES "charts" ("id")
+[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "memory_objects" ADD CONSTRAINT "fk_rails_dfbf772888"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (9.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "charts" CASCADE[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "charts" ("id" bigserial primary key, "name" character varying, "description" character varying, "image_url" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_charts_on_user_id" ON "charts"  ("user_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "memory_objects" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "memory_objects" ("id" bigserial primary key, "number" character varying, "initials" character varying, "name" character varying, "description" character varying, "image_url" character varying, "user_id" bigint NOT NULL, "chart_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_memory_objects_on_chart_id" ON "memory_objects"  ("chart_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_memory_objects_on_user_id" ON "memory_objects"  ("user_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "charts" ADD CONSTRAINT "fk_rails_adf4c771f2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "memory_objects" ADD CONSTRAINT "fk_rails_343ffa8c48"
+FOREIGN KEY ("chart_id")
+  REFERENCES "charts" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "memory_objects" ADD CONSTRAINT "fk_rails_dfbf772888"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2020-08-31 19:27:52.328412"], ["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-08-31 19:27:52.333299"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (0.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "admin"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "admin"], ["email", "admin@email.com"], ["password_digest", "$2a$12$2y229Bo8/aD70hB9VQinVOI/ByGiWMtmzUx4Adw/3y5D6GZrnz7qG"], ["created_at", "2020-08-31 19:27:52.611776"], ["updated_at", "2020-08-31 19:27:52.611776"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "alexBaldman"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$nt3B2SqmsGT/gVal5BIGDeES2N2DHLxEwfjYuKtRlTaxl1PGYbnBu"], ["created_at", "2020-08-31 19:27:52.824995"], ["updated_at", "2020-08-31 19:27:52.824995"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.6ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "People"], ["description", "memory system people"], ["image_url", "https://jeffwarren.org/wp-content/uploads/thinker.jpg"], ["user_id", 2], ["created_at", "2020-08-31 19:27:52.835275"], ["updated_at", "2020-08-31 19:27:52.835275"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.3ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Numbers 0-10"], ["description", "memory system numbers 0-10"], ["image_url", "https://specials-images.forbesimg.com/imageserve/1135400792/960x0.jpg?fit=scale"], ["user_id", 2], ["created_at", "2020-08-31 19:27:52.840179"], ["updated_at", "2020-08-31 19:27:52.840179"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.6ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "1"], ["name", "one"], ["description", "pencil"], ["image_url", "https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.853491"], ["updated_at", "2020-08-31 19:27:52.853491"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "2"], ["name", "two"], ["description", "swan"], ["image_url", "https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.858264"], ["updated_at", "2020-08-31 19:27:52.858264"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "3"], ["name", "three"], ["description", "handcuffs"], ["image_url", "https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.864261"], ["updated_at", "2020-08-31 19:27:52.864261"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "4"], ["name", "four"], ["description", "sailboat"], ["image_url", "https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.867627"], ["updated_at", "2020-08-31 19:27:52.867627"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "5"], ["name", "five"], ["description", "hook"], ["image_url", "https://www.memory-improvement-tips.com/images/hook.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.871150"], ["updated_at", "2020-08-31 19:27:52.871150"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "6"], ["name", "six"], ["description", "elephant trunk"], ["image_url", "https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.882883"], ["updated_at", "2020-08-31 19:27:52.882883"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "7"], ["name", "seven"], ["description", "axe"], ["image_url", "https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.886188"], ["updated_at", "2020-08-31 19:27:52.886188"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "8"], ["name", "eight"], ["description", "hourglass"], ["image_url", "https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.889154"], ["updated_at", "2020-08-31 19:27:52.889154"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "9"], ["name", "nine"], ["description", "balloon"], ["image_url", "https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg"], ["user_id", 2], ["chart_id", 2], ["created_at", "2020-08-31 19:27:52.892256"], ["updated_at", "2020-08-31 19:27:52.892256"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "00"], ["initials", "OO"], ["name", "Ozzie Osbourne"], ["description", "biting the head off a bat like a proper psycho"], ["image_url", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a1e8f0e-aa17-4fea-8d97-26c41ceb9068/d3it68t-a60b9db6-c313-4bef-902c-a18958495b8e.jpg/v1/fill/w_600,h_893,q_75,strp/ozzy_osbourne_caricature_by_andrej2249_d3it68t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04OTMiLCJwYXRoIjoiXC9mXC80YTFlOGYwZS1hYTE3LTRmZWEtOGQ5Ny0yNmM0MWNlYjkwNjhcL2QzaXQ2OHQtYTYwYjlkYjYtYzMxMy00YmVmLTkwMmMtYTE4OTU4NDk1YjhlLmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ov9hS0oOiMdnCoyHyHYPf8Jya7f-WqZkYFF32Y4-WRI"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.895355"], ["updated_at", "2020-08-31 19:27:52.895355"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "01"], ["initials", "OA"], ["name", "Orphan Annie"], ["description", "performing a musical number"], ["image_url", "http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.898441"], ["updated_at", "2020-08-31 19:27:52.898441"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "02"], ["initials", "OB"], ["name", "Obi-Wan Kenobi"], ["description", "weilding a lightsaber looking like a beard model"], ["image_url", "https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.901345"], ["updated_at", "2020-08-31 19:27:52.901345"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "03"], ["initials", "OC"], ["name", "Osi Umenyiora"], ["description", "sacking Tom Brady so hard he might die"], ["image_url", "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.904358"], ["updated_at", "2020-08-31 19:27:52.904358"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "04"], ["initials", "OD"], ["name", "Oscar De La Hoya"], ["description", "jabbin super fast jabs with the best of em"], ["image_url", "https://www.ringtv.com/wp-content/uploads/2018/05/Oscar-De-La-Hoya-vs.-Yori-Boy-Campas-YouTube.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.907309"], ["updated_at", "2020-08-31 19:27:52.907309"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "05"], ["initials", "OE"], ["name", "Dmar Epps"], ["description", "coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)"], ["image_url", "https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.910026"], ["updated_at", "2020-08-31 19:27:52.910026"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "06"], ["initials", "OS"], ["name", "OJ Simpson"], ["description", "trying to put on that pesky glove"], ["image_url", "https://lovelace-media.imgix.net/getty/51988708.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.915330"], ["updated_at", "2020-08-31 19:27:52.915330"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "07"], ["initials", "OG"], ["name", "Oscar the Grouch"], ["description", "yelling at folks on the sidewalk froom his trashcan"], ["image_url", "https://media.washtimes.com/media/image/2015/07/17/Oscar.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.921217"], ["updated_at", "2020-08-31 19:27:52.921217"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "08"], ["initials", "OH"], ["name", "Owen Hart"], ["description", "falling from the ceiling, unfortunately"], ["image_url", "https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/6/5/4/1326654_owendiveinjapan_964702.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.924386"], ["updated_at", "2020-08-31 19:27:52.924386"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "09"], ["initials", "ON"], ["name", "Oliver North"], ["description", "lying to Congress about Iran Contra or some other shadiness"], ["image_url", "https://www.dw.com/image/39165037_401.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.928023"], ["updated_at", "2020-08-31 19:27:52.928023"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "10"], ["initials", "AO"], ["name", "Annie Oakley"], ["description", "shooting off some six shooters with ease"], ["image_url", "https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.937483"], ["updated_at", "2020-08-31 19:27:52.937483"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "11"], ["initials", "AA"], ["name", "Andre Agassi"], ["description", "hitting a tennisball super hard with a headband holding on his wig super tight"], ["image_url", "https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.941291"], ["updated_at", "2020-08-31 19:27:52.941291"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "12"], ["initials", "AB"], ["name", "Al Bundy"], ["description", "sittin on the couch with his hands down his pants watching TV"], ["image_url", "https://memegenerator.net/img/images/15027148.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.944515"], ["updated_at", "2020-08-31 19:27:52.944515"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "13"], ["initials", "AC"], ["name", "Aleister Crowley"], ["description", "doing magick, drawing a pentagram or something evil seeming"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/81jRzG7gmyL._AC_SL1500_.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.948025"], ["updated_at", "2020-08-31 19:27:52.948025"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "14"], ["initials", "AD"], ["name", "Abner Doubleday"], ["description", "inventing baseball"], ["image_url", "https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/04/09152649/Ridiculous-6-John-Turturro-Abner-Doubleday.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.951268"], ["updated_at", "2020-08-31 19:27:52.951268"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.5ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "15"], ["initials", "AE"], ["name", "Albert Einstein"], ["description", "writing out physics formulas on a chalkboard"], ["image_url", "https://s3.amazonaws.com/holdenluntz.com/wp-content/uploads/20200625181753/keystone-press-agency_albert-einstein-writing-blackboard.jpeg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.959696"], ["updated_at", "2020-08-31 19:27:52.959696"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "16"], ["initials", "AS"], ["name", "Arnold Schwartzenegger"], ["description", "pumping iron / flexing"], ["image_url", "https://i.pinimg.com/originals/48/0e/bc/480ebc56b3ef355b3b84e42e00a3071a.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.965125"], ["updated_at", "2020-08-31 19:27:52.965125"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "17"], ["initials", "AG"], ["name", "Ali G"], ["description", "BOOYAKASHA! finger snap"], ["image_url", "https://media1.tenor.com/images/67993b95e090778b512b9a5446d02f5c/tenor.gif?itemid=3411330"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.969533"], ["updated_at", "2020-08-31 19:27:52.969533"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "18"], ["initials", "AH"], ["name", "Adolf Hitler"], ["description", "doing a Nazi salute / heiling himself"], ["image_url", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hitler_salute_in_front_of_lamppost.jpg/240px-Hitler_salute_in_front_of_lamppost.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.973963"], ["updated_at", "2020-08-31 19:27:52.973963"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "19"], ["initials", "AN"], ["name", "Aaron Neville"], ["description", "singing super vibrato-ish"], ["image_url", "https://www.offbeat.com/wp-content/uploads/2016/01/aaronneville.goldengrichardiii.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.977525"], ["updated_at", "2020-08-31 19:27:52.977525"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "20"], ["initials", "BO"], ["name", "Barack Obama"], ["description", "making fun of Donald Trump at the White House Press Dinner"], ["image_url", "https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-superJumbo.jpg"], ["user_id", 2], ["chart_id", 1], ["created_at", "2020-08-31 19:27:52.981021"], ["updated_at", "2020-08-31 19:27:52.981021"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMemoryObject Load (1.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 1]]
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.4ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 2]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Destroy (0.1ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 1]]
+  [1m[36mChart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."chart_id" = $1[0m  [["chart_id", 2]]
+  [1m[36mChart Destroy (0.3ms)[0m  [1m[31mDELETE FROM "charts" WHERE "charts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mMemoryObject Load (0.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Load (0.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mMemoryObject Load (0.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "admin"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "admin"], ["email", "admin@email.com"], ["password_digest", "$2a$12$OA/4l7shm9HqSzIxtavLveIU3.Yk1ClR3D5hWaRj6qK8MbKOpBn8a"], ["created_at", "2020-08-31 19:28:00.836909"], ["updated_at", "2020-08-31 19:28:00.836909"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "alexBaldman"], ["email", "alexlbeckerman@gmail.com"], ["password_digest", "$2a$12$vU67ZBU6slgAl7rLxg2j1ecL3WVwiAAPhTa4hRm8WkT0rWpOkGzB6"], ["created_at", "2020-08-31 19:28:01.049374"], ["updated_at", "2020-08-31 19:28:01.049374"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.5ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "People"], ["description", "memory system people"], ["image_url", "https://jeffwarren.org/wp-content/uploads/thinker.jpg"], ["user_id", 4], ["created_at", "2020-08-31 19:28:01.053198"], ["updated_at", "2020-08-31 19:28:01.053198"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChart Create (0.3ms)[0m  [1m[32mINSERT INTO "charts" ("name", "description", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Numbers 0-10"], ["description", "memory system numbers 0-10"], ["image_url", "https://specials-images.forbesimg.com/imageserve/1135400792/960x0.jpg?fit=scale"], ["user_id", 4], ["created_at", "2020-08-31 19:28:01.057960"], ["updated_at", "2020-08-31 19:28:01.057960"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.6ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "1"], ["name", "one"], ["description", "pencil"], ["image_url", "https://i.etsystatic.com/15835007/r/il/f50fe7/1634154587/il_1588xN.1634154587_gktz.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.063486"], ["updated_at", "2020-08-31 19:28:01.063486"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "2"], ["name", "two"], ["description", "swan"], ["image_url", "https://clipartix.com/wp-content/uploads/2017/03/Swan-clipart-2.gif"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.068121"], ["updated_at", "2020-08-31 19:28:01.068121"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "3"], ["name", "three"], ["description", "handcuffs"], ["image_url", "https://thumbs.dreamstime.com/z/unlocked-handcuffs-white-painted-brick-wall-open-form-number-100363062.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.071527"], ["updated_at", "2020-08-31 19:28:01.071527"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "4"], ["name", "four"], ["description", "sailboat"], ["image_url", "https://www.clker.com/cliparts/R/E/0/L/7/U/number-4-sailboat-md.png"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.074795"], ["updated_at", "2020-08-31 19:28:01.074795"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "5"], ["name", "five"], ["description", "hook"], ["image_url", "https://www.memory-improvement-tips.com/images/hook.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.078167"], ["updated_at", "2020-08-31 19:28:01.078167"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "6"], ["name", "six"], ["description", "elephant trunk"], ["image_url", "https://i.pinimg.com/originals/cb/55/5f/cb555fd7a75e154994047b72e08b4917.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.081408"], ["updated_at", "2020-08-31 19:28:01.081408"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "7"], ["name", "seven"], ["description", "axe"], ["image_url", "https://www.a-prandi.it/public/gallery/G103/maxi/3-001-7-C-03.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.084502"], ["updated_at", "2020-08-31 19:28:01.084502"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.7ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "8"], ["name", "eight"], ["description", "hourglass"], ["image_url", "https://i.pinimg.com/originals/46/60/fe/4660feae46ba0ca33435209207c4bfdf.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.087631"], ["updated_at", "2020-08-31 19:28:01.087631"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["number", "9"], ["name", "nine"], ["description", "balloon"], ["image_url", "https://cdn2.vectorstock.com/i/thumb-large/03/96/red-balloon-ribbon-vector-1860396.jpg"], ["user_id", 4], ["chart_id", 4], ["created_at", "2020-08-31 19:28:01.091307"], ["updated_at", "2020-08-31 19:28:01.091307"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "00"], ["initials", "OO"], ["name", "Ozzie Osbourne"], ["description", "biting the head off a bat like a proper psycho"], ["image_url", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a1e8f0e-aa17-4fea-8d97-26c41ceb9068/d3it68t-a60b9db6-c313-4bef-902c-a18958495b8e.jpg/v1/fill/w_600,h_893,q_75,strp/ozzy_osbourne_caricature_by_andrej2249_d3it68t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04OTMiLCJwYXRoIjoiXC9mXC80YTFlOGYwZS1hYTE3LTRmZWEtOGQ5Ny0yNmM0MWNlYjkwNjhcL2QzaXQ2OHQtYTYwYjlkYjYtYzMxMy00YmVmLTkwMmMtYTE4OTU4NDk1YjhlLmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ov9hS0oOiMdnCoyHyHYPf8Jya7f-WqZkYFF32Y4-WRI"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.094150"], ["updated_at", "2020-08-31 19:28:01.094150"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "01"], ["initials", "OA"], ["name", "Orphan Annie"], ["description", "performing a musical number"], ["image_url", "http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.103768"], ["updated_at", "2020-08-31 19:28:01.103768"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "02"], ["initials", "OB"], ["name", "Obi-Wan Kenobi"], ["description", "weilding a lightsaber looking like a beard model"], ["image_url", "https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.107347"], ["updated_at", "2020-08-31 19:28:01.107347"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "03"], ["initials", "OC"], ["name", "Osi Umenyiora"], ["description", "sacking Tom Brady so hard he might die"], ["image_url", "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.110514"], ["updated_at", "2020-08-31 19:28:01.110514"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "04"], ["initials", "OD"], ["name", "Oscar De La Hoya"], ["description", "jabbin super fast jabs with the best of em"], ["image_url", "https://www.ringtv.com/wp-content/uploads/2018/05/Oscar-De-La-Hoya-vs.-Yori-Boy-Campas-YouTube.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.113747"], ["updated_at", "2020-08-31 19:28:01.113747"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "05"], ["initials", "OE"], ["name", "Dmar Epps"], ["description", "coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)"], ["image_url", "https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.116879"], ["updated_at", "2020-08-31 19:28:01.116879"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "06"], ["initials", "OS"], ["name", "OJ Simpson"], ["description", "trying to put on that pesky glove"], ["image_url", "https://lovelace-media.imgix.net/getty/51988708.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.119990"], ["updated_at", "2020-08-31 19:28:01.119990"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "07"], ["initials", "OG"], ["name", "Oscar the Grouch"], ["description", "yelling at folks on the sidewalk froom his trashcan"], ["image_url", "https://media.washtimes.com/media/image/2015/07/17/Oscar.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.123108"], ["updated_at", "2020-08-31 19:28:01.123108"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "08"], ["initials", "OH"], ["name", "Owen Hart"], ["description", "falling from the ceiling, unfortunately"], ["image_url", "https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/6/5/4/1326654_owendiveinjapan_964702.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.126487"], ["updated_at", "2020-08-31 19:28:01.126487"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "09"], ["initials", "ON"], ["name", "Oliver North"], ["description", "lying to Congress about Iran Contra or some other shadiness"], ["image_url", "https://www.dw.com/image/39165037_401.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.129352"], ["updated_at", "2020-08-31 19:28:01.129352"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "10"], ["initials", "AO"], ["name", "Annie Oakley"], ["description", "shooting off some six shooters with ease"], ["image_url", "https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.132303"], ["updated_at", "2020-08-31 19:28:01.132303"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.4ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "11"], ["initials", "AA"], ["name", "Andre Agassi"], ["description", "hitting a tennisball super hard with a headband holding on his wig super tight"], ["image_url", "https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.135415"], ["updated_at", "2020-08-31 19:28:01.135415"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "12"], ["initials", "AB"], ["name", "Al Bundy"], ["description", "sittin on the couch with his hands down his pants watching TV"], ["image_url", "https://memegenerator.net/img/images/15027148.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.138536"], ["updated_at", "2020-08-31 19:28:01.138536"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "13"], ["initials", "AC"], ["name", "Aleister Crowley"], ["description", "doing magick, drawing a pentagram or something evil seeming"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/81jRzG7gmyL._AC_SL1500_.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.141338"], ["updated_at", "2020-08-31 19:28:01.141338"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "14"], ["initials", "AD"], ["name", "Abner Doubleday"], ["description", "inventing baseball"], ["image_url", "https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/04/09152649/Ridiculous-6-John-Turturro-Abner-Doubleday.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.144320"], ["updated_at", "2020-08-31 19:28:01.144320"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "15"], ["initials", "AE"], ["name", "Albert Einstein"], ["description", "writing out physics formulas on a chalkboard"], ["image_url", "https://s3.amazonaws.com/holdenluntz.com/wp-content/uploads/20200625181753/keystone-press-agency_albert-einstein-writing-blackboard.jpeg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.147411"], ["updated_at", "2020-08-31 19:28:01.147411"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "16"], ["initials", "AS"], ["name", "Arnold Schwartzenegger"], ["description", "pumping iron / flexing"], ["image_url", "https://i.pinimg.com/originals/48/0e/bc/480ebc56b3ef355b3b84e42e00a3071a.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.156306"], ["updated_at", "2020-08-31 19:28:01.156306"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "17"], ["initials", "AG"], ["name", "Ali G"], ["description", "BOOYAKASHA! finger snap"], ["image_url", "https://media1.tenor.com/images/67993b95e090778b512b9a5446d02f5c/tenor.gif?itemid=3411330"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.159586"], ["updated_at", "2020-08-31 19:28:01.159586"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "18"], ["initials", "AH"], ["name", "Adolf Hitler"], ["description", "doing a Nazi salute / heiling himself"], ["image_url", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hitler_salute_in_front_of_lamppost.jpg/240px-Hitler_salute_in_front_of_lamppost.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.162570"], ["updated_at", "2020-08-31 19:28:01.162570"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "19"], ["initials", "AN"], ["name", "Aaron Neville"], ["description", "singing super vibrato-ish"], ["image_url", "https://www.offbeat.com/wp-content/uploads/2016/01/aaronneville.goldengrichardiii.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.165374"], ["updated_at", "2020-08-31 19:28:01.165374"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMemoryObject Create (0.3ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "20"], ["initials", "BO"], ["name", "Barack Obama"], ["description", "making fun of Donald Trump at the White House Press Dinner"], ["image_url", "https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-superJumbo.jpg"], ["user_id", 4], ["chart_id", 3], ["created_at", "2020-08-31 19:28:01.168380"], ["updated_at", "2020-08-31 19:28:01.168380"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/memory_objects/" for ::1 at 2020-08-31 17:13:33 -0400
+Started GET "/auth/verify" for ::1 at 2020-08-31 17:13:33 -0400
+Started GET "/charts" for ::1 at 2020-08-31 17:13:33 -0400
+  [1m[35m (126.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (125.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (126.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+  [1m[36mChart Load (192.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (314.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 469ms (Views: 8.1ms | ActiveRecord: 454.2ms | Allocations: 11080)
+
+
+Completed 200 OK in 472ms (Views: 12.0ms | ActiveRecord: 456.6ms | Allocations: 20605)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-08-31 17:17:01 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-08-31 17:17:01 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (7.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (7.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 67ms (Views: 57.6ms | ActiveRecord: 7.2ms | Allocations: 1959)
+
+
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 60.5ms | ActiveRecord: 7.0ms | Allocations: 7528)
+
+
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-08-31 17:21:22 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-08-31 17:21:22 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 1.3ms | Allocations: 6223)
+
+
+  [1m[36mChart Load (24.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 37ms (Views: 9.6ms | ActiveRecord: 24.9ms | Allocations: 7619)
+
+
+Started GET "/charts" for ::1 at 2020-08-31 17:21:23 -0400
+Started GET "/auth/verify" for ::1 at 2020-08-31 17:21:23 -0400
+Started GET "/memory_objects/" for ::1 at 2020-08-31 17:21:23 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (25.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Processing by MemoryObjectsController#index as HTML
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 6.1ms | ActiveRecord: 25.5ms | Allocations: 1970)
+
+
+  [1m[36mMemoryObject Load (3.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 3.6ms | Allocations: 6832)
+
+
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-02 15:54:03 -0400
+Started GET "/charts" for ::1 at 2020-09-02 15:54:03 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (11.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (12.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 59ms (Views: 43.4ms | ActiveRecord: 11.6ms | Allocations: 1979)
+
+
+Completed 200 OK in 78ms (Views: 55.3ms | ActiveRecord: 12.2ms | Allocations: 7607)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-02 15:54:05 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mChart Load (5.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 210ms (Views: 0.3ms | ActiveRecord: 5.6ms | Allocations: 2676)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-02 15:58:40 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.8ms | Allocations: 801)
+
+
+Started GET "/charts/3" for ::1 at 2020-09-02 15:58:49 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 799)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-02 22:06:58 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-02 22:06:58 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (23.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (34.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 60ms (Views: 24.9ms | ActiveRecord: 34.3ms | Allocations: 7293)
+
+
+Completed 200 OK in 99ms (Views: 44.6ms | ActiveRecord: 23.7ms | Allocations: 7945)
+
+

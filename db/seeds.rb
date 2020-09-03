@@ -125,8 +125,8 @@ User.destroy_all
 @people = MemoryObject.create(
     [
         { 
-            name: 'Ozzie Osbourne', 
             number: '00', 
+            name: 'Ozzie Osbourne', 
             initials: 'OO', 
             description: 'biting the head off a bat like a proper psycho', 
             image_url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a1e8f0e-aa17-4fea-8d97-26c41ceb9068/d3it68t-a60b9db6-c313-4bef-902c-a18958495b8e.jpg/v1/fill/w_600,h_893,q_75,strp/ozzy_osbourne_caricature_by_andrej2249_d3it68t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04OTMiLCJwYXRoIjoiXC9mXC80YTFlOGYwZS1hYTE3LTRmZWEtOGQ5Ny0yNmM0MWNlYjkwNjhcL2QzaXQ2OHQtYTYwYjlkYjYtYzMxMy00YmVmLTkwMmMtYTE4OTU4NDk1YjhlLmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ov9hS0oOiMdnCoyHyHYPf8Jya7f-WqZkYFF32Y4-WRI', 
@@ -134,8 +134,8 @@ User.destroy_all
             chart: @peopleChart 
         }, 
         { 
-            name: 'Orphan Annie', 
-            number: '01', 
+            number: '01',
+            name: 'Orphan Annie',  
             initials: 'OA', 
             description: 'performing a musical number', 
             image_url: 'http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg', 
@@ -143,8 +143,8 @@ User.destroy_all
             chart: @peopleChart
         }, 
         {    
-            name: 'Obi-Wan Kenobi', 
-            number: '02', 
+            number: '02',
+            name: 'Obi-Wan Kenobi',  
             initials: 'OB', 
             description: 'weilding a lightsaber looking like a beard model', 
             image_url: 'https://4.bp.blogspot.com/-k2KS5eXyCCU/VN8pwoY917I/AAAAAAAAcU0/1LWaI_xs0Uw/s1600/obi1.jpg', 
@@ -152,8 +152,8 @@ User.destroy_all
             chart: @peopleChart 
         },
         {
-            name: 'Osi Umenyiora', 
             number: '03', 
+            name: 'Osi Umenyiora', 
             initials: 'OC', 
             description: 'sacking Tom Brady so hard he might die', 
             image_url: 'https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/giants/gjseqmqiomniuowtioim.jpg', 
@@ -222,26 +222,97 @@ User.destroy_all
             image_url: 'https://historydaily.org/content/60058/7a48da90bf9968f9009c87bdb24ec3d2.jpg',
             chart: @peopleChart,
             user: @alex
+        },
+        {
+            number: '11',
+            initials: 'AA',
+            name: 'Andre Agassi',
+            description: 'hitting a tennisball super hard with a headband holding on his wig super tight',
+            image_url: 'https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '12',
+            initials: 'AB',
+            name: 'Al Bundy',
+            description: 'sittin on the couch with his hands down his pants watching TV',
+            image_url: 'https://memegenerator.net/img/images/15027148.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '13',
+            initials: 'AC',
+            name: 'Aleister Crowley',
+            description: 'doing magick, drawing a pentagram or something evil seeming',
+            image_url: 'https://images-na.ssl-images-amazon.com/images/I/81jRzG7gmyL._AC_SL1500_.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '14',
+            initials: 'AD',
+            name: 'Abner Doubleday',
+            description: 'inventing baseball',
+            image_url: 'https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/04/09152649/Ridiculous-6-John-Turturro-Abner-Doubleday.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '15',
+            initials: 'AE',
+            name: 'Albert Einstein',
+            description: 'writing out physics formulas on a chalkboard',
+            image_url: 'https://s3.amazonaws.com/holdenluntz.com/wp-content/uploads/20200625181753/keystone-press-agency_albert-einstein-writing-blackboard.jpeg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '16',
+            initials: 'AS',
+            name: 'Arnold Schwartzenegger',
+            description: 'pumping iron / flexing',
+            image_url: 'https://i.pinimg.com/originals/48/0e/bc/480ebc56b3ef355b3b84e42e00a3071a.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '17',
+            initials: 'AG',
+            name: 'Ali G',
+            description: 'BOOYAKASHA! finger snap',
+            image_url: 'https://media1.tenor.com/images/67993b95e090778b512b9a5446d02f5c/tenor.gif?itemid=3411330',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '18',
+            initials: 'AH',
+            name: 'Adolf Hitler',
+            description: 'doing a Nazi salute / heiling himself',
+            image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hitler_salute_in_front_of_lamppost.jpg/240px-Hitler_salute_in_front_of_lamppost.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '19',
+            initials: 'AN',
+            name: 'Aaron Neville',
+            description: 'singing super vibrato-ish',
+            image_url: 'https://www.offbeat.com/wp-content/uploads/2016/01/aaronneville.goldengrichardiii.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '20',
+            initials: 'BO',
+            name: 'Barack Obama',
+            description: 'making fun of Donald Trump at the White House Press Dinner',
+            image_url: 'https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-superJumbo.jpg',
+            chart: @peopleChart,
+            user: @alex
         }
-        # },
-        # {
-        #     number: '11',
-        #     initials: 'AA',
-        #     name: 'Andre Agassi',
-        #     description: 'hitting a tennisball super hard with a headband holding on his wig super tight',
-        #     image_url: 'https://2.bp.blogspot.com/-Adg9zZrpLCM/VdBpvMzLdbI/AAAAAAAAJGA/TeB4mVVuN_Q/s400/agass.jpg',
-        #     chart: @peopleChart,
-        #     user: @alex
-        # },
-        # {
-        #     number: '12',
-        #     initials: 'AB',
-        #     name: 'Al Bundy',
-        #     description: 'sittin on the couch with his hands down his pants watching TV',
-        #     image_url: 'https://memegenerator.net/img/images/15027148.jpg',
-        #     chart: @peopleChart,
-        #     user: @alex
-        # }
     ]
 )
 
@@ -249,15 +320,18 @@ User.destroy_all
 # ____________________________
 
 ## template JSON:
-# {
-    # number: '00', 
-    # initials: 'OO', 
-    # name: '', 
-    # description: '____', 
-    # image_url: '_____', 
-    # user: @admin, 
-    # chart: people 
-# },
+
+        # ,
+        # {
+        #     number: '',
+        #     initials: '',
+        #     name: '',
+        #     description: '',
+        #     image_url: '',
+        #     chart: @peopleChart,
+        #     user: @alex
+        # }
+
 
 # OO = MemoryObject.create(name: 'Ozzie Osbourne', number: '00', initials: 'OO', description: 'Ozzie biting the head off a bat', image_url: 'https://townsquare.media/site/295/files/2015/01/ozzy.jpg', user: @admin, chart: people)
 # OA = MemoryObject.create(name: 'Orphan Annie', number: '01', initials: 'OA', description: 'Orphan Annie singing a song on Broadway', image_url: 'http://4.bp.blogspot.com/-JzdLYUVCbQc/TsZrJApPSQI/AAAAAAAAEuc/xoiB1-Tnjig/s1600/AnnieSandyTOMORROW.jpg', user: @admin, chart: people)
