@@ -16,7 +16,7 @@ export default function Objects(props) {
       <div className="content">
 
         <div className="title-container">
-          <h2> memory objects </h2>
+          <h1> MY MEMORY OBJECTS </h1>
         </div>
 
           {props.objects.map((memoryObject) => (
@@ -24,7 +24,8 @@ export default function Objects(props) {
 
               <div className=''>
 
-                  <h1>{memoryObject.name}</h1>
+                  <h1>{memoryObject.number}</h1>
+                  <h2>{memoryObject.name}</h2>
                   <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>
                     <img src={memoryObject.image_url} alt={ "memory object image" } /> 
                   </Link>

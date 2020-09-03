@@ -10,6 +10,18 @@
   background-color: lightgrey;
 }
 
+.home {
+  display: flex;
+}
+
+.charts {
+  display: flex;
+}
+
+.objects {
+  display: flex;
+}
+
 .app-title {
   font-family: "Pacifico", cursive;
   font-size: 1em;
@@ -170,8 +182,9 @@ img {
 
 nav {
   display: flex;
-  background-color: linear-gradient(blue, transparent);
+  background-color: rgb(72, 13, 13);
   justify-content: space-evenly;
+  border-width: 20px;
   align-items: center;
   min-height: 10vh;
   max-height: 15vh;

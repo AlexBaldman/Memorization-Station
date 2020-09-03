@@ -8,7 +8,7 @@ export default function Charts(props) {
     return (
         <div className="">
             <div className="title-container">
-                <h1> memory charts </h1>
+                <h1> MEMORY CHARTS </h1>
             </div>
             <div className="charts">
             {props.charts.map((chart) => (
