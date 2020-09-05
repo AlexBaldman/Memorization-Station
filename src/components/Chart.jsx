@@ -59,11 +59,11 @@ export default function Chart(props) {
                                 <img src={object.image_url} alt='memory object image' />
                                 <p>{object.description}</p>
                                 <div className='button-wrapper'>
-                                    <button className='button'>
-                                        <Link to={`/memory_objects/${object.id}/edit`}> 
-                                            edit object 
-                                        </Link>
-                                    </button>
+                                     <Link to={`/memory_objects/${object.id}/edit`}> 
+                                        <button className='button'>  
+                                                edit object 
+                                        </button>
+                                    </Link>
                                     <button className="button" onClick={() => handleClick(object.id)}> 
                                         delete Object 
                                     </button>

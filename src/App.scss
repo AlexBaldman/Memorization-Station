@@ -107,13 +107,13 @@
 .card-content {
   display: flex;
   font-family: 'Pacifico';
-  font-style: none;
   color: black;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
   text-align: wrap;
-  width: 300px;
+  font-size: 1rem;
+  width: 18vw;
   background-color: lightgrey;
   padding: 30px;
   margin: 30px;
@@ -123,6 +123,7 @@
       color: white;
       background-color: hotpink;
       box-shadow: 5px;
+      border: 10px double black;
       h1 {
         color: yellow;
       }
@@ -130,11 +131,10 @@
         color: yellow;
       }
       img {
-        border: double 10px yellow;
+        border: solid 10px yellow;
       }
       p {
         color: white;
-        flex-grow: 1;
       }
     }
 }
@@ -197,13 +197,11 @@ img {
 nav {
   display: flex;
   justify-content: space-evenly;
-  border: solid yellow 10px;
-  border-width: 4px;
   min-height: 10vh;
   max-height: 15vh;
   color: grey;
   text-decoration: none;
-  background: rgb(44, 232, 210);
+  background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
 }
 
 button {
@@ -219,9 +217,9 @@ button {
   margin-top: 30px;
   box-shadow: 0 3px 40px 0 #7e17178a;
   &:hover {
-    color: rgb(212, 57, 106);
-    background-color: pink;
-    box-shadow: 20px 20px;
+    color: yellow;
+    background-color: black;
+    box-shadow: 3px 3px 3px 3px;
   }
 }
 
