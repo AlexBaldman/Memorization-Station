@@ -121,8 +121,21 @@
   border: 10px solid darkgrey;
     &:hover {
       color: white;
-      background-color: darkgrey;
+      background-color: hotpink;
       box-shadow: 5px;
+      h1 {
+        color: yellow;
+      }
+      h2 {
+        color: yellow;
+      }
+      img {
+        border: double 10px yellow;
+      }
+      p {
+        color: white;
+        flex-grow: 1;
+      }
     }
 }
 
@@ -196,6 +209,7 @@ nav {
 button {
   font-family: "Roboto";
   text-emphasis: bold;
+  text-decoration: none;
 	padding: 15px 15px;
 	border-radius: 30px;
 	color: #333;
