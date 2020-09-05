@@ -10,7 +10,7 @@ export default function Header() {
             
             <div className="header">
 
-                <div className="nav-button">
+                <div className="app-title">
                     <h1>Memorization Station</h1>
                 </div>
 
