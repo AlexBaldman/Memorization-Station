@@ -15,12 +15,12 @@ export default function Charts(props) {
             <div className="charts">
                 {props.charts.map((chart) => (
                     <div>
-                        <div className="card-content">
-                            <h2>{chart.name}</h2>
-                            <Link to={`/charts/${chart.id}`}> 
+                        <Link to={`/charts/${chart.id}`}> 
+                            <div className="card-content">
+                                <h2>{chart.name}</h2>
                                 <img src={chart.image_url} /> 
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
