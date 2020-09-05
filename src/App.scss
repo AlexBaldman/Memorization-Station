@@ -48,14 +48,20 @@
 .home {
   display: flex;
   flex-flow: column;
+  color: purple;
+  font-family: 'Roboto';
+  font-size: 1.5em;
   align-items: center;
   text-align: center;
   margin: 0 20rem;
 }
 
 .about {
-  display: flex;
+ display: flex;
   flex-flow: column;
+  color: purple;
+  font-family: 'Roboto';
+  font-size: 1.5em;
   align-items: center;
   text-align: center;
   margin: 0 20rem;
@@ -131,7 +137,7 @@
         color: yellow;
       }
       img {
-        border: solid 10px yellow;
+        border: dotted 10px yellow;
       }
       p {
         color: white;
@@ -225,9 +231,9 @@ button {
 
 form {
   display: flex;
-  border-radius: 0px;
-  width: 40vw;
-  height: 30vh;
+  border-radius: 40px;
+  width: 50vw;
+  height: 50vh;
   background-color: pink;
   flex-flow: column; 
   align-items: left;

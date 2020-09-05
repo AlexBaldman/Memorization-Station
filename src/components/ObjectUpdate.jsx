@@ -50,58 +50,67 @@ export default function ObjectUpdate(props) {
   }
 
   return (
-    <div className="content">
-      <form onSubmit={handleSubmit}>
-        
-        <h3>edit object</h3>
-        <label>
-          Number:
-          <input
-            type="text"
-            name="number"
-            value={formData.number}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Initials:
-        <input
-          type="text"
-          name="initials"
-          value={formData.initials}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Description:
-        <input
-          type="text"
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Image URL:
-        <input
-          type="text"
-          name="image_url"
-          value={formData.image_url}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
+    <div className="home">
 
-      </form>
+      <div className='title-container'>
+        <h3>edit object</h3>
+      </div>
+
+      <div className='form'>
+        <form onSubmit={handleSubmit}>
+          
+          <label>
+            Number:
+            <input
+              type="text"
+              name="number"
+              value={formData.number}
+              onChange={handleChange}
+              />
+          </label>
+
+          <label>
+            Initials:
+            <input
+              type="text"
+              name="initials"
+              value={formData.initials}
+              onChange={handleChange}
+              />
+          </label>
+
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              />
+          </label>
+
+          <label>
+            Description:
+            <input
+              type="text"
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
+              />
+          </label>
+
+          <label>
+            Image URL:
+            <input
+              type="text"
+              name="image_url"
+              value={formData.image_url}
+              onChange={handleChange}
+              />
+          </label>
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
