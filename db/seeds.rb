@@ -173,7 +173,7 @@ User.destroy_all
         { 
             number: '05',
             initials: 'OE',
-            name: 'Dmar Epps',
+            name: 'Omar Epps',
             description: 'coaching the Pittsburg Steelers (because he looks like Mike Tomplin, obviously)',
             image_url: 'https://cdn.s3-media.wbal.com/Media/Archive/f7667b87-3c88-42ed-b63c-df7598f7a295/original.jpg', 
             chart: @peopleChart,
@@ -310,6 +310,366 @@ User.destroy_all
             name: 'Barack Obama',
             description: 'making fun of Donald Trump at the White House Press Dinner',
             image_url: 'https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-superJumbo.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '21',
+            initials: 'BA',
+            name: 'BA Baracus',
+            description: 'driving the A-team van',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '22',
+            initials: 'BB',
+            name: 'Bugs Bunny',
+            description: 'giving the ole smackaroo kiss',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '23',
+            initials: 'BC',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '24',
+            initials: 'BD',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '25',
+            initials: 'BE',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '26',
+            initials: 'BS',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '27',
+            initials: 'BG',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '28',
+            initials: 'BH',
+            name: 'Ben Hur',
+            description: 'racing a charriot',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '29',
+            initials: 'BN',
+            name: 'Bill Nye',
+            description: 'doing a nerdy science experiment',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '30',
+            initials: 'CO',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '31',
+            initials: 'CA',
+            name: 'Captain America',
+            description: 'throwing his sheild',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '32',
+            initials: 'CB',
+            name: 'Charles Bronson',
+            description: 'in a shootout',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '33',
+            initials: 'CC',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '34',
+            initials: 'CD',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '35',
+            initials: 'CE',
+            name: 'Clint Eastwood',
+            description: 'asking someone if they feel lucky punk at gunpoint',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '36',
+            initials: 'CS',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '37',
+            initials: 'CG',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '38',
+            initials: 'CH',
+            name: 'Charleton Heston',
+            description: 'yelling at dirty apes about how damned they are from captivity',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '39',
+            initials: 'CN',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '40',
+            initials: 'DO',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '41',
+            initials: 'DA',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '42',
+            initials: 'DB',
+            name: 'Derren Brown',
+            description: 'hypnotizing someone',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '43',
+            initials: 'DC',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '44',
+            initials: 'DD',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '45',
+            initials: 'DE',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '46',
+            initials: 'DS',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '47',
+            initials: 'DG',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '48',
+            initials: 'DH',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '49',
+            initials: 'DN',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '50',
+            initials: 'EO',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '51',
+            initials: 'EA',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '52',
+            initials: 'EB',
+            name: 'Eric Bana',
+            description: 'turning into the hulk',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '53',
+            initials: 'EC',
+            name: 'Ewan Cameron',
+            description: 'doing MK-Ultra experiments on people like a creep',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '54',
+            initials: 'ED',
+            name: 'Mr. Ed',
+            description: 'being a horse that talks, obviously',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '55',
+            initials: 'EE',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '',
+            initials: '',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '',
+            initials: '',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '',
+            initials: '',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '',
+            initials: '',
+            name: '',
+            description: '',
+            image_url: '',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '',
+            initials: '',
+            name: '',
+            description: '',
+            image_url: '',
             chart: @peopleChart,
             user: @alex
         }

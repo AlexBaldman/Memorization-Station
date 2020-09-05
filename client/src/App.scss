@@ -10,77 +10,88 @@
   background-color: lightgrey;
 }
 
-.home {
-  display: flex;
-}
-
-.charts {
-  display: flex;
-}
-
-.objects {
-  display: flex;
-}
-
 .app-title {
+  display: flex;
   font-family: "Pacifico", cursive;
   font-size: 1em;
-  border: black 1px;
-  border: solid orange 10px;
-  border-radius: 15px;
-  display: flex;
-  min-width: 300px;
-  flex-flow: column;
-  color: red;
-  border: solid white 10px;
-  padding: black 10px;
-    // max-width: 500px;
-
-}
-
-.title-container {
-  font-family: "IBM Plex Mono", monospace;
-  background-size: cover;  
-  margin: 0 auto;
-  max-width: 30vw;
-  max-height: 30vw;
-  shape-rendering: triangle;
-  margin-top: 0;
-  padding: 20px;
-  color: hotpink;
-  align-items: center;
-  align-self: center;
-  text-align: center;
-    // border-radius: 30px;
-    // background-image: url('./assets/images/brain-transparent-2.jpeg');
-
+  justify-content: center;
+  color: yellow;
+  // border: solid black 10px;
+  // padding: black 10px;
 }
 
 .header {
   display: flex;
-  font-family: 'Pacifico', cursive;
-  min-height: 10vh;
-  max-height: 20vh;
+  background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
+  width: 100vw;
   flex-flow: column;
   align-items: top;
   justify-content: center;
   font-size: calc(4px + 2vmin);
-  color: mintcream;
-  border-color: blue;
+    // min-height: 10vh;
+    // max-height: 20vh;
 }
 
-.card {
-  height: 250px;
-  font-family: 'Pacifico', cursive;
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 85vh;
+  text-align: center;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  color: rgb(79, 31, 82);
+  font-size: calc(2vmin);
+    // max-height: 50%;
+    // align-items: center; 
+    // justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 20rem;
+}
+
+.about {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 20rem;
+}
+
+.charts {
   display: flex;
   flex-flow: row wrap;
-  outline: dotted red;
+  justify-content: center;
+}
+
+.objects {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.title-container {
+  font-family: "Pacifico", monospace;
+  background-size: cover;  
+  margin: 0 auto;
+  max-width: 30vw;
+  max-height: 30vw;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  color: lightgrey;
+  background-color: rgb(17, 23, 36);
+  border: solid 10px hotpink;
+  border-radius: 25px;
   align-items: center;
-  justify-content: space-around;
-  padding: 30px;
-    // border-radius: 20px;
-    // max-width: 70vw;   
-    // flex-shrink: 1;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+    // border-radius: 30px;
+    // background-image: url('./assets/images/brain-transparent-2.jpeg');
 }
 
 .login-register {
@@ -93,41 +104,26 @@
   align-self: right;
 }
 
-.main {
-  display: flex;
-  flex-flow: column wrap;
-  min-height: 85vh;
-  // max-height: 50%;
-  // align-items: center; 
-  // justify-content: center;
-  text-align: center;
-  background-color: rgb(205, 232, 210);
-  color: rgb(79, 31, 82);
-  font-size: calc(2vmin);
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 60vw;
-  flex-flow: column wrap;
-  flex-grow: 1;
-  text-size-adjust: 80%;
-}
-
-.chart-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px;
-  border-color: red;
-  border-radius: 20px;
-}
-
 .card-content {
   display: flex;
-  flex-flow: column;
+  font-family: 'Pacifico';
+  font-style: none;
+  color: black;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: wrap;
+  width: 300px;
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  border: 10px solid darkgrey;
+    &:hover {
+      color: white;
+      background-color: darkgrey;
+      box-shadow: 5px;
+    }
 }
 
 .footer {
@@ -135,13 +131,15 @@
   max-height: 20vh;
   min-height: 10vh;
   min-width: 100%;
-  color: hotpink;
+  color: lightgrey;
   font-family: 'Pacifico', cursive;
-  font-size: calc(10px + 2rem);
-  justify-content: bottom;
+  font-size: calc(3px + 2rem);
+  justify-content: flex-end;
   align-content: bottom;
-  position: sticky;
-  bottom: 0; 
+  bottom: 0;
+  background: linear-gradient(#e66465, #9198e5);
+    // position: sticky;
+
 }
 
 .nav-button {
@@ -154,13 +152,13 @@
   background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
   background-size: cover;
   flex-grow: 2;
-    // margin: 10px 10px;
-    // justify-content: center;
-    // border: 10px 0 #7e17178a;
+  margin: 10px 10px;
+  justify-content: center;
+  border: 10px 0 #7e17178a;
   &:hover {
     color: yellow;
-    background-color: yellow;
-    box-shadow: 20px 20px 20px 20px;
+    background-color: orange;
+    box-shadow: 20px 20px;
   }
 }
 
@@ -176,21 +174,23 @@
 img {
   height: 15rem;
   width: 15rem;
-  // padding: 1vh;
-  // margin: 1vh;
+  border: double 10px white;
+  border-radius: 100px;
+  align-self: center;
+  justify-self: center;
+  padding: 1vh;
 }
 
 nav {
   display: flex;
-  background-color: rgb(72, 13, 13);
   justify-content: space-evenly;
-  border-width: 20px;
-  align-items: center;
+  border: solid yellow 10px;
+  border-width: 4px;
   min-height: 10vh;
   max-height: 15vh;
-  color: white;
-  text-decoration: none    
-    // background-image: url(https://i.pinimg.com/236x/b2/ba/e0/b2bae0228c560b0751ebb837363ab31c.jpg);
+  color: grey;
+  text-decoration: none;
+  background: rgb(44, 232, 210);
 }
 
 button {
@@ -204,7 +204,6 @@ button {
   margin-bottom: 50px;
   margin-top: 30px;
   box-shadow: 0 3px 40px 0 #7e17178a;
-    // border: none;
   &:hover {
     color: rgb(212, 57, 106);
     background-color: pink;
@@ -223,28 +222,67 @@ form {
   justify-content: center;
 }
 
+
 // media query for under 800px width:
 // =============================
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .main {
     background-color: lightblue;
-  }
-  .footer {
-    display: none;
   }
 
 }
 
 // media query for larger than 900px width:
 // ====================================
-
-@media only screen and (min-width: 900px) {
-  body {
-    background-image: none;
+@media only screen and (max-width: 900px) {
+  .main {
+    background-color: pink;
   }
 
   .footer {
     display: none;
   }
 }
+
+
+// ______BACKGROUND GRADIENT SAMPLES:________
+// background: linear-gradient(#e66465, #9198e5);
+// background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+// ______BACKGROUND IMAGES________
+// BRAIN PATTERN:
+//   background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
+
+
+
+// .content {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   max-width: 60vw;
+//   flex-flow: column wrap;
+//   flex-grow: 1;
+//   text-size-adjust: 80%;
+// }
+
+// .card {
+//   height: 250px;
+//   font-family: 'Pacifico', cursive;
+//   display: flex;
+//   flex-flow: row wrap;
+//   outline: dotted red;
+//   align-items: center;
+//   justify-content: space-around;
+//   padding: 30px;
+//     // border-radius: 20px;
+//     // max-width: 70vw;   
+//     // flex-shrink: 1;
+// }
+
+// .chart-card {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border: 5px;
+//   border-color: red;
+//   border-radius: 20px;
+// }

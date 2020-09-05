@@ -38,95 +38,127 @@ export default function Main(props) {
 
 
     return (
+
       <main className="main">
         
         <Switch>
 
-          <Route path='/' exact component={Home}  />
+          <Route 
+            path='/' exact 
+            component={Home}  
+            />
 
-          <Route path='/login' render={(props) => (
-            <Login
-              {...props}
-              setCurrentUser={setCurrentUser}
-              />
-            )}/>
+          <Route 
+            path='/login' 
+            render={(props) => (
+              <Login
+                {...props}
+                setCurrentUser={setCurrentUser}
+                />
+            )} 
+          />
 
-          <Route path='/register' render={(props) => (
-            <Register
-              {...props}
-              setCurrentUser={setCurrentUser}
-              />
-            )} />
+          <Route 
+            path='/register' 
+            render={(props) => (
+              <Register
+                {...props}
+                setCurrentUser={setCurrentUser}
+                />
+            )} 
+          />
 
           <Route path='/about' component={About} />
 
-          <Route path='/charts/:id' render={(props) => (
-            <Chart
-              {...props}
-              objects={objects}
-              setObjects={setObjects}
-              charts={charts}
-              setCharts={setCharts}
-              />
-            )} /> 
+          <Route 
+            path='/charts/:id' 
+            render={(props) => (
+              <Chart
+                {...props}
+                objects={objects}
+                setObjects={setObjects}
+                charts={charts}
+                setCharts={setCharts}
+                />
+            )} 
+          /> 
 
-          <Route path='/charts' exact render={(props) => (
-            <Charts
-              {...props}
-              charts={charts}
-              setCharts={setCharts}
-              />
-            )} /> 
+          <Route 
+            path='/charts' exact 
+            render={(props) => (
+              <Charts
+                {...props}
+                charts={charts}
+                setCharts={setCharts}
+                />
+            )} 
+          /> 
 
-          <Route path='/charts/new' exact render={(props) => (
-            <ChartCreate
-              {...props}
-              charts={charts}
-              setCharts={setCharts}
-              />
-            )} /> 
+          <Route 
+            path='/charts/new' exact 
+            render={(props) => (
+              <ChartCreate
+                {...props}
+                charts={charts}
+                setCharts={setCharts}
+                />
+            )} 
+          /> 
 
-          <Route path='/charts/:id/edit' render={(props) => (
-            <ChartEdit
-              {...props}
-              objects={objects}
-              setObjects={setObjects}
-              charts={charts}
-              setCharts={setCharts}
-              />
-            )} /> 
+          <Route 
+            path='/charts/:id/edit' 
+            render={(props) => (
+              <ChartEdit
+                {...props}
+                objects={objects}
+                setObjects={setObjects}
+                charts={charts}
+                setCharts={setCharts}
+                />
+            )}   
+          /> 
             
-          <Route path='/memory_objects' exact render={(props) => (
-            <Objects
-              {...props}
-              charts={charts}
-              setCharts={setCharts}
-              objects={objects}
-              setObjects={setObjects}
-              />
-            )} />
+          <Route 
+            path='/memory_objects' exact 
+            render={(props) => (
+              <Objects
+                {...props}
+                charts={charts}
+                setCharts={setCharts}
+                objects={objects}
+                setObjects={setObjects}
+                />
+            )} 
+          />
 
-          <Route path='/memory_objects/:id/new' render={(props) => (
-            <ObjectCreate
-              {...props}
-              charts={charts}
-              setCharts={setCharts}
-              objects={objects}
-              setObjects={setObjects}
-              />
-           )} />
+          <Route 
+            path='/memory_objects/:id/new' 
+            render={(props) => (
+              <ObjectCreate
+                {...props}
+                charts={charts}
+                setCharts={setCharts}
+                objects={objects}
+                setObjects={setObjects}
+                />
+            )} 
+          />
 
-          <Route path='/memory_objects/:id/edit' render={(props) => (
-            <ObjectUpdate
-              {...props}
-              charts={charts}
-              setCharts={setCharts}
-              objects={objects}
-              setObjects={setObjects}
-              />
-          )} />
+          <Route 
+            path='/memory_objects/:id/edit' 
+            render={(props) => (
+              <ObjectUpdate
+                {...props}
+                charts={charts}
+                setCharts={setCharts}
+                objects={objects}
+                setObjects={setObjects}
+                />
+            )} 
+          />
 
         </Switch>
+
       </main>
     )
 }

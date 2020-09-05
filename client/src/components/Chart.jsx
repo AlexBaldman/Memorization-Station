@@ -25,27 +25,28 @@ export default function Chart(props) {
 
     return (
         <> 
-            <div className="content">
-
+            <div className="">
                 {chart && 
                     <>
-                    <div className="chart-title">
-                        <h1>{chart.description}</h1>
-                        <Link to={`/memory_objects/${chart.id}/new`}> 
-                            <button>Add Memory Object</button><br/>
-                        </Link>
-                    </div>
+                        <div className='title-container'>
+                            <h1>{chart.description}</h1>
+                        </div>
+                        <div className=''>
+                            <Link to={`/memory_objects/${chart.id}/new`}> 
+                                <button className='nav-button'>Add Memory Object</button><br/>
+                            </Link>
+                        </div>
                     </>
                 }
             
-                <div className="object-card">
+                <div className="charts">
                     {objects &&
                         objects.map(object => (
-                        <>
-                            <h2>{object.name}</h2>
-                            <img src={object.image_url} />
-                            <p>{object.description}</p>
-                        </>
+                            <div className='card-content'>
+                                <h2>{object.name}</h2>
+                                <img src={object.image_url} />
+                                <p>{object.description}</p>
+                            </div>
                         ))
                     }
                 </div>
