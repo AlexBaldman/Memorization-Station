@@ -487,9 +487,9 @@ User.destroy_all
         {
             number: '40',
             initials: 'DO',
-            name: '',
-            description: '',
-            image_url: '',
+            name: 'David Ortiz',
+            description: 'hitting a homerun looking super satisfied',
+            image_url: 'https://www.boston.com/wp-content/uploads/2014/06/9700cfb4d35948458c461f62df7db103-9700cfb4d35948458c461f62df7db103-0-1.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -507,15 +507,15 @@ User.destroy_all
             initials: 'DB',
             name: 'Derren Brown',
             description: 'hypnotizing someone',
-            image_url: '',
+            image_url: 'https://i.dailymail.co.uk/i/pix/2013/03/14/article-2292648-18A831A9000005DC-437_306x467.jpg',
             chart: @peopleChart,
             user: @alex
         },
         {
             number: '43',
             initials: 'DC',
-            name: '',
-            description: '',
+            name: 'Daniel Cormier',
+            description: 'giving someone a suplex',
             image_url: '',
             chart: @peopleChart,
             user: @alex

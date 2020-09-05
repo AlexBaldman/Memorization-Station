@@ -39252,3 +39252,983 @@ Processing by ChartsController#show as HTML
 Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 799)
 
 
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:40 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:40 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:40 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (7.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 7.6ms | Allocations: 888)
+
+
+  [1m[36mMemoryObject Load (26.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:41 -0400
+  [1m[36mChart Load (35.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 38ms (Views: 2.5ms | ActiveRecord: 35.0ms | Allocations: 8993)
+
+
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 51ms (Views: 11.4ms | ActiveRecord: 26.6ms | Allocations: 10672)
+
+
+  [1m[36mChart Load (0.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 1084)
+
+
+Started GET "/charts" for ::1 at 2020-09-05 18:07:41 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:41 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (1.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Filter chain halted as :authorize_request rendered or redirected
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 1.0ms | Allocations: 1737)
+
+
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 607)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:41 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (7.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Started GET "/charts" for ::1 at 2020-09-05 18:07:41 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:41 -0400
+Processing by ChartsController#index as HTML
+Completed 200 OK in 38ms (Views: 8.5ms | ActiveRecord: 7.7ms | Allocations: 7289)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:41 -0400
+  [1m[36mChart Load (5.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Processing by AuthenticationController#verify as HTML
+Processing by MemoryObjectsController#index as HTML
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 5.0ms | Allocations: 2120)
+
+
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 572)
+
+
+  [1m[36mMemoryObject Load (5.9ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 5.9ms | Allocations: 6693)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:41 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:41 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:41 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (4.9ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (11.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 8.1ms | ActiveRecord: 11.4ms | Allocations: 7257)
+
+
+Completed 200 OK in 23ms (Views: 9.0ms | ActiveRecord: 4.9ms | Allocations: 8375)
+
+
+  [1m[36mChart Load (2.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 5.2ms | Allocations: 8593)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:42 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:42 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:42 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:42 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mChart Load (10.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (10.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (9.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 2.7ms | ActiveRecord: 10.3ms | Allocations: 2023)
+
+
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 9.1ms | Allocations: 8126)
+
+
+Completed 200 OK in 26ms (Views: 7.5ms | ActiveRecord: 10.0ms | Allocations: 8640)
+
+
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/charts" for ::1 at 2020-09-05 18:07:42 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:42 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (5.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (1.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 5.0ms | Allocations: 1764)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:42 -0400
+Completed 200 OK in 50ms (Views: 9.0ms | ActiveRecord: 1.0ms | Allocations: 7875)
+
+
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:46 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:46 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:46 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (7.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 7.9ms | Allocations: 1351)
+
+
+  [1m[36mMemoryObject Load (7.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Processing by ChartsController#index as HTML
+Completed 200 OK in 51ms (Views: 41.5ms | ActiveRecord: 7.5ms | Allocations: 7688)
+
+
+  [1m[36mChart Load (1.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.7ms | Allocations: 1477)
+
+
+Started GET "/charts" for ::1 at 2020-09-05 18:07:46 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:46 -0400
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Filter chain halted as :authorize_request rendered or redirected
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 401 Unauthorized in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 851)
+
+
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.7ms | Allocations: 1772)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:46 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.9ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 40ms (Views: 24.4ms | ActiveRecord: 1.9ms | Allocations: 6220)
+
+
+Started GET "/charts" for ::1 at 2020-09-05 18:07:46 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:46 -0400
+Processing by ChartsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:46 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:46 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (4.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 4.1ms | Allocations: 2352)
+
+
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 623)
+
+
+  [1m[36mMemoryObject Load (9.9ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Processing by ChartsController#show as HTML
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 50ms (Views: 39.2ms | ActiveRecord: 9.9ms | Allocations: 8877)
+
+
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 1160)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:50 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:50 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:50 -0400
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (1.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 1345)
+
+
+  [1m[36mMemoryObject Load (10.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (17.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 22ms (Views: 4.8ms | ActiveRecord: 17.1ms | Allocations: 8208)
+
+
+Completed 200 OK in 25ms (Views: 7.8ms | ActiveRecord: 10.2ms | Allocations: 9102)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:50 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:50 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:50 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.5ms | Allocations: 6220)
+
+
+  [1m[36mChart Load (10.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 2.9ms | ActiveRecord: 10.3ms | Allocations: 8037)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:50 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:50 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:50 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:50 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mChart Load (3.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 800)
+
+
+Processing by MemoryObjectsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Processing by ChartsController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 340)
+
+
+  [1m[36mMemoryObject Load (1.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (1.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.6ms | Allocations: 7419)
+
+
+Completed 200 OK in 19ms (Views: 7.2ms | ActiveRecord: 1.5ms | Allocations: 8090)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:51 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:51 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:51 -0400
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (16.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Processing by MemoryObjectsController#index as HTML
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  [1m[36mChart Load (38.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 16.0ms | Allocations: 1371)
+
+
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (2.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Completed 200 OK in 43ms (Views: 3.9ms | ActiveRecord: 38.4ms | Allocations: 3207)
+
+
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 2.0ms | Allocations: 8010)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:52 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:52 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:52 -0400
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+  [1m[36mChart Load (0.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Processing by MemoryObjectsController#index as HTML
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 2090)
+
+
+  [1m[36mMemoryObject Load (2.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 2.3ms | Allocations: 6893)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:52 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:52 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:52 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:52 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+  [1m[36mChart Load (12.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 12.3ms | Allocations: 2413)
+
+
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (0.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 2139)
+
+
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 7709)
+
+
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:56 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:56 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:56 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (4.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 4.3ms | Allocations: 1351)
+
+
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (2.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 1133)
+
+
+  [1m[36mMemoryObject Load (57.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 65ms (Views: 7.3ms | ActiveRecord: 57.3ms | Allocations: 8960)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:56 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:56 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms | Allocations: 1685)
+
+
+  [1m[36mMemoryObject Load (9.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:56 -0400
+Completed 200 OK in 29ms (Views: 6.0ms | ActiveRecord: 9.6ms | Allocations: 7785)
+
+
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:56 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:56 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:56 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:56 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mChart Load (1.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by AuthenticationController#verify as HTML
+  [1m[36mMemoryObject Load (1.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Filter chain halted as :authorize_request rendered or redirected
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 2974)
+
+
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms | Allocations: 3113)
+
+
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+Completed 200 OK in 29ms (Views: 7.3ms | ActiveRecord: 1.3ms | Allocations: 8890)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:07:59 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:07:59 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:07:59 -0400
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (5.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 5.0ms | Allocations: 808)
+
+
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (11.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (23.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 5.8ms | ActiveRecord: 23.9ms | Allocations: 7183)
+
+
+Completed 200 OK in 42ms (Views: 9.2ms | ActiveRecord: 11.4ms | Allocations: 9071)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:59 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:59 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (1.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (18.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 2.1ms | ActiveRecord: 18.2ms | Allocations: 7162)
+
+
+Completed 200 OK in 34ms (Views: 17.5ms | ActiveRecord: 1.3ms | Allocations: 7619)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:59 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:07:59 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:07:59 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:07:59 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:07:59 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by AuthenticationController#verify as HTML
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (2.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (1.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Filter chain halted as :authorize_request rendered or redirected
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (1.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1471)
+
+
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 8606)
+
+
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.6ms | Allocations: 8120)
+
+
+Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 2.5ms | Allocations: 9940)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:08:01 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:11:12 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:11:12 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:11:12 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (5.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Processing by ChartsController#index as HTML
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 5.7ms | Allocations: 1194)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (1.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.5ms | Allocations: 1679)
+
+
+  [1m[36mMemoryObject Load (29.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 50ms (Views: 7.6ms | ActiveRecord: 29.3ms | Allocations: 7556)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:11:13 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:11:13 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:11:13 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (0.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5567)
+
+
+Processing by ChartsController#index as HTML
+Completed 200 OK in 20ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 7596)
+
+
+  [1m[36mChart Load (1.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 1441)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:11:13 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:11:13 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:11:13 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:11:13 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by ChartsController#show as HTML
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"4"}
+Filter chain halted as :authorize_request rendered or redirected
+  [1m[36mChart Load (1.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 584)
+
+
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (2.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.2ms | Allocations: 1554)
+
+
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (2.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 8359)
+
+
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 2.4ms | Allocations: 8812)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:11:28 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:11:28 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:11:28 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (3.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.1ms | Allocations: 1350)
+
+
+  [1m[36mChart Load (17.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 17.3ms | Allocations: 2074)
+
+
+  [1m[36mMemoryObject Load (48.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 6.5ms | ActiveRecord: 48.6ms | Allocations: 8574)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:11:29 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:11:29 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:11:29 -0400
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (4.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 4.6ms | Allocations: 2157)
+
+
+  [1m[36mMemoryObject Load (2.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 28ms (Views: 9.7ms | ActiveRecord: 2.2ms | Allocations: 7469)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:11:29 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:11:29 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:11:29 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:11:29 -0400
+Processing by ChartsController#show as HTML
+Processing by AuthenticationController#verify as HTML
+  Parameters: {"id"=>"4"}
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (1.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Filter chain halted as :authorize_request rendered or redirected
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 1052)
+
+
+  [1m[36mChart Load (1.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (2.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.9ms | Allocations: 2188)
+
+
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1518)
+
+
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 2.1ms | Allocations: 8794)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:11:55 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:17:00 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:17:00 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:17:00 -0400
+Processing by ChartsController#show as HTML
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (2.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 26ms (Views: 5.4ms | ActiveRecord: 2.9ms | Allocations: 799)
+
+
+  [1m[36mChart Load (33.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (32.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 49ms (Views: 9.2ms | ActiveRecord: 33.6ms | Allocations: 2980)
+
+
+Completed 200 OK in 65ms (Views: 16.4ms | ActiveRecord: 32.7ms | Allocations: 8556)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:17:00 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:17:00 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:17:00 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:17:01 -0400
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+  [1m[36mChart Load (49.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 57ms (Views: 7.1ms | ActiveRecord: 49.0ms | Allocations: 2006)
+
+
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by MemoryObjectsController#index as HTML
+Started GET "/charts" for ::1 at 2020-09-05 18:17:01 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:17:01 -0400
+  [1m[36mMemoryObject Load (31.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (43.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 58ms (Views: 0.6ms | ActiveRecord: 43.8ms | Allocations: 8825)
+
+
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+  [1m[36mChart Load (3.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 3.7ms | Allocations: 1699)
+
+
+Completed 200 OK in 109ms (Views: 10.3ms | ActiveRecord: 31.5ms | Allocations: 10535)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:17:01 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 78ms (Views: 21.9ms | ActiveRecord: 1.3ms | Allocations: 6220)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:17:04 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:17:57 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:18:14 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 799)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:18:14 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:18:14 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (2.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 2.6ms | Allocations: 1133)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (73.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:18:14 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:18:14 -0400
+Completed 200 OK in 149ms (Views: 41.3ms | ActiveRecord: 73.8ms | Allocations: 6881)
+
+
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by ChartsController#index as HTML
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 583)
+
+
+  [1m[36mChart Load (2.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 2.5ms | Allocations: 1337)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:18:14 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:18:14 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:18:14 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by ChartsController#index as HTML
+  [1m[36mMemoryObject Load (5.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:18:14 -0400
+  [1m[36mChart Load (19.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  [1m[36mChart Load (19.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Completed 200 OK in 71ms (Views: 8.5ms | ActiveRecord: 5.7ms | Allocations: 7647)
+
+
+Completed 200 OK in 70ms (Views: 0.4ms | ActiveRecord: 19.6ms | Allocations: 7465)
+
+
+Processing by AuthenticationController#verify as HTML
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:18:14 -0400
+Filter chain halted as :authorize_request rendered or redirected
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Completed 200 OK in 125ms (Views: 105.5ms | ActiveRecord: 19.4ms | Allocations: 9827)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 1.4ms | Allocations: 6220)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:18:16 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:18:36 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:18:36 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:18:36 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#show as HTML
+Processing by ChartsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (12.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 32ms (Views: 2.8ms | ActiveRecord: 12.1ms | Allocations: 799)
+
+
+  [1m[36mMemoryObject Load (45.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (50.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 54ms (Views: 3.2ms | ActiveRecord: 50.0ms | Allocations: 8270)
+
+
+Completed 200 OK in 70ms (Views: 17.3ms | ActiveRecord: 45.1ms | Allocations: 9507)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:18:36 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:18:36 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:18:36 -0400
+Started GET "/charts/4" for ::1 at 2020-09-05 18:18:36 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:18:36 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (1.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (68.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Processing by ChartsController#show as HTML
+Processing by AuthenticationController#verify as HTML
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 79ms (Views: 10.1ms | ActiveRecord: 68.6ms | Allocations: 8577)
+
+
+Filter chain halted as :authorize_request rendered or redirected
+Completed 200 OK in 60ms (Views: 46.1ms | ActiveRecord: 1.0ms | Allocations: 8060)
+
+
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 538)
+
+
+  [1m[36mChart Load (4.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/charts" for ::1 at 2020-09-05 18:18:36 -0400
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 1901)
+
+
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:18:36 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (2.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (1.3ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 2.2ms | Allocations: 1282)
+
+
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 46.3ms | ActiveRecord: 1.3ms | Allocations: 7494)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:18:44 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started DELETE "/memory_objects/40" for 127.0.0.1 at 2020-09-05 18:19:13 -0400
+Processing by MemoryObjectsController#destroy as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mMemoryObject Load (0.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects" WHERE "memory_objects"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:47:in `set_memory_object'
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+  [1m[36mMemoryObject Destroy (6.8ms)[0m  [1m[31mDELETE FROM "memory_objects" WHERE "memory_objects"."id" = $1[0m  [["id", 40]]
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/memory_objects_controller.rb:41:in `destroy'
+Completed 204 No Content in 48ms (ActiveRecord: 13.5ms | Allocations: 2665)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:20:12 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 18:20:12 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 18:20:12 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (13.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 2.8ms | ActiveRecord: 13.6ms | Allocations: 1133)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (120.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 122ms (Views: 0.5ms | ActiveRecord: 120.4ms | Allocations: 3142)
+
+
+  [1m[36mMemoryObject Load (3.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 3.0ms | Allocations: 7026)
+
+
+Started GET "/charts/4" for ::1 at 2020-09-05 18:20:12 -0400
+Started GET "/charts" for ::1 at 2020-09-05 18:20:12 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:20:12 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:20:12 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/auth/verify" for ::1 at 2020-09-05 18:20:12 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (12.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 12.2ms | Allocations: 3084)
+
+
+  [1m[36mChart Load (30.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mMemoryObject Load (39.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Filter chain halted as :authorize_request rendered or redirected
+Completed 200 OK in 57ms (Views: 26.6ms | ActiveRecord: 30.5ms | Allocations: 10329)
+
+
+Completed 401 Unauthorized in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5797)
+
+
+Completed 200 OK in 51ms (Views: 8.9ms | ActiveRecord: 39.2ms | Allocations: 9283)
+
+
+Started GET "/charts" for ::1 at 2020-09-05 18:20:12 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-05 18:20:12 -0400
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (2.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 2.9ms | Allocations: 1255)
+
+
+  [1m[36mMemoryObject Load (7.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 7.8ms | Allocations: 7313)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 18:20:25 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 799)
+
+
