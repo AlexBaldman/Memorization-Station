@@ -13,11 +13,9 @@
 .app-title {
   display: flex;
   font-family: "Pacifico", cursive;
-  font-size: 1em;
+  font-size: 1.5rem;
   justify-content: center;
-  color: yellow;
-  // border: solid black 10px;
-  // padding: black 10px;
+  color: white;
 }
 
 .header {
@@ -28,8 +26,6 @@
   align-items: top;
   justify-content: center;
   font-size: calc(4px + 2vmin);
-    // min-height: 10vh;
-    // max-height: 20vh;
 }
 
 .main {
@@ -40,9 +36,6 @@
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   color: rgb(79, 31, 82);
   font-size: calc(2vmin);
-    // max-height: 50%;
-    // align-items: center; 
-    // justify-content: center;
 }
 
 .home {
@@ -91,7 +84,7 @@
   color: lightgrey;
   background-color: rgb(17, 23, 36);
   border: solid 10px hotpink;
-  border-radius: 25px;
+  border-radius: 35px;
   align-items: center;
   align-self: center;
   text-align: center;
@@ -124,7 +117,7 @@
   padding: 30px;
   margin: 30px;
   border-radius: 20px;
-  border: 10px solid darkgrey;
+  border: 10px double white;
     &:hover {
       color: white;
       background-color: hotpink;
@@ -147,18 +140,17 @@
 
 .footer {
   display: flex;
+  flex-flow: row wrap;
   max-height: 20vh;
   min-height: 10vh;
   min-width: 100%;
-  color: lightgrey;
-  font-family: 'Pacifico', cursive;
-  font-size: calc(3px + 2rem);
+  color: white;
+  font-family: 'Roboto', cursive;
+  font-size: calc(3px + 1rem);
   justify-content: flex-end;
-  align-content: bottom;
+  align-content: flex-end;
   bottom: 0;
-  background: linear-gradient(#e66465, #9198e5);
-    // position: sticky;
-
+  background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
 }
 
 .nav-button {
