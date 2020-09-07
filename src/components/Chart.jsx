@@ -37,16 +37,19 @@ export default function Chart(props) {
             <div className="">
                 {chart && 
                     <>
-                        <Link to={`/memory_objects/${chart.id}/new`}>
+                        
                             <div className='title-container'>
                                 <h1>{chart.description}</h1>
+                                <img src={chart.image_url} />
                             </div>
                             <div>
+                            <Link to={`/memory_objects/${chart.id}/new`}>
                                 <button className='nav-button'>
                                     Add Memory Object
                                 </button>
+                            </Link>
                             </div>
-                        </Link>
+                        
                     </>
                 }
             
