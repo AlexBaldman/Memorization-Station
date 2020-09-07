@@ -40784,3 +40784,309 @@ Processing by ChartsController#show as HTML
 Completed 200 OK in 13ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 800)
 
 
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:11:58 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (5.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 18ms (Views: 2.4ms | ActiveRecord: 6.0ms | Allocations: 887)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:12:24 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:12:24 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:12:24 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (28.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 28.6ms | Allocations: 1024)
+
+
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (1.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.1ms | Allocations: 1737)
+
+
+  [1m[36mMemoryObject Load (5.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 5.8ms | Allocations: 7406)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:12:38 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:12:38 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:12:38 -0400
+Processing by ChartsController#show as HTML
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (6.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 6.4ms | Allocations: 1371)
+
+
+  [1m[36mMemoryObject Load (12.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (7.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 10.5ms | Allocations: 7973)
+
+
+Completed 200 OK in 80ms (Views: 65.5ms | ActiveRecord: 12.7ms | Allocations: 8412)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:12:43 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 799)
+
+
+Started GET "/charts/4" for 127.0.0.1 at 2020-09-05 20:13:03 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 800)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:13:22 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:13:57 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 799)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:40:54 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:40:54 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:40:54 -0400
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (43.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  [1m[36mChart Load (40.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMemoryObject Load (44.8ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 9.0ms | ActiveRecord: 43.8ms | Allocations: 2830)
+
+
+Completed 200 OK in 50ms (Views: 0.3ms | ActiveRecord: 41.0ms | Allocations: 2664)
+
+
+Completed 200 OK in 60ms (Views: 12.4ms | ActiveRecord: 44.8ms | Allocations: 8586)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:41:12 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 831)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:41:19 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:42:04 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:42:04 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:42:04 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMemoryObject Load (4.2ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (6.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 6.4ms | Allocations: 7239)
+
+
+  [1m[36mChart Load (17.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 18.2ms | Allocations: 8051)
+
+
+Completed 200 OK in 26ms (Views: 18.0ms | ActiveRecord: 4.2ms | Allocations: 7356)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:42:14 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 799)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:44:58 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:44:58 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:44:58 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (3.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mChart Load (4.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 3.5ms | Allocations: 1271)
+
+
+  [1m[36mMemoryObject Load (18.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 82ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 2734)
+
+
+Completed 200 OK in 99ms (Views: 75.8ms | ActiveRecord: 18.5ms | Allocations: 8523)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:48:10 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:48:10 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:48:10 -0400
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (2.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 2.8ms | Allocations: 2117)
+
+
+  [1m[36mMemoryObject Load (6.4ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (2.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 1650)
+
+
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 6.4ms | Allocations: 8355)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:48:39 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:48:39 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:48:39 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by ChartsController#index as HTML
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mChart Load (1.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (3.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 1693)
+
+
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 9012)
+
+
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 3.1ms | Allocations: 8260)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:52:04 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:52:04 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:52:04 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (3.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+  [1m[36mMemoryObject Load (8.0ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 3.3ms | Allocations: 1298)
+
+
+  [1m[36mChart Load (2.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 2.0ms | Allocations: 7951)
+
+
+Completed 200 OK in 38ms (Views: 20.7ms | ActiveRecord: 8.0ms | Allocations: 9321)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:52:31 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:52:31 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:52:31 -0400
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (0.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  [1m[36mChart Load (25.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 3.2ms | ActiveRecord: 25.0ms | Allocations: 7636)
+
+
+  [1m[36mChart Load (27.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 22.1ms | ActiveRecord: 0.7ms | Allocations: 7356)
+
+
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 62ms (Views: 0.3ms | ActiveRecord: 27.0ms | Allocations: 8378)
+
+
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:53:01 -0400
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:53:01 -0400
+Processing by ChartsController#show as HTML
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:53:01 -0400
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (1.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Processing by ChartsController#index as HTML
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 1339)
+
+
+  [1m[36mChart Load (1.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+Processing by MemoryObjectsController#index as HTML
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.7ms | Allocations: 2154)
+
+
+  [1m[36mMemoryObject Load (1.7ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.7ms | Allocations: 6651)
+
+
+Started GET "/charts" for 127.0.0.1 at 2020-09-05 20:53:06 -0400
+Started GET "/charts/3" for 127.0.0.1 at 2020-09-05 20:53:06 -0400
+Started GET "/memory_objects/" for 127.0.0.1 at 2020-09-05 20:53:06 -0400
+Processing by ChartsController#index as HTML
+Processing by ChartsController#show as HTML
+Processing by MemoryObjectsController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mChart Load (1.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.7ms | Allocations: 1391)
+
+
+  [1m[36mMemoryObject Load (2.5ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  [1m[36mChart Load (1.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+  ↳ app/controllers/charts_controller.rb:55:in `set_chart'
+Completed 200 OK in 64ms (Views: 46.1ms | ActiveRecord: 1.0ms | Allocations: 7923)
+
+
+Completed 200 OK in 65ms (Views: 14.9ms | ActiveRecord: 2.5ms | Allocations: 8375)
+
+

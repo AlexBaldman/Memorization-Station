@@ -622,6 +622,24 @@ User.destroy_all
         {
             number: '55',
             initials: 'EE',
+            name: 'Ernie Els',
+            description: 'playing golf looking a bit dufusish',
+            image_url: 'https://golf.com/wp-content/uploads/2020/07/ErnieElsDistance.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '56',
+            initials: 'ES',
+            name: 'Edward Scissorhands',
+            description: 'sculpting elaborate hedge sculptures, or perhaps a block of ice from time to time...',
+            image_url: 'https://arthistoryoffilmtcmc.files.wordpress.com/2018/09/edwardshlowangle.jpg',
+            chart: @peopleChart,
+            user: @alex
+        },
+        {
+            number: '57',
+            initials: 'EG',
             name: '',
             description: '',
             image_url: '',
@@ -629,7 +647,7 @@ User.destroy_all
             user: @alex
         },
         {
-            number: '',
+            number: '58',
             initials: '',
             name: '',
             description: '',
@@ -638,35 +656,17 @@ User.destroy_all
             user: @alex
         },
         {
-            number: '',
-            initials: '',
-            name: '',
-            description: '',
+            number: '59',
+            initials: 'EN',
+            name: 'Ed Norton',
+            description: 'fightclub fighting / beating the shit out of ',
             image_url: '',
             chart: @peopleChart,
             user: @alex
         },
         {
-            number: '',
-            initials: '',
-            name: '',
-            description: '',
-            image_url: '',
-            chart: @peopleChart,
-            user: @alex
-        },
-        {
-            number: '',
-            initials: '',
-            name: '',
-            description: '',
-            image_url: '',
-            chart: @peopleChart,
-            user: @alex
-        },
-        {
-            number: '',
-            initials: '',
+            number: '60',
+            initials: 'SO',
             name: '',
             description: '',
             image_url: '',
