@@ -13,7 +13,7 @@ export default function About() {
           <p>The human mind is an amazing thing.  In fact, it is the most complex object in the universe that we are 
           currently aware of, and yet we still are only just breaking the surface in terms of understanding the mechanisms behind how it actually works.</p>
 
-          <p>One of the most amazing things about the brain is its ability to store and retrieve vast amounts of information.  One of the key insights
+          <p>One of the most amazing things about the brain is its ability to store and retrieve vast amounts of information.  A key insight
           that was understood by those who first began using memory systems was that the more senses we use when storing a piece of information, the more likely 
           we are to be able to recall that information quickly.  This is seen most prominently with our sense of sight.</p>
 

@@ -597,7 +597,7 @@ User.destroy_all
             initials: 'EB',
             name: 'Eric Bana',
             description: 'turning into the hulk',
-            image_url: '',
+            image_url: 'https://qph.fs.quoracdn.net/main-qimg-0f826b9e59715c87eefd8179a7ecaf8e',
             chart: @peopleChart,
             user: @alex
         },
@@ -606,7 +606,7 @@ User.destroy_all
             initials: 'EC',
             name: 'Ewan Cameron',
             description: 'doing MK-Ultra experiments on people like a creep',
-            image_url: '',
+            image_url: 'https://i2-prod.dailyrecord.co.uk/incoming/article11666210.ece/ALTERNATES/s615b/JS138334168.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -615,7 +615,7 @@ User.destroy_all
             initials: 'ED',
             name: 'Mr. Ed',
             description: 'being a horse that talks, obviously',
-            image_url: '',
+            image_url: 'https://cdn0.wideopenpets.com/wp-content/uploads/2016/05/Untitled-design-18-770x405.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -648,8 +648,8 @@ User.destroy_all
         },
         {
             number: '58',
-            initials: '',
-            name: '',
+            initials: 'EH',
+            name: 'E',
             description: '',
             image_url: '',
             chart: @peopleChart,
@@ -660,16 +660,16 @@ User.destroy_all
             initials: 'EN',
             name: 'Ed Norton',
             description: 'fightclub fighting / beating the shit out of ',
-            image_url: '',
+            image_url: 'https://shblogging.files.wordpress.com/2016/12/fightclub_256pyxurz.jpg',
             chart: @peopleChart,
             user: @alex
         },
         {
             number: '60',
             initials: 'SO',
-            name: '',
-            description: '',
-            image_url: '',
+            name: 'Shaquille O\'Neal',
+            description: 'breaking the backboard with a slam dunk',
+            image_url: 'https://thumbs.gfycat.com/HugePhysicalIzuthrush-max-1mb.gif',
             chart: @peopleChart,
             user: @alex
         }

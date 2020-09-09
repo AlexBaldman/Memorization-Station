@@ -18,7 +18,6 @@ export default function Charts(props) {
                         <Link to={`/charts/${chart.id}`}> 
                             <div className="card-content">
                                 <h2>{chart.name}</h2>
-                                <img src={chart.image_url} /> 
                             </div>
                         </Link>
                     </div>
