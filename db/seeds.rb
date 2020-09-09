@@ -586,9 +586,9 @@ User.destroy_all
         {
             number: '51',
             initials: 'EA',
-            name: '',
-            description: '',
-            image_url: '',
+            name: 'Edgar Allen Poe',
+            description: 'writing poetry while a raven taunts him',
+            image_url: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/George_Hazelton%27s_The_Raven_%28Edgar_Allan_Poe%29_1908.jpg',
             chart: @peopleChart,
             user: @alex
         },
@@ -640,18 +640,18 @@ User.destroy_all
         {
             number: '57',
             initials: 'EG',
-            name: '',
-            description: '',
-            image_url: '',
+            name: 'Eddie Guerrero',
+            description: 'doing an aerial wrestling move (frogsplash, etc.) from the turnbuckle',
+            image_url: 'https://staticg.sportskeeda.com/editor/2019/12/be32d-15753394201948-800.jpg',
             chart: @peopleChart,
             user: @alex
         },
         {
             number: '58',
             initials: 'EH',
-            name: 'E',
-            description: '',
-            image_url: '',
+            name: 'Evander Holyfield',
+            description: 'getting his ear bitten off',
+            image_url: 'https://www.sportscasting.com/wp-content/uploads/2020/04/Mike-Tyson-Bites-Ear.jpg',
             chart: @peopleChart,
             user: @alex
         },
