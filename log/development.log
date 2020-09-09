@@ -46163,3 +46163,23 @@ Completed 200 OK in 22ms (Views: 1.9ms | ActiveRecord: 1.6ms | Allocations: 995)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mMemoryObject Create (0.2ms)[0m  [1m[32mINSERT INTO "memory_objects" ("number", "initials", "name", "description", "image_url", "user_id", "chart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", "60"], ["initials", "SO"], ["name", "Shaquille O'Neal"], ["description", "breaking the backboard with a slam dunk"], ["image_url", "https://thumbs.gfycat.com/HugePhysicalIzuthrush-max-1mb.gif"], ["user_id", 6], ["chart_id", 5], ["created_at", "2020-09-09 20:53:38.006460"], ["updated_at", "2020-09-09 20:53:38.006460"]]
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/charts" for ::1 at 2020-09-09 17:00:02 -0400
+Started GET "/auth/verify" for ::1 at 2020-09-09 17:00:02 -0400
+Started GET "/memory_objects/" for ::1 at 2020-09-09 17:00:02 -0400
+Processing by MemoryObjectsController#index as HTML
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+  [1m[36mChart Load (6.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 10.2ms | ActiveRecord: 6.8ms | Allocations: 1436)
+
+
+Completed 401 Unauthorized in 13ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 866)
+
+
+  [1m[36mMemoryObject Load (38.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 94ms (Views: 52.0ms | ActiveRecord: 38.1ms | Allocations: 16447)
+
+

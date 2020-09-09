@@ -1,5 +1,4 @@
 require_relative 'boot'
-
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -33,5 +32,14 @@ module MemorizationStation
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Testing here to see if helps with CORS error:
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+         origins '*'
+         resource '*', :headers => :any, :methods => [:get, :post, :options]
+       end
+    end
+
   end
 end
