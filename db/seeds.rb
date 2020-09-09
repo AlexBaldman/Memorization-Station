@@ -642,7 +642,7 @@ User.destroy_all
             initials: 'EG',
             name: 'Eddie Guerrero',
             description: 'doing an aerial wrestling move (frogsplash, etc.) from the turnbuckle',
-            image_url: 'https://staticg.sportskeeda.com/editor/2019/12/be32d-15753394201948-800.jpg',
+            image_url: 'https://staticg.sportskeeda.com/editor/2019/12/be32d-15753394201948-800.jpg                            ',
             chart: @peopleChart,
             user: @alex
         },

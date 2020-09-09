@@ -79,9 +79,14 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  # Do not dump schema after migrations.
+  # Do not dump schema after migrations:
   config.active_record.dump_schema_after_migration = false
 
+  # FOR CORS - Adding to allow Heroku to serve static assets through the rails container
+  # while in the production environment (deployed to Heroku), 
+  # as per instructions @ https://github.com/cyu/rack-cors:
+  config.serve_static_assets = true
+  
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
