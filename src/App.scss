@@ -54,7 +54,7 @@
 }
 
 .about {
- display: flex;
+  display: flex;
   flex-flow: column;
   color: purple;
   font-family: 'Roboto';
@@ -86,8 +86,8 @@
   margin-bottom: 40px;
   padding: 20px;
   color: darkblue;
-  background-color: rgb(17, 23, 36);
-  border: solid 10px hotpink;
+  background-color: rgb(250, 250, 200);
+  border: double 10px hotpink;
   border-radius: 35px;
   align-items: center;
   align-self: center;

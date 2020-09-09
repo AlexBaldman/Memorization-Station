@@ -9,13 +9,13 @@ import './App.scss';
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
-    useEffect(()=> {
+  useEffect(()=> {
       handleVerify()
     }, [])
   
-    const handleVerify = async () => {
-      const userData = await verifyUser();
-      setCurrentUser(userData);
+  const handleVerify = async () => {
+    const userData = await verifyUser();
+    setCurrentUser(userData);
     }
 
   return (
