@@ -18,8 +18,8 @@ export default function Chart(props) {
     const getChart = async () => {
         const newChart = await getOneChart(props.match.params.id)
         const objectArray = props.objects.filter(obj => {
-        return obj.chart_id === newChart.id
-        })
+            return obj.chart_id === newChart.id
+            })
         setChart(newChart)
         setObjects(objectArray)
     }
@@ -37,19 +37,16 @@ export default function Chart(props) {
             <div className="">
                 {chart && 
                     <>
-                        
-                            <div className='title-container'>
-                                <h1>{chart.description}</h1>
-                                <img src={chart.image_url} />
-                            </div>
-                            <div>
-                            <Link to={`/memory_objects/${chart.id}/new`}>
-                                <button className='nav-button'>
-                                    Add Memory Object
-                                </button>
-                            </Link>
-                            </div>
-                        
+                        <div className='title-container'>
+                            <h1>{chart.description}</h1>
+                        </div>
+                        <div>
+                        <Link to={`/memory_objects/${chart.id}/new`}>
+                            <button className='nav-button'>
+                                Add Memory Object
+                            </button>
+                        </Link>
+                        </div>
                     </>
                 }
             
@@ -64,7 +61,7 @@ export default function Chart(props) {
                                 <div className='button-wrapper'>
                                      <Link to={`/memory_objects/${object.id}/edit`}> 
                                         <button className='button'>  
-                                                edit object 
+                                            edit object 
                                         </button>
                                     </Link>
                                     <button className="button" onClick={() => handleClick(object.id)}> 

@@ -38,7 +38,9 @@ export default function Nav(props) {
                 {props.currentUser ? 
                     ( <>
                         <p>{props.currentUser.username}</p>
-                        <button onClick={handleLogout}> logout </button>
+                        <button onClick={handleLogout}> 
+                          logout 
+                        </button>
                       </> 
                     ) : 
                     ( "not logged in" )
