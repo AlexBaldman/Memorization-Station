@@ -67,7 +67,9 @@ export default function Login(props) {
           </label>
 
           <button>Submit</button>
-          <Link to='/register'><button>Create a account! </button></Link>
+          <Link to='/register'>
+            <button>Create a account! </button>
+          </Link>
           <br/>
           
         
