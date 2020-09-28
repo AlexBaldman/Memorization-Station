@@ -19,6 +19,10 @@ class ChartsController < ApplicationController
 
 #   render json: @charts
 # end
+
+##  added function in services/charts in client which may be 
+##  the right way to do this, rather than in this file...needs troubleshooting
+##  and addition of function call to charts component
 #=========-----
 
   # GET /charts/1
