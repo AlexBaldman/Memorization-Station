@@ -51470,3 +51470,15 @@ Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.6ms | Allocations: 
 NoMethodError (undefined method `authenticate' for nil:NilClass):
   
 app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2020-09-28 16:54:10 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alex", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 8.6ms | Allocations: 1247)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
