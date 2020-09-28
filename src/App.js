@@ -6,7 +6,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import './App.scss';
 
-function App() {
+function App(props) {
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(()=> {
@@ -34,6 +34,7 @@ function App() {
         />
 
         <Main 
+          {...props}
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
         />

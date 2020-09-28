@@ -12,7 +12,6 @@ export default function Chart(props) {
 
     useEffect(() => {
         getChart();
-        
       }, [])
     
     const getChart = async () => {
