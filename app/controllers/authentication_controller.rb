@@ -1,6 +1,5 @@
 class AuthenticationController < ApplicationController
     before_action :authorize_request, except: :login
-    # has_secure_password
   
     # POST /auth/login
     def login
