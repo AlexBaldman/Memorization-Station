@@ -9,10 +9,8 @@ export default function ChartCreate(props) {
         image_url: ''
     })
 
-
     useEffect(() => {
         setFormData({chart_id: props.match.params.id});
-        
       }, [])
     
       const handleChange = (e) => {

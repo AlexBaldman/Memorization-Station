@@ -9,10 +9,6 @@ export default function Footer() {
           Created by Alex Beckerman  
         </div>
 
-        <div className='footer-links'>
-          
-        </div>
-
       </footer>
     )
 }

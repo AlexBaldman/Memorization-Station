@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { removeToken } from '../services/auth'
+import { loginUser, verifyUser, registerUser, removeToken } from '../services/auth'
 
 export default function Nav(props) {
+
   const history = useHistory()
 
   const handleLogout = () => {
