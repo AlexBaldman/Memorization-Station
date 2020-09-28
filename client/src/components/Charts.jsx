@@ -4,6 +4,8 @@ import { destroyChart } from '../services/charts';
 
 
 export default function Charts(props) {
+    const { currentUser } = props;
+
 
     return (
         <div className='home'>

@@ -5,9 +5,21 @@ class ChartsController < ApplicationController
   # GET /charts
   def index
     @charts = Chart.all
+    # @chart.user = @current_user
 
     render json: @charts
   end
+
+#===========---
+# original working version of index above - below trying to change 
+# so instead of showing all charts, only show charts belonging to user: 
+#-------------------------
+# def index
+#   @charts = Chart.where(:user_id => :current_user.id)
+
+#   render json: @charts
+# end
+#=========-----
 
   # GET /charts/1
   def show
