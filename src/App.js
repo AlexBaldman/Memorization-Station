@@ -14,9 +14,9 @@ function App(props) {
     }, [])
   
   const handleVerify = async () => {
-    const userData = await verifyUser();
-    setCurrentUser(userData);
-    }
+    const userData = await verifyUser()
+    setCurrentUser(userData)
+  }
 
   return (
     <>
@@ -24,11 +24,13 @@ function App(props) {
       <div className="App">
 
         <Header
+          {...props}
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
         />
 
-        <Nav 
+        <Nav
+          {...props}
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
         />
@@ -39,7 +41,8 @@ function App(props) {
           setCurrentUser={setCurrentUser}
         />
 
-        <Footer 
+        <Footer
+          {...props}
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
         />
@@ -47,7 +50,7 @@ function App(props) {
       </div>
 
     </>
-  );
+  )
 }
 
 export default App;

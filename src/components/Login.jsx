@@ -24,18 +24,21 @@ export default function Login(props) {
   }
 
 // TO DO :
-  // use if / else or ternary or something to:
-  // if not logged in, 
-  // display login form 
-  // if logged in, 
-  // show user_image_url
-  // (user_image_url would need to be added to the user table in database using a migration)
+  // use if / else or ternary, perhaps to:
+    // if not logged in, 
+    // display login form 
+    // if logged in, 
+    // show user.image_url & user.name
+    // (user.image_url would need to be added to the user model in the database using a migration)
 
   return (
       <div>
         <form onSubmit={handleSubmit}>
           
-          <div className="title-container"><h2> login </h2></div>
+          <div className="title-container">
+            <h2> login </h2>
+          </div>
+          
           <label>
             username:
             <input
@@ -67,9 +70,11 @@ export default function Login(props) {
           </label>
 
           <button>Submit</button>
-          <Link to='/register'>
-            <button>Create a account! </button>
-          </Link>
+
+            <Link to='/register'>
+              <button>Create a account! </button>
+            </Link>
+            
           <br/>
           
         

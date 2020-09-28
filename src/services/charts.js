@@ -24,3 +24,10 @@ export const destroyChart = async (id) => {
   const resp = await api.delete(`/charts/${id}`)
   return resp
 }
+
+
+// adding function for getting charts only belonging to user:
+export const getUserCharts = async (id) => {
+  const resp = await api.get(`/users/${id}/charts/`)
+  return resp
+}
