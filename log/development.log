@@ -52256,3 +52256,1162 @@ Completed 200 OK in 51ms (Views: 42.7ms | ActiveRecord: 6.1ms | Allocations: 227
 Completed 200 OK in 83ms (Views: 1.4ms | ActiveRecord: 61.0ms | Allocations: 26885)
 
 
+Started POST "/users/" for ::1 at 2021-08-01 19:06:14 -0400
+Started POST "/users/" for ::1 at 2021-08-01 19:06:14 -0400
+Started POST "/users/" for ::1 at 2021-08-01 19:06:14 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+Processing by UsersController#create as HTML
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"Alex", "email"=>"alexlbeckerman@gmail.com", "password"=>"[FILTERED]"}}
+  Parameters: {"user"=>{"username"=>"Alex", "email"=>"alexlbeckerman@gmail.com", "password"=>"[FILTERED]"}}
+  Parameters: {"user"=>{"username"=>"Alex", "email"=>"alexlbeckerman@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (6.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (9.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (7.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (22.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexlbeckerman@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 687ms (Views: 0.8ms | ActiveRecord: 16.8ms | Allocations: 20314)
+
+
+Completed 422 Unprocessable Entity in 688ms (Views: 0.1ms | ActiveRecord: 255.6ms | Allocations: 21554)
+
+
+Completed 422 Unprocessable Entity in 688ms (Views: 0.1ms | ActiveRecord: 435.4ms | Allocations: 21122)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:35 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1431)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:36 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 1180)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:43 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:43 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 1379)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 73.6ms | Allocations: 84074)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:43 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:44 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 1163)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:06:45 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/users/" for ::1 at 2021-08-01 19:07:06 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"New", "email"=>"new@new.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "New"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (11.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "New"], ["email", "new@new.com"], ["password_digest", "$2a$12$zo2cP7Nx4rssZijnBBwOteTYgrQb7VITBkyyDORq27dqeKmFoDnnC"], ["created_at", "2021-08-01 23:07:06.404793"], ["updated_at", "2021-08-01 23:07:06.404793"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 243ms (Views: 1.2ms | ActiveRecord: 18.6ms | Allocations: 5106)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 19:21:00 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms | Allocations: 1250)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:25:02 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"AlexBaldman", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (22.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "AlexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 22.7ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:29:58 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.2ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:32:53 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms | Allocations: 1163)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:32:54 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:33:23 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"alex@email.com"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.3ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:33:51 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:33:52 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:33:54 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:37:59 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:38:00 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started GET "/charts" for ::1 at 2021-08-01 19:39:06 -0400
+Started GET "/memory_objects/" for ::1 at 2021-08-01 19:39:06 -0400
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (32.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (30.2ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 161ms (Views: 36.5ms | ActiveRecord: 109.5ms | Allocations: 26818)
+
+
+Completed 200 OK in 67ms (Views: 24.2ms | ActiveRecord: 39.0ms | Allocations: 25383)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 19:39:13 -0400
+  
+NameError (undefined local variable or method `has_secure_password' for AuthenticationController:Class):
+  
+app/controllers/authentication_controller.rb:3:in `<class:AuthenticationController>'
+app/controllers/authentication_controller.rb:1:in `<main>'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:39:35 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms | Allocations: 3576)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:40:01 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 19:40:09 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 8.2ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started GET "/" for ::1 at 2021-08-01 22:11:16 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbeckerman/.rvm/gems/ruby-2.6.4/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 309)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 1618)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-01 22:11:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/charts" for ::1 at 2021-08-01 22:11:35 -0400
+Started GET "/memory_objects/" for ::1 at 2021-08-01 22:11:35 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (9.0ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mMemoryObject Load (19.1ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 12.5ms | ActiveRecord: 42.1ms | Allocations: 12887)
+
+
+Completed 200 OK in 66ms (Views: 26.7ms | ActiveRecord: 32.9ms | Allocations: 26465)
+
+
+Started GET "/users/" for ::1 at 2021-08-01 22:11:47 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started GET "/charts/" for ::1 at 2021-08-01 22:11:58 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (1.1ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 1150)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 22:12:39 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"alex@gmail.com"}}
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 9.7ms | Allocations: 3834)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:18:16 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"alex@gmail.com"}}
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 9.5ms | Allocations: 4475)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started GET "/charts/" for ::1 at 2021-08-01 22:19:15 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.7ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 8.0ms | ActiveRecord: 7.8ms | Allocations: 7538)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:35 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"alex@gmail.com"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.6ms | Allocations: 3463)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:46 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1180)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:48 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1180)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:50 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:55 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1163)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:56 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:20:57 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms | Allocations: 1161)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:44:01 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.8ms | Allocations: 4420)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:45:27 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms | Allocations: 3558)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:46:04 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms | Allocations: 4421)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for ::1 at 2021-08-01 22:48:47 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"Alex", "password"=>"[FILTERED]", "email"=>"sonificus@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.0ms | Allocations: 3558)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/users/" for ::1 at 2021-08-01 23:36:02 -0400
+  
+NoMethodError (undefined method `has_secure_password' for UsersController:Class):
+  
+app/controllers/users_controller.rb:4:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/" for ::1 at 2021-08-01 23:36:27 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"User1", "email"=>"user@user.com", "password"=>"[FILTERED]"}}
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "User1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@user.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (10.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "User1"], ["email", "user@user.com"], ["password_digest", "$2a$12$7jdXF41F6gwlKxvb.1ZhEuGCsxnFpfqsurPaxxaP3W9WXiA/clBMG"], ["created_at", "2021-08-02 03:36:27.349288"], ["updated_at", "2021-08-02 03:36:27.349288"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 263ms (Views: 0.4ms | ActiveRecord: 31.7ms | Allocations: 9919)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:36:56 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (1.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 16.1ms | Allocations: 6972)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:37:09 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (1.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 800)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:37:37 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (10.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 10.5ms | Allocations: 800)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:37:54 -0400
+Started GET "/memory_objects/" for ::1 at 2021-08-01 23:37:54 -0400
+Started GET "/charts" for ::1 at 2021-08-01 23:37:54 -0400
+Started GET "/auth/verify" for ::1 at 2021-08-01 23:37:54 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (2.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 2.4ms | Allocations: 800)
+
+
+Processing by ChartsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mChart Load (4.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 4.8ms | Allocations: 3053)
+
+
+Processing by MemoryObjectsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 33.2ms | Allocations: 5281)
+
+
+  [1m[36mMemoryObject Load (37.6ms)[0m  [1m[34mSELECT "memory_objects".* FROM "memory_objects"[0m
+  ↳ app/controllers/memory_objects_controller.rb:9:in `index'
+Completed 200 OK in 65ms (Views: 20.0ms | ActiveRecord: 41.7ms | Allocations: 22059)
+
+
+Started GET "/charts/6" for ::1 at 2021-08-01 23:38:27 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mChart Load (1.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 834)
+
+
+Started GET "/charts/6" for ::1 at 2021-08-01 23:38:57 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mChart Load (0.4ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 801)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:42:44 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (0.6ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 13ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 800)
+
+
+Started GET "/charts/" for ::1 at 2021-08-01 23:42:55 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.8ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.8ms | Allocations: 1134)
+
+
+Started GET "/users/" for ::1 at 2021-08-01 23:43:03 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started GET "/user/" for ::1 at 2021-08-01 23:43:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/user/6" for ::1 at 2021-08-01 23:43:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/6"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/6" for ::1 at 2021-08-01 23:43:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started GET "/users/5" for ::1 at 2021-08-01 23:43:32 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/1" for ::1 at 2021-08-01 23:43:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/" for ::1 at 2021-08-01 23:45:04 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/index" for ::1 at 2021-08-01 23:45:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"index"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users" for ::1 at 2021-08-01 23:45:13 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users" for ::1 at 2021-08-01 23:45:35 -0400
+Processing by UsersController#index as HTML
+Completed 404 Not Found in 13ms (ActiveRecord: 6.7ms | Allocations: 2454)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/6" for ::1 at 2021-08-01 23:45:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 1.0ms | Allocations: 4433)
+
+
+Started GET "/users/6" for ::1 at 2021-08-01 23:46:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 6809)
+
+
+Started GET "/users/" for ::1 at 2021-08-01 23:46:31 -0400
+Processing by UsersController#index as HTML
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/1" for ::1 at 2021-08-01 23:46:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 656)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/2" for ::1 at 2021-08-01 23:46:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 656)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=2):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/3" for ::1 at 2021-08-01 23:46:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 656)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=3):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/4" for ::1 at 2021-08-01 23:46:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 657)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/5" for ::1 at 2021-08-01 23:46:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 787)
+
+
+Started GET "/charts/5" for ::1 at 2021-08-01 23:47:47 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 10.0ms | Allocations: 6482)
+
+
+Started GET "/users/56" for ::1 at 2021-08-01 23:49:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"56"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 170)
+
+
+Started GET "/users/56" for ::1 at 2021-08-01 23:49:19 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"56"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/6" for ::1 at 2021-08-01 23:49:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/6" for ::1 at 2021-08-01 23:49:30 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 5.7ms | Allocations: 6755)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:49:38 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbecker"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 209ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 972)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:49:42 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 211ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 820)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:49:44 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 210ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 820)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:50:13 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 205ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 820)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:50:52 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 220ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 6756)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:51:03 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 214ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 823)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:51:03 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 208ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 823)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:51:09 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 211ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 823)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:52:01 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 224ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 6792)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:52:07 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 208ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 821)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:52:07 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 209ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 820)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:52:08 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 204ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 820)
+
+
+Started POST "/auth/login" for ::1 at 2021-08-01 23:52:10 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"alexBaldman", "password"=>"[FILTERED]", "email"=>"alexlbeckerman@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "alexBaldman"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 210ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 821)
+
+
+Started GET "/charts/6" for ::1 at 2021-08-01 23:52:31 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 6445)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:17 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 173)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:24 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:26 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:26 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:27 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:27 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:28 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 141)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:28 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:28 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:28 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:29 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:29 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:29 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:41 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:41 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:53 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started POST "/memory_objects" for ::1 at 2021-08-01 23:53:54 -0400
+Processing by MemoryObjectsController#create as HTML
+  Parameters: {"memory_object"=>{"chart_id"=>"6", "number"=>"0", "name"=>"zero", "description"=>"donut", "image_url"=>"https://ctl.s6img.com/society6/img/gXuF3KObIdufNNo4M1eWIlV4xD8/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ed9728bdef7047b6b3ce3696e0016d5f/~~/pink-donut-with-sprinkles-pink-blue-yellow-prints.jpg"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started GET "/charts/6" for ::1 at 2021-08-01 23:54:13 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mChart Load (1.9ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 1.9ms | Allocations: 801)
+
+
+Started GET "/users/6" for ::1 at 2021-08-01 23:55:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 1.2ms | Allocations: 933)
+
+
+Started GET "/charts/6" for ::1 at 2021-08-01 23:55:46 -0400
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mChart Load (0.3ms)[0m  [1m[34mSELECT "charts".* FROM "charts" WHERE "charts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/charts_controller.rb:71:in `set_chart'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 801)
+
+
+Started GET "/charts/" for ::1 at 2021-08-01 23:55:50 -0400
+Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.5ms)[0m  [1m[34mSELECT "charts".* FROM "charts"[0m
+  ↳ app/controllers/charts_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 1134)
+
+

@@ -30,6 +30,36 @@
   font-size: calc(4px + 2vmin);
 }
 
+nav {
+  display: flex;
+  // background-size: cover;
+  justify-content: space-evenly;
+  min-height: 10vh;
+  max-height: 15vh;
+  background-color: rgba(26, 8, 56, 0.75);
+  text-decoration: none;
+  // background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
+}
+.nav-button {
+  font-family: "Pacifico";
+  text-emphasis: bold;
+  font-size: 2rem;
+  border: yellow 15px;
+  background-color: hotpink;
+	color: white;
+  background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
+  background-size: cover;
+  flex-grow: 2;
+  margin: 10px 10px;
+  justify-content: center;
+  border: 20px #fbfe958a;
+  &:hover {
+    color: yellow;
+    background-color: orange;
+    // box-shadow: 10px 0px 10px 10px;
+  }
+}
+
 .main {
   display: flex;
   flex-flow: column wrap;
@@ -154,26 +184,6 @@
   background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
 }
 
-.nav-button {
-  font-family: "Pacifico";
-  text-emphasis: bold;
-  font-size: 2rem;
-  border: yellow 15px;
-  background-color: hotpink;
-	color: white;
-  background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
-  background-size: cover;
-  flex-grow: 2;
-  margin: 10px 10px;
-  justify-content: center;
-  border: 10px 0 #7e17178a;
-  &:hover {
-    color: yellow;
-    background-color: orange;
-    box-shadow: 20px 20px;
-  }
-}
-
 .button-submit {
   border: red dotted 2px;
   &:hover {
@@ -193,18 +203,6 @@ img {
   padding: 1vh;
 }
 
-nav {
-  display: flex;
-  // background-size: cover;
-  justify-content: space-evenly;
-  min-height: 10vh;
-  max-height: 15vh;
-  background-color: rgba(121, 76, 192, 0.453);
-  text-decoration: none;
-  // background-image: url('https://www.creativefabrica.com/wp-content/uploads/2018/10/Lightning-seamless-pattern-by-sabavector-580x406.jpg');
-  // background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
-}
-
 button {
   font-family: "Roboto";
   text-emphasis: bold;
@@ -220,7 +218,7 @@ button {
   &:hover {
     color: yellow;
     background-color: black;
-    box-shadow: 3px 3px 3px 3px;
+    // box-shadow: 3px 3px 3px 3px;
   }
 }
 
