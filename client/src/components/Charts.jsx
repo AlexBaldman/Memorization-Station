@@ -8,10 +8,11 @@ export default function Charts(props) {
 
 
     return (
+        
         <div className='home'>
 
             <div className="title-container">
-                <h2> memory charts </h2>
+                <h1> memory charts </h1>
             </div>
             
             <div className="charts">
@@ -19,8 +20,8 @@ export default function Charts(props) {
                     <div>
                         <Link to={`/charts/${chart.id}`}> 
                             <div className="card-content">
-                                <h2>{chart.name}</h2>
-                                <img src={chart.image_url} alt='chart image' />
+                                <h1> {chart.name} </h1>
+                                <img src= {chart.image_url} alt='chart image' />
                             </div>
                         </Link>
                     </div>

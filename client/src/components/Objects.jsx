@@ -24,17 +24,17 @@ export default function Objects(props) {
                   <h1>{memoryObject.number}</h1>
                   <h2>{memoryObject.name}</h2>
                   <Link to={`/memory_objects/${memoryObject.id}`} key={memoryObject.id}>
-                    <img src={memoryObject.image_url} alt={ "memory object image" } /> 
+                    <img src={memoryObject.image_url} alt= { "memory object image" } /> 
                   </Link>
                   <h2>{memoryObject.description}</h2>
                   <div className='button-wrapper'>
                     <button className='button'>
                       <Link to={`/memory_objects/${memoryObject.id}/edit`}> 
-                        edit object 
+                        edit 
                       </Link>
                     </button>
                     <button className="button" onClick={() => handleClick(memoryObject.id)}> 
-                      delete Object 
+                      delete 
                     </button>
                   </div>
               </div>

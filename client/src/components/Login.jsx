@@ -33,10 +33,10 @@ export default function Login(props) {
 
   return (
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit= {handleSubmit} >
           
           <div className="title-container">
-            <h2> login </h2>
+            <h3> login </h3>
           </div>
           
           <label>
@@ -69,10 +69,12 @@ export default function Login(props) {
             />
           </label>
 
-          <button>Submit</button>
+          <button> 
+            Submit 
+          </button>
 
             <Link to='/register'>
-              <button>Create a account! </button>
+              <button> create account </button>
             </Link>
             
           <br/>

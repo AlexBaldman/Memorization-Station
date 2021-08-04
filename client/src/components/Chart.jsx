@@ -18,7 +18,7 @@ export default function Chart(props) {
         const newChart = await getOneChart(props.match.params.id)
         const objectArray = props.objects.filter(obj => {
             return obj.chart_id === newChart.id
-            })
+        })
         setChart(newChart)
         setObjects(objectArray)
     }
@@ -33,16 +33,16 @@ export default function Chart(props) {
 
     return (
         <> 
-            <div className="">
+            <div className="main">
                 {chart && 
                     <>
                         <div className='title-container'>
-                            <h1>{chart.description}</h1>
+                            <h2> {chart.description} </h2>
                         </div>
                         <div>
-                        <Link to={`/memory_objects/${chart.id}/new`}>
-                            <button className='nav-button'>
-                                Add Memory Object
+                        <Link to= {`/memory_objects/${chart.id}/new`} >
+                            <button className='button'>
+                                add new object
                             </button>
                         </Link>
                         </div>

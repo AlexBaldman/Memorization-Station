@@ -3,13 +3,14 @@ import React from 'react'
 export default function About() {
     
     return (
-      <div className='about'>
+      <div className='home'>
 
         <div className="title-container">
-          <h2>about</h2>
+           <h1> about </h1>
         </div>
         
-        <div>
+        <div className= "home">
+
           <p>The human mind is an amazing thing.  In fact, it is the most complex object in the universe that we are 
           currently aware of, and yet we still are only just breaking the surface in terms of understanding the mechanisms behind how it actually works.</p>
 
@@ -37,6 +38,7 @@ export default function About() {
           they can easily be recalled at will, each object or location can then act like nodes that 
           a memorizer can then use to store new information by creating vivid associations in their mind between the node
           and the information they plan to recall.</p>
+
         </div>
         
       </div>

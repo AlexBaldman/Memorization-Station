@@ -42,12 +42,11 @@ export default function Main(props) {
       <main className="main">
         
         <Switch>
-
           <Route 
             path='/' exact 
             component={Home}  
             />
-
+            
           <Route 
             path='/login' 
             render={(props) => (

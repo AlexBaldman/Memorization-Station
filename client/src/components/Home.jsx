@@ -6,10 +6,10 @@ export default function Home () {
       <div className="home">
       
         <div className='title-container'>
-          <h2>home</h2>
+          <h1> home </h1>
         </div>
         
-        <div className=''>
+        <div className='home'>
           <p>
             Memorization Station is a web app designed to help people to in learning about, and developing their own, memory system frameworks.
             Memory systems have been used throughout history to make it easier to memorize large amounts of information.  Research into these systems is ongoing today,

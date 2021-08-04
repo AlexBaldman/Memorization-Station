@@ -1,58 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&family=Mouse+Memoirs&family=Pacifico&family=Proza+Libre:ital,wght@1,800&display=swap');
 
-.App {
-  text-align: center;
+html {
+  margin: 0;
+  // align-items: center;
+}
+
+body {
+  margin: 0;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  justify-items: center;
+  // height: 100%;
+  // width: 100%;
+  // overflow: hidden;
+
+}
+nav {
+  display: flex;
+  background-size: cover;
+  justify-content: space-evenly;
+  max-height: 15vh;
+  max-width: 100vw;
+  background-color: rgba(26, 8, 56, 0.75);
+  text-decoration: none;
+  // min-height: 10vh;
+  // background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
+}
+
+.App {
+  display: block;
+  text-align: center;
+  // align-items: center;
+  // max-width: 100vw;
+  // height: 90%;
+  margin: 0;
+  // justify-content: space-between;
   background-color: lightgrey;
 }
 
 .app-title {
   display: flex;
-  font-family: "Pacifico", cursive;
-  font-size: 1.5rem;
+  // max-width: 100%;
+  // font-family: "Pacifico", cursive;
+  font-family: '-apple-system';
+  font-size: 1rem;
   justify-content: center;
   color: white;
 }
 
 .header {
   display: flex;
-  background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
+  // background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
   color: black;
-  background-color: hotpink;
-  width: 100vw;
-  flex-flow: column;
-  align-items: top;
+  background-color: rgba(243, 146, 146, 0.964);
+  max-width: 100vw;
+  // flex-flow: column;
+  // align-items: top;
   justify-content: center;
-  font-size: calc(4px + 2vmin);
+  font-size: calc(4px + 1vmin);
 }
 
-nav {
-  display: flex;
-  // background-size: cover;
-  justify-content: space-evenly;
-  min-height: 10vh;
-  max-height: 15vh;
-  background-color: rgba(26, 8, 56, 0.75);
-  text-decoration: none;
-  // background: linear-gradient(rgb(44, 232, 210), rgb(200, 200, 00));
-}
 .nav-button {
   font-family: "Pacifico";
   text-emphasis: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: yellow 15px;
   background-color: hotpink;
 	color: white;
   background-image: url(https://i.pinimg.com/originals/29/06/10/2906108d04d7e4cbb08325074d217ade.jpg);
   background-size: cover;
-  flex-grow: 2;
+  flex-grow: 1;
   margin: 10px 10px;
   justify-content: center;
-  border: 20px #fbfe958a;
+  // border: 20px #fbfe958a;
   &:hover {
     color: yellow;
     background-color: orange;
@@ -61,24 +80,24 @@ nav {
 }
 
 .main {
-  display: flex;
-  flex-flow: column wrap;
-  min-height: 85vh;
+  width: 100%;
   text-align: center;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   color: rgb(79, 31, 82);
   font-size: calc(2vmin);
+  // display: flex;
+  // flex-flow: column wrap;
 }
 
 .home {
   display: flex;
   flex-flow: column;
-  color: purple;
+  color: rgb(95, 89, 95);
   font-family: 'Roboto';
-  font-size: 1.5em;
+  font-size: 1em;
   align-items: center;
   text-align: center;
-  margin: 0 20rem;
+  margin: 0;
 }
 
 .about {
@@ -95,60 +114,65 @@ nav {
 .charts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  // justify-content: space-evenly;
 }
 
 .objects {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
+  // max-width: 100%;
 }
 
 .title-container {
-  font-family: "Pacifico", monospace;
-  background-size: cover;  
-  margin: 0 auto;
-  max-width: 30vw;
-  max-height: 30vw;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 20px;
+  font-family: monospace;
   color: darkblue;
   background-color: rgb(250, 250, 200);
-  border: double 10px hotpink;
-  border-radius: 35px;
-  align-items: center;
+  align-content: center;
   align-self: center;
-  text-align: center;
-  justify-self: center;
-    // border-radius: 30px;
+  text-align: top;
+  justify-content: center;
+  // display: flex;
+  // border: solid 10px hotpink;
+  // border-radius: 35px;
+  // border-radius: 30px;
+  // background-size: cover;  
+  // margin: 0;
+  // max-width: 20vw;
+  // max-height: 10vh;
+  // margin-top: 2vh;
+  // margin-bottom: 40px;
+  // padding: 10px;
 }
 
 .login-register {
-  max-width: 50px;
-  max-height: 50px;
-  padding: 10px;
-  margin: 10px;
   display: flex;
-  flex: 1;
-  align-self: right;
+  max-width: 15%;
+  // max-height: 50px;
+  // padding: 10px;
+  margin: 5px;
+  // display: flex;
+  // flex: 1;
+  // align-self: bottom center;
 }
 
 .card-content {
   display: flex;
-  font-family: 'Pacifico';
+  font-family: -apple-system, "Helvetica Neue",Helvetica,;
   color: black;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-content: center;
   text-align: wrap;
-  font-size: 1rem;
+  font-size: .8rem;
   width: 18vw;
-  background-color: lightgrey;
-  padding: 30px;
-  margin: 30px;
-  border-radius: 20px;
-  border: 10px double white;
+  background-color: rgb(244, 244, 232);
+  margin: 3vw;
+  padding: 10px;
+  border-radius: 25px;
+  border: 10px ridge darkslateblue;
+  // padding: 30px;
+
     &:hover {
       color: white;
       background-color: hotpink;
@@ -161,7 +185,7 @@ nav {
         color: yellow;
       }
       img {
-        border: dotted 10px yellow;
+        // border: dotted 10px yellow;
       }
       p {
         color: white;
@@ -174,7 +198,7 @@ nav {
   flex-flow: row wrap;
   max-height: 20vh;
   min-height: 10vh;
-  min-width: 100%;
+  // min-width: 100%;
   color: white;
   font-family: 'Roboto', cursive;
   font-size: calc(3px + 1rem);
@@ -194,10 +218,13 @@ nav {
 }
 
 img {
-  height: 15rem;
-  width: 15rem;
-  border: double 10px white;
-  border-radius: 100px;
+  // height: 15rem;
+  width: 90%;
+  height: 20vh;
+  // height: 50%;
+  // display: flex;
+  border: 5px lightblue;
+  border-radius: 50px;
   align-self: center;
   justify-self: center;
   padding: 1vh;
@@ -205,16 +232,16 @@ img {
 
 button {
   font-family: "Roboto";
-  text-emphasis: bold;
-  text-decoration: none;
-	padding: 15px 15px;
-	border-radius: 30px;
+  // text-emphasis: bold;
+  // text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 25px;
 	color: #333;
   background: #fff;
-  margin-left: 20px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  box-shadow: 0 3px 40px 0 #7e17178a;
+  // margin-left: 20px;
+  // margin-bottom: 50px;
+  // margin-top: 30px;
+  // box-shadow: 0 3px 4px 0 #7e17178a;
   &:hover {
     color: yellow;
     background-color: black;
@@ -238,7 +265,7 @@ form {
 // =============================
 @media screen and (max-width: 600px) {
   .main {
-    background-color: lightblue;
+    // background-color: lightblue;
   }
 
 }

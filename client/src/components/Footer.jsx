@@ -4,11 +4,8 @@ export default function Footer() {
     
     return (
       <footer className="footer">
-
-        <div className='created-by'>
-          Created by Alex Beckerman  
-        </div>
-
+          created by Alex Beckerman
       </footer>
     )
+    
 }

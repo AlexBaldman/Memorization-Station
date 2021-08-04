@@ -3,7 +3,7 @@ import { verifyUser } from './services/auth';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import './App.scss';
 
 function App(props) {
@@ -20,35 +20,32 @@ function App(props) {
 
   return (
     <>
-
       <div className="App">
 
         <Header
           {...props}
-          currentUser={currentUser}
-          setCurrentUser={setCurrentUser}
+          currentUser= {currentUser}
+          setCurrentUser= {setCurrentUser}
         />
 
         <Nav
           {...props}
-          currentUser={currentUser}
-          setCurrentUser={setCurrentUser}
+          currentUser= {currentUser}
+          setCurrentUser= {setCurrentUser}
         />
 
         <Main 
           {...props}
-          currentUser={currentUser}
-          setCurrentUser={setCurrentUser}
+          currentUser= {currentUser}
+          setCurrentUser= {setCurrentUser}
         />
 
-        <Footer
+        {/* <Footer
           {...props}
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
-        />
-        
+        /> */}
       </div>
-
     </>
   )
 }
