@@ -1,0 +1,257 @@
+{
+  "entities": {
+    "Card": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Card",
+      "type": "object",
+      "description": "Represents a flashcard with Portuguese vocabulary and associated learning data.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the card."
+        },
+        "portugueseWord": {
+          "type": "string",
+          "description": "The Portuguese word on the flashcard."
+        },
+        "englishTranslation": {
+          "type": "string",
+          "description": "The English translation of the Portuguese word."
+        },
+        "pronunciation": {
+          "type": "string",
+          "description": "Pronunciation guide for the Portuguese word (optional)."
+        },
+        "mnemonicStory": {
+          "type": "string",
+          "description": "Mnemonic story associated with the word to aid memorization."
+        },
+        "deckId": {
+          "type": "string",
+          "description": "Reference to the Deck this card belongs to. (Relationship: Deck 1:N Card)"
+        },
+        "imagePrompt": {
+          "type": "string",
+          "description": "Prompt used to generate the image for this card."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the image associated with the card."
+        },
+        "repetitions": {
+          "type": "number",
+          "description": "Number of times the card has been reviewed.",
+          "format": "integer"
+        },
+        "easiness": {
+          "type": "number",
+          "description": "Easiness factor used in the spaced repetition algorithm."
+        },
+        "interval": {
+          "type": "number",
+          "description": "Interval (in days) until the next review.",
+          "format": "integer"
+        },
+        "nextReview": {
+          "type": "string",
+          "description": "Timestamp for the next scheduled review.",
+          "format": "date-time"
+        },
+        "lastReviewed": {
+          "type": "string",
+          "description": "Timestamp of the last time the card was reviewed.",
+          "format": "date-time"
+        },
+        "correctCount": {
+          "type": "number",
+          "description": "Number of times the card has been answered correctly.",
+          "format": "integer"
+        },
+        "streak": {
+          "type": "number",
+          "description": "Current streak of correct answers for the card.",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "portugueseWord",
+        "englishTranslation",
+        "mnemonicStory",
+        "deckId"
+      ]
+    },
+    "Deck": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Deck",
+      "type": "object",
+      "description": "Represents a collection of flashcards, categorized for learning.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the deck."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the deck."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the deck (optional)."
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of the deck (e.g., verbs, nouns, custom)."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "category"
+      ]
+    },
+    "Settings": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Settings",
+      "type": "object",
+      "description": "Represents user-specific application settings.",
+      "properties": {
+        "theme": {
+          "type": "string",
+          "description": "Selected theme for the application."
+        },
+        "stylePreset": {
+          "type": "string",
+          "description": "Default style preset for image generation prompts."
+        },
+        "showPronunciation": {
+          "type": "boolean",
+          "description": "Indicates whether to show pronunciation guides."
+        },
+        "imageProvider": {
+          "type": "string",
+          "description": "Selected image provider for generating images."
+        },
+        "providerSettings": {
+          "type": "string",
+          "description": "Provider-specific settings (JSON string)."
+        }
+      },
+      "required": [
+        "theme",
+        "stylePreset",
+        "showPronunciation",
+        "imageProvider"
+      ]
+    },
+    "Stats": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Stats",
+      "type": "object",
+      "description": "Represents global learning statistics for the user.",
+      "properties": {
+        "totalReviews": {
+          "type": "number",
+          "description": "Total number of cards reviewed.",
+          "format": "integer"
+        },
+        "correctCount": {
+          "type": "number",
+          "description": "Total number of correct answers.",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "totalReviews",
+        "correctCount"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}/decks/{deckId}",
+        "definition": {
+          "entityName": "Deck",
+          "schema": {
+            "$ref": "#/backend/entities/Deck"
+          },
+          "description": "Decks owned by a specific user. Uses path-based ownership. The 'ownerId' is implicitly {userId}.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The UID of the user who owns the deck."
+            },
+            {
+              "name": "deckId",
+              "description": "The unique ID of the deck."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/decks/{deckId}/cards/{cardId}",
+        "definition": {
+          "entityName": "Card",
+          "schema": {
+            "$ref": "#/backend/entities/Card"
+          },
+          "description": "Cards within a specific deck, owned by a user. Includes denormalized 'ownerId' (inherited from the parent Deck) for authorization independence.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The UID of the user who owns the deck and cards."
+            },
+            {
+              "name": "deckId",
+              "description": "The unique ID of the deck containing the cards."
+            },
+            {
+              "name": "cardId",
+              "description": "The unique ID of the card."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/settings",
+        "definition": {
+          "entityName": "Settings",
+          "schema": {
+            "$ref": "#/backend/entities/Settings"
+          },
+          "description": "User-specific application settings.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The UID of the user whose settings are stored."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/stats",
+        "definition": {
+          "entityName": "Stats",
+          "schema": {
+            "$ref": "#/backend/entities/Stats"
+          },
+          "description": "User-specific learning statistics.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The UID of the user whose statistics are stored."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore data structure is designed to ensure Authorization Independence, support necessary QAPs (Queries and Permissions), and align with the application's core features. This design uses denormalization to avoid hierarchical authorization dependencies (`get()` calls in security rules) and structural segregation to simplify security rules. User-owned data follows a hierarchical path structure. Collaborative data utilizes a Membership Map, and global roles are managed via dedicated collections.\n\nSpecifically, Authorization Independence is achieved by denormalizing ownership for Decks and Cards. Each Card includes the `ownerId` (inherited from the parent Deck). This eliminates the need to query the parent Deck document to determine ownership when securing Card access.\n\nSegregation of data based on access needs is reflected in the structure. User settings and statistics are stored in private user-specific collections (`/users/{userId}/settings` and `/users/{userId}/stats`), while shared or collaborative features (if any) would reside in separate top-level collections with Membership Map-based security.\n\nQAPs are supported by the structure, ensuring that listing operations can be securely performed. Path-based ownership (`/users/{userId}/decks/{deckId}/cards/{cardId}`) enables efficient and secure queries to retrieve all cards belonging to a specific deck owned by a user, without the risk of exposing unauthorized data. If collaborative decks were introduced, a Membership Map (`members: {uid1: 'role', uid2: 'role'}`) would be included in the Deck document and denormalized into the Card documents to support secure listing of collaborative data."
+  }
+}

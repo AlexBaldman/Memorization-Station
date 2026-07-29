@@ -1,0 +1,124 @@
+rules_version = '2';
+
+/**
+ * Portuguese Flashcards Application Security Rules
+ *
+ * CORE PHILOSOPHY:
+ * This ruleset implements a strict User-Ownership model where all data is hierarchically nested 
+ * under the authenticated user's ID (/users/{userId}). This ensures that users can only 
+ * access their own decks, cards, settings, and statistics.
+ *
+ * DATA STRUCTURE:
+ * - /users/{userId}/settings: Singleton-style document for user preferences.
+ * - /users/{userId}/stats: Singleton-style document for global learning metrics.
+ * - /users/{userId}/decks/{deckId}: Collection of flashcard decks owned by the user.
+ * - /users/{userId}/decks/{deckId}/cards/{cardId}: Subcollection of cards within a specific deck.
+ *
+ * KEY SECURITY DECISIONS:
+ * - Authorization Independence: The structure uses path-based ownership. While the reasoning 
+ *   suggests denormalizing ownerId onto documents, these rules prioritize the secure path 
+ *   segment {userId} as the primary source of truth for authorization.
+ * - Relational Integrity: On creation of cards, the rules enforce that the internal 
+ *   'deckId' matches the parent deck's ID in the path to ensure data consistency.
+ * - State Robustness: Update and delete operations strictly verify the existence of 
+ *   the document and the requester's ownership before permitting the change.
+ */
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helper Functions ---
+
+    /**
+     * @description Checks if a user is authenticated with a valid UID.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * @description Checks if the authenticated user's UID matches the provided userId.
+     * @param userId The UID to compare against the current session.
+     */
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    /**
+     * @description Combines ownership check with document existence check for writes.
+     * @param userId The UID of the document owner.
+     */
+    function isExistingOwner(userId) {
+      return isOwner(userId) && resource != null;
+    }
+
+    // --- Collection Rules ---
+
+    /**
+     * @description Rules for User Settings documents.
+     * @path /users/{userId}/settings
+     * @allow (get) if user matches path UID.
+     * @deny (list) if user UID does not match path.
+     * @principle Restricts application configuration to the individual user.
+     */
+    match /users/{userId}/settings {
+      allow get: if isOwner(userId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update: if isExistingOwner(userId);
+      allow delete: if isExistingOwner(userId);
+    }
+
+    /**
+     * @description Rules for User Statistics.
+     * @path /users/{userId}/stats
+     * @allow (update) if owner is incrementing counts.
+     * @deny (create) if auth UID is different from the target path.
+     * @principle Enforces strict ownership of learning progress data.
+     */
+    match /users/{userId}/stats {
+      allow get: if isOwner(userId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update: if isExistingOwner(userId);
+      allow delete: if isExistingOwner(userId);
+    }
+
+    /**
+     * @description Rules for Decks owned by a user.
+     * @path /users/{userId}/decks/{deckId}
+     * @allow (create) if the userId matches auth and deck data ID matches path.
+     * @deny (update) if the user attempts to change the deck's internal ID.
+     * @principle Ensures path-document consistency and owner-only write access.
+     */
+    match /users/{userId}/decks/{deckId} {
+      allow get: if isOwner(userId);
+      allow list: if isOwner(userId);
+      allow create: if isOwner(userId) && (request.resource.data.id == deckId);
+      allow update: if isExistingOwner(userId) && (request.resource.data.id == resource.data.id);
+      allow delete: if isExistingOwner(userId);
+
+      /**
+       * @description Rules for Cards within a specific deck.
+       * @path /users/{userId}/decks/{deckId}/cards/{cardId}
+       * @allow (list) if the user is the owner of the parent deck.
+       * @deny (create) if the card's deckId field does not match the current path.
+       * @principle Validates relational integrity between cards and their parent decks.
+       */
+      match /cards/{cardId} {
+        allow get: if isOwner(userId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) && (request.resource.data.deckId == deckId);
+        allow update: if isExistingOwner(userId) && (request.resource.data.deckId == resource.data.deckId);
+        allow delete: if isExistingOwner(userId);
+      }
+    }
+
+    /**
+     * @description Global catch-all to deny any access not explicitly granted above.
+     */
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}

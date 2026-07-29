@@ -1,0 +1,610 @@
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006925
+      nanos: 714071000
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    completed_at {
+      seconds: 1775006925
+      nanos: 714071000
+    }
+  }
+  user_input {
+    user_response: "Here is the full initial file tree for the application:\n/.agents/skills/developing-genkit-js/SKILL.md\n/.agents/skills/developing-genkit-js/references/best-practices.md\n/.agents/skills/developing-genkit-js/references/common-errors.md\n/.agents/skills/developing-genkit-js/references/docs-and-cli.md\n/.agents/skills/developing-genkit-js/references/examples.md\n/.agents/skills/developing-genkit-js/references/setup.md\n/.env.example\n/.gitignore\n/.modified\n/README.md\n/apphosting.yaml\n/components.json\n/docs/architecture.md\n/docs/blueprint.md\n/docs/google-translate-mining.md\n/docs/idea-bank.md\n/docs/import-export-guide.md\n/docs/ios-migration.md\n/docs/roadmap.md\n/firebase-blueprint.json\n/firestore.rules\n/metadata.json\n/next-env.d.ts\n/next.config.ts\n/package-lock.json\n/package.json\n/postcss.config.mjs\n/public/manifest.webmanifest\n/skills-lock.json\n/src/ai/dev.ts\n/src/ai/flows/card-suggestions.ts\n/src/ai/flows/generate-image-prompt.ts\n/src/ai/flows/generate-image.ts\n/src/ai/flows/mnemonic-remix.ts\n/src/ai/genkit.ts\n/src/app/_actions/generation.ts\n/src/app/create/page.tsx\n/src/app/deck/[deckId]/page.tsx\n/src/app/edit/[cardId]/page.tsx\n/src/app/favicon.ico\n/src/app/globals.css\n/src/app/layout.tsx\n/src/app/page.tsx\n/src/app/practice/page.tsx\n/src/app/providers/page.tsx\n/src/app/settings/page.tsx\n/src/components/FirebaseErrorListener.tsx\n/src/components/features/card-creator.tsx\n/src/components/features/card-editor.tsx\n/src/components/features/deck-card.tsx\n/src/components/features/deck-drawer.tsx\n/src/components/features/deck-manager.tsx\n/src/components/features/deck-vault.tsx\n/src/components/features/neural-sketch.tsx\n/src/components/features/new-deck-dialog.tsx\n/src/components/features/practice-session.tsx\n/src/components/features/settings-form.tsx\n/src/components/main-nav.tsx\n/src/components/page-header.tsx\n/src/components/site-header.tsx\n/src/components/theme-provider.tsx\n/src/components/theme-toggle.tsx\n/src/components/ui/accordion.tsx\n/src/components/ui/alert-dialog.tsx\n/src/components/ui/alert.tsx\n/src/components/ui/avatar.tsx\n/src/components/ui/badge.tsx\n/src/components/ui/button.tsx\n/src/components/ui/calendar.tsx\n/src/components/ui/card.tsx\n/src/components/ui/carousel.tsx\n/src/components/ui/chart.tsx\n/src/components/ui/checkbox.tsx\n/src/components/ui/collapsible.tsx\n/src/components/ui/dialog.tsx\n/src/components/ui/dropdown-menu.tsx\n/src/components/ui/form.tsx\n/src/components/ui/input.tsx\n/src/components/ui/label.tsx\n/src/components/ui/menubar.tsx\n/src/components/ui/popover.tsx\n/src/components/ui/progress.tsx\n/src/components/ui/radio-group.tsx\n/src/components/ui/scroll-area.tsx\n/src/components/ui/select.tsx\n/src/components/ui/separator.tsx\n/src/components/ui/sheet.tsx\n/src/components/ui/skeleton.tsx\n/src/components/ui/slider.tsx\n/src/components/ui/switch.tsx\n/src/components/ui/table.tsx\n/src/components/ui/tabs.tsx\n/src/components/ui/textarea.tsx\n/src/components/ui/toast.tsx\n/src/components/ui/toaster.tsx\n/src/components/ui/tooltip.tsx\n/src/firebase/client-provider.tsx\n/src/firebase/config.ts\n/src/firebase/error-emitter.ts\n/src/firebase/errors.ts\n/src/firebase/firestore/use-collection.tsx\n/src/firebase/firestore/use-doc.tsx\n/src/firebase/index.ts\n/src/firebase/non-blocking-login.tsx\n/src/firebase/non-blocking-updates.tsx\n/src/firebase/provider.tsx\n/src/hooks/use-toast.ts\n/src/lib/data/image-cache.ts\n/src/lib/data/initial-content.ts\n/src/lib/domain/sm2.ts\n/src/lib/domain/types.ts\n/src/lib/image-providers/gemini-server.ts\n/src/lib/image-providers/gemini.ts\n/src/lib/image-providers/huggingface.ts\n/src/lib/image-providers/index.ts\n/src/lib/image-providers/openai.ts\n/src/lib/image-providers/pollinations.ts\n/src/lib/image-providers/qwen.ts\n/src/lib/image-providers/scavenger.ts\n/src/lib/image-providers/types.ts\n/src/lib/placeholder-images.json\n/src/lib/placeholder-images.ts\n/src/lib/store/app-state-provider.tsx\n/src/lib/store/useDeckStore.ts\n/src/lib/store/useSettingsStore.ts\n/src/lib/store/useStatsStore.ts\n/src/lib/utils.ts\n/tailwind.config.ts\n/tsconfig.json\n\nThe following dependencies are installed:\n@genkit-ai/google-genai: ^1.20.0\n@genkit-ai/next: ^1.20.0\n@hookform/resolvers: ^4.1.3\n@radix-ui/react-accordion: ^1.2.3\n@radix-ui/react-alert-dialog: ^1.1.6\n@radix-ui/react-avatar: ^1.1.3\n@radix-ui/react-checkbox: ^1.1.4\n@radix-ui/react-collapsible: ^1.1.11\n@radix-ui/react-dialog: ^1.1.6\n@radix-ui/react-dropdown-menu: ^2.1.6\n@radix-ui/react-label: ^2.1.2\n@radix-ui/react-menubar: ^1.1.6\n@radix-ui/react-popover: ^1.1.6\n@radix-ui/react-progress: ^1.1.2\n@radix-ui/react-radio-group: ^1.2.3\n@radix-ui/react-scroll-area: ^1.2.3\n@radix-ui/react-select: ^2.1.6\n@radix-ui/react-separator: ^1.1.2\n@radix-ui/react-slider: ^1.2.3\n@radix-ui/react-slot: ^1.2.3\n@radix-ui/react-switch: ^1.1.3\n@radix-ui/react-tabs: ^1.1.3\n@radix-ui/react-toast: ^1.2.6\n@radix-ui/react-tooltip: ^1.1.8\nclass-variance-authority: ^0.7.1\nclsx: ^2.1.1\ndate-fns: ^3.6.0\ndotenv: ^16.5.0\nembla-carousel-react: ^8.6.0\nfirebase: ^11.9.1\ngenkit: ^1.20.0\nlucide-react: ^0.475.0\nnext: 15.5.9\npatch-package: ^8.0.0\nreact: ^19.2.1\nreact-day-picker: ^9.11.3\nreact-dom: ^19.2.1\nreact-hook-form: ^7.54.2\nrecharts: ^2.15.1\ntailwind-merge: ^3.0.1\ntailwindcss-animate: ^1.0.7\nzod: ^3.24.2\nzustand: ^4.5.2\n\nThe following devDependencies are installed:\n@types/node: ^20\n@types/react: ^19.2.1\n@types/react-dom: ^19.2.1\ngenkit-cli: ^1.20.0\npostcss: ^8\ntailwindcss: ^3.4.1\ntypescript: ^5\n\nKey file contents:\n\n--- /.env.example ---\n```\nGOOGLE_GENAI_API_KEY=\n```\n\n--- /components.json ---\n```json\n{\n  \"$schema\": \"https://ui.shadcn.com/schema.json\",\n  \"style\": \"default\",\n  \"rsc\": true,\n  \"tsx\": true,\n  \"tailwind\": {\n    \"config\": \"tailwind.config.ts\",\n    \"css\": \"src/app/globals.css\",\n    \"baseColor\": \"neutral\",\n    \"cssVariables\": true,\n    \"prefix\": \"\"\n  },\n  \"aliases\": {\n    \"components\": \"@/components\",\n    \"utils\": \"@/lib/utils\",\n    \"ui\": \"@/components/ui\",\n    \"lib\": \"@/lib\",\n    \"hooks\": \"@/hooks\"\n  },\n  \"iconLibrary\": \"lucide\"\n}\n```\n\n--- /metadata.json ---\n```json\n{\n  \"name\": \"studio-8296505957\",\n  \"description\": \"App imported from Firebase Studio\"\n}\n\n```\n\n--- /next.config.ts ---\n```typescript\nimport type {NextConfig} from \'next\';\n\nconst nextConfig: NextConfig = {\n  /* config options here */\n  typescript: {\n    ignoreBuildErrors: true,\n  },\n  eslint: {\n    ignoreDuringBuilds: true,\n  },\n  images: {\n    unoptimized: true,\n    remotePatterns: [\n      {\n        protocol: \'https\',\n        hostname: \'placehold.co\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'images.unsplash.com\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'picsum.photos\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'image.pollinations.ai\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n    ],\n  },\n};\n\nexport default nextConfig;\n\n```\n\n--- /src/app/create/page.tsx ---\n```typescript\nimport { CardCreator } from \"@/components/features/card-creator\";\nimport { PageHeader } from \"@/components/page-header\";\n\nexport default function CreateCardPage() {\n    return (\n        <div>\n            <PageHeader\n                title=\"Card Creator\"\n                description=\"Craft a new flashcard with a memorable story. The more absurd, the better!\"\n            />\n            <CardCreator />\n        </div>\n    )\n}\n\n```\n\n--- /src/app/deck/[deckId]/page.tsx ---\n```typescript\nimport { DeckManager } from \"@/components/features/deck-manager\";\nimport { Suspense } from \"react\";\n\nexport default async function DeckManagerPage({ params }: { params: Promise<{ deckId: string }> }) {\n    const { deckId } = await params;\n\n    return (\n        <Suspense fallback={\n            <div className=\"flex items-center justify-center h-96\">\n                <div className=\"animate-pulse font-headline text-muted-foreground\">Loading Vault...</div>\n            </div>\n        }>\n            <DeckManager deckId={deckId} />\n        </Suspense>\n    )\n}\n\n```\n\n--- /src/app/edit/[cardId]/page.tsx ---\n```typescript\nimport { CardEditor } from \'@/components/features/card-editor\';\nimport { Suspense } from \'react\';\n\nexport default async function EditCardPage({ params }: { params: Promise<{ cardId: string }> }) {\n    const { cardId } = await params;\n    \n    return (\n        <Suspense fallback={\n            <div className=\"flex items-center justify-center h-96\">\n                <div className=\"animate-pulse font-headline text-muted-foreground\">Initializing Brain Scan...</div>\n            </div>\n        }>\n            <CardEditor cardId={cardId} />\n        </Suspense>\n    )\n}\n\n```\n\n--- /src/app/globals.css ---\n```css\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: 45 100% 95%; /* Candy Yellow */\n    --background-to: 14 100% 80%; /* Juicy Peach */\n    --foreground: 240 10% 4%;\n    --card: 0 0% 100%;\n    --card-foreground: 240 10% 4%;\n    --popover: 45 100% 95%;\n    --popover-foreground: 240 10% 4%;\n    --primary: 220 100% 50%; /* Neural Blue */\n    --primary-foreground: 0 0% 100%;\n    --secondary: 14 100% 75%; /* Neon Coral */\n    --secondary-foreground: 240 10% 4%;\n    --muted: 220 15% 94%;\n    --muted-foreground: 220 10% 40%;\n    --accent: 330 100% 65%; /* Bubblegum Pink */\n    --accent-foreground: 0 0% 100%;\n    --destructive: 0 84% 60%;\n    --destructive-foreground: 0 0% 98%;\n    --success: 160 100% 45%; /* High-Vis Mint */\n    --success-foreground: 0 0% 100%;\n    --border: 0 0% 0%;\n    --input: 330 100% 98%;\n    --ring: 220 100% 50%;\n    --radius: 1.5rem;\n    --shadow-color: #000;\n    --text-shadow-color: hsl(var(--primary));\n    --header-bg: 14 100% 75%; /* Fluorescent Coral */\n    --menu-text: 220 100% 50%;\n\n    /* TCG Styles */\n    --card-border-width: 8px;\n    --card-shine: rgba(255, 255, 255, 0.2);\n  }\n\n  .dark {\n    --background: 220 40% 25%; /* Medium Sunset Blue */\n    --background-to: 230 50% 12%; /* Deep Midnight */\n    --foreground: 180 100% 95%;\n    --card: 240 40% 10%; /* Deep Navy components */\n    --card-foreground: 180 100% 95%;\n    --popover: 240 40% 15%;\n    --popover-foreground: 180 100% 95%;\n    --primary: 160 100% 70%; /* Electric Mint */\n    --primary-foreground: 240 40% 5%;\n    --secondary: 0 100% 60%; /* Racing Red */\n    --secondary-foreground: 0 0% 100%;\n    --muted: 220 30% 20%;\n    --muted-foreground: 180 40% 70%;\n    --accent: 50 100% 50%; /* Neon Tennis Yellow */\n    --accent-foreground: 0 0% 0%;\n    --destructive: 0 80% 60%;\n    --destructive-foreground: 0 0% 98%;\n    --success: 160 100% 75%;\n    --success-foreground: 240 40% 5%;\n    --border: 0 0% 0%;\n    --input: 220 30% 15%;\n    --ring: 50 100% 50%;\n    --shadow-color: #000;\n    --text-shadow-color: #000;\n    --header-bg: 220 40% 25%;\n    --menu-text: 50 100% 50%;\n  }\n}\n\n@layer base {\n  * {\n    @apply border-border;\n    -webkit-tap-highlight-color: transparent;\n  }\n  body {\n    @apply text-foreground transition-colors duration-500 min-h-screen selection:bg-accent selection:text-white overflow-x-hidden;\n    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);\n    background-attachment: fixed;\n    touch-action: manipulation;\n    overscroll-behavior-y: none;\n  }\n}\n\n@layer components {\n    .site-header-custom {\n      background-color: hsla(var(--header-bg) / 0.85);\n    }\n\n    .text-shadow {\n        text-shadow: 4px 4px 0 var(--text-shadow-color);\n    }\n    .ink-shadow-lg {\n        box-shadow: 12px 12px 0px var(--shadow-color);\n    }\n    .ink-shadow-sm {\n        box-shadow: 4px 4px 0px var(--shadow-color);\n    }\n    .backface-hidden {\n      backface-visibility: hidden;\n      -webkit-backface-visibility: hidden;\n    }\n    .perspective-1000 {\n      perspective: 1000px;\n    }\n    .transform-style-3d {\n      transform-style: preserve-3d;\n    }\n    .rotate-y-180 {\n      transform: rotateY(180deg);\n    }\n    \n    .safe-area-padding {\n      padding-top: env(safe-area-inset-top);\n    }\n\n    .pb-safe {\n      padding-bottom: calc(1rem + env(safe-area-inset-bottom));\n    }\n\n    .bubble-text {\n      font-family: var(--font-bubble);\n      @apply uppercase tracking-tighter px-6 py-4;\n      -webkit-text-stroke: 2px black;\n      -webkit-text-fill-color: hsl(var(--primary));\n      text-shadow: \n        1px 1px 0 #000,\n        2px 2px 0 #000,\n        3px 3px 0 #000,\n        4px 4px 0 hsl(var(--accent));\n      display: inline-block;\n      line-height: 1.4;\n      overflow: visible;\n    }\n\n    .hover-lift {\n      @apply transition-transform duration-300 hover:-translate-y-1 active:scale-95 active:translate-y-0;\n    }\n    .hover-pop {\n      @apply transition-all duration-300 hover:scale-105 active:scale-95;\n    }\n    .menu-gradient {\n      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);\n    }\n}\n\n@layer utilities {\n    .blueprint-bg {\n        background-image: \n            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),\n            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);\n        background-size: 32px 32px;\n    }\n    .dark .blueprint-bg {\n        background-image: \n            linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),\n            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);\n    }\n    .animate-float {\n      animation: float 6s ease-in-out infinite;\n    }\n    @keyframes float {\n      0%, 100% { transform: translateY(0); }\n      50% { transform: translateY(-20px); }\n    }\n}\n\n```\n\n--- /src/app/layout.tsx ---\n```typescript\nimport type { Metadata, Viewport } from \'next\';\nimport { Source_Code_Pro, Press_Start_2P, Lora, Permanent_Marker, Luckiest_Guy } from \'next/font/google\';\nimport \'./globals.css\';\nimport { cn } from \'@/lib/utils\';\nimport { Toaster } from \'@/components/ui/toaster\';\nimport { SiteHeader } from \'@/components/site-header\';\nimport { AppStateProvider } from \'@/lib/store/app-state-provider\';\nimport { ThemeProvider } from \'@/components/theme-provider\';\n\nconst fontCode = Source_Code_Pro({\n  subsets: [\'latin\'],\n  variable: \'--font-code\',\n});\n\nconst fontHeadline = Press_Start_2P({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-headline\',\n});\n\nconst fontSerif = Lora({\n  subsets: [\'latin\'],\n  variable: \'--font-serif\',\n  style: [\'normal\', \'italic\'],\n});\n\nconst fontHandwritten = Permanent_Marker({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-handwritten\',\n});\n\nconst fontBubble = Luckiest_Guy({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-bubble\',\n});\n\nexport const viewport: Viewport = {\n  themeColor: \'#FF7F50\', // Light Coral base\n  width: \'device-width\',\n  initialScale: 1,\n  maximumScale: 1,\n  userScalable: false,\n  viewportFit: \'cover\',\n};\n\nexport const metadata: Metadata = {\n  title: \'Memorization Station\',\n  description: \'A mnemonic-first Portuguese flashcard app.\',\n  appleWebApp: {\n    capable: true,\n    statusBarStyle: \'black-translucent\',\n    title: \'MemStation\',\n  },\n  manifest: \'/manifest.webmanifest\',\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\" suppressHydrationWarning>\n      <head>\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossOrigin=\"\" />\n        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\" />\n        <link rel=\"apple-touch-icon\" href=\"/icon-192.png\" />\n      </head>\n      <body\n        className={cn(\n          \'font-code antialiased select-none\',\n          fontCode.variable,\n          fontHeadline.variable,\n          fontSerif.variable,\n          fontHandwritten.variable,\n          fontBubble.variable\n        )}\n      >\n        <AppStateProvider>\n          <ThemeProvider>\n            <div className=\"relative flex min-h-screen flex-col bg-background safe-area-padding\">\n              <SiteHeader />\n              <main className=\"flex-1 p-4 md:p-8 pb-safe\">{children}</main>\n              <Toaster />\n            </div>\n          </ThemeProvider>\n        </AppStateProvider>\n      </body>\n    </html>\n  );\n}\n\n```\n\n--- /src/app/page.tsx ---\n```typescript\nimport { DeckDrawer } from \'@/components/features/deck-drawer\';\nimport { Button } from \'@/components/ui/button\';\nimport { Sparkles, Brain, Zap, Play, Info, BookOpen, Star, LayoutGrid, PlusCircle } from \'lucide-react\';\nimport Link from \'next/link\';\nimport { cn } from \'@/lib/utils\';\n\nexport default function Home() {\n  return (\n    <div className=\"flex flex-col gap-24 pb-32\">\n      {/* Hero / Start Screen Section */}\n      <section className=\"relative min-h-[85vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden rounded-[4rem] border-8 border-black ink-shadow-lg bg-primary/5 blueprint-bg mx-auto w-full max-w-7xl mt-4 animate-in fade-in zoom-in duration-1000\">\n        <div className=\"absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/70 pointer-events-none\" />\n        \n        {/* Animated Background Elements */}\n        <div className=\"absolute top-10 left-10 animate-float opacity-20 hidden md:block\">\n            <Star className=\"h-24 w-24 text-yellow-400 fill-yellow-400 drop-shadow-lg\" />\n        </div>\n        <div className=\"absolute bottom-10 right-10 animate-float opacity-20 hidden md:block\" style={{ animationDelay: \'3s\' }}>\n            <Zap className=\"h-32 w-32 text-accent fill-accent drop-shadow-lg\" />\n        </div>\n\n        <div className=\"relative z-10 flex flex-col items-center justify-center space-y-16 w-full max-w-5xl mx-auto py-12\">\n          <div className=\"flex flex-col items-center space-y-8 w-full px-2\">\n            <div className=\"inline-flex items-center gap-4 bg-black text-white px-10 py-4 rounded-full font-headline text-[11px] animate-pulse border-4 border-accent shadow-xl\">\n                <Zap className=\"h-5 w-5 text-[#d4ff00] fill-[#d4ff00]\" />\n                NEURAL LINK ACTIVE\n            </div>\n            \n            <div className=\"relative group w-full flex justify-center py-6 px-10 overflow-visible\">\n                <h1 className=\"text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.2] uppercase text-center w-full max-w-full tracking-tighter transition-all duration-500 group-hover:scale-105\">\n                    <span className=\"inline-block whitespace-nowrap text-shadow drop-shadow-[6px_6px_0_black] md:drop-shadow-[10px_10px_0_black] text-accent dark:text-primary\">\n                        MEMORIZATION\n                    </span>\n                    <br className=\"hidden sm:block\" /> \n                    <span className=\"inline-block whitespace-nowrap text-shadow drop-shadow-[6px_6px_0_black] md:drop-shadow-[10px_10px_0_black] text-accent dark:text-primary\">\n                        STATION\n                    </span>\n                </h1>\n            </div>\n\n            <p className=\"text-xl md:text-4xl font-serif italic font-black text-muted-foreground mt-6 max-w-3xl text-center px-6 leading-relaxed animate-in slide-in-from-bottom-4 delay-500 duration-1000 fill-mode-both\">\n                \"The most absurd way to conversational mastery.\"\n            </p>\n          </div>\n\n          <div className=\"flex flex-col items-center justify-center gap-10 w-full px-4 max-w-2xl mx-auto\">\n            <Button asChild size=\"lg\" className=\"h-28 sm:h-32 w-full font-headline text-3xl sm:text-4xl bg-accent text-white border-8 border-black ink-shadow-lg hover:scale-105 active:scale-95 transition-all group rounded-[2.5rem] relative overflow-hidden shadow-[12px_12px_0px_black]\">\n                <Link href=\"#drawer\">\n                    <Play className=\"mr-8 h-12 w-12 fill-current group-hover:rotate-12 transition-transform\" />\n                    PRESS START\n                </Link>\n            </Button>\n            \n            <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-8 w-full\">\n              <Button asChild size=\"lg\" variant=\"success\" className=\"h-24 w-full font-headline text-xs border-6 border-black ink-shadow-sm hover:scale-105 hover:bg-accent hover:text-white active:bg-primary transition-all rounded-[1.5rem] group shadow-[6px_6px_0px_black]\">\n                  <Link href=\"#drawer\" className=\"flex items-center justify-center\">\n                      <LayoutGrid className=\"mr-4 h-6 w-6 group-hover:rotate-12 transition-transform\" />\n                      DECK DRAWER\n                  </Link>\n              </Button>\n              <Button asChild size=\"lg\" variant=\"success\" className=\"h-24 w-full font-headline text-xs border-6 border-black ink-shadow-sm hover:scale-105 hover:bg-accent hover:text-white active:bg-primary transition-all rounded-[1.5rem] group shadow-[6px_6px_0px_black]\">\n                  <Link href=\"/create\" className=\"flex items-center justify-center\">\n                      <PlusCircle className=\"mr-4 h-6 w-6 group-hover:scale-125 transition-transform\" />\n                      CREATE CARDS\n                  </Link>\n              </Button>\n            </div>\n          </div>\n        </div>\n      </section>\n\n      {/* How to Play Section */}\n      <section className=\"max-w-6xl mx-auto w-full px-6\">\n        <div className=\"grid grid-cols-1 md:grid-cols-3 gap-12\">\n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-primary h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center -rotate-6 group-hover:rotate-0 transition-transform\">\n                    <Brain className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">1. Discover</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Use <strong>Magic Assist</strong> to build vivid, absurd stories that bridge English to Portuguese effortlessly.\n                </p>\n            </div>\n            \n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-accent h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center rotate-3 group-hover:rotate-0 transition-transform\">\n                    <Zap className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">2. Visualize</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Summon <strong>AI Visions</strong> to cement the mnemonic into your visual cortex forever.\n                </p>\n            </div>\n\n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-success h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center -rotate-2 group-hover:rotate-0 transition-transform\">\n                    <Star className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">3. Master</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Engage in <strong>Neural Sync Sessions</strong>. Spaced-repetition ensures you never forget a single card.\n                </p>\n            </div>\n        </div>\n      </section>\n\n      {/* Main App Entry (The Drawer) */}\n      <section id=\"drawer\" className=\"scroll-mt-32 pt-12\">\n        <div className=\"flex items-center gap-6 mb-16 px-6 max-w-7xl mx-auto\">\n            <div className=\"h-2 bg-black flex-grow rounded-full opacity-20\" />\n            <div className=\"bg-black text-white font-headline text-[11px] px-8 py-3 rounded-full uppercase tracking-[0.2em] shadow-xl border-4 border-accent\">\n                Accessing Deck Drawer\n            </div>\n            <div className=\"h-2 bg-black flex-grow rounded-full opacity-20\" />\n        </div>\n        <DeckDrawer />\n      </section>\n\n      {/* Footer Info */}\n      <footer className=\"max-w-4xl mx-auto px-6 text-center space-y-10 pb-20 opacity-80\">\n          <div className=\"p-10 border-8 border-black border-dashed rounded-[3rem] bg-muted/20 backdrop-blur-md relative overflow-hidden transition-all duration-500 hover:bg-muted/30\">\n            <Info className=\"h-12 w-12 mx-auto mb-6 text-primary\" />\n            <h4 className=\"font-headline text-sm uppercase mb-6 tracking-widest\">Linguistic Protocol</h4>\n            <p className=\"text-2xl font-serif italic text-muted-foreground leading-relaxed font-black\">\n                \"We don\'t study languages here. We inhabit them. Use logical building blocks and Magnetic Memory to build permanence.\"\n            </p>\n          </div>\n          <p className=\"font-headline text-[9px] opacity-40 uppercase tracking-[0.5em] animate-pulse\">\n              V17.0 // Neural Engine Online // Optimized for High-Speed Memory\n          </p>\n      </footer>\n    </div>\n  );\n}\n\n```\n\n--- /src/app/practice/page.tsx ---\n```typescript\nimport { PracticeSession } from \"@/components/features/practice-session\";\nimport { PageHeader } from \"@/components/page-header\";\nimport { Suspense } from \"react\";\n\nexport default function PracticePage({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {\n    const deckId = typeof searchParams.deckId === \'string\' ? searchParams.deckId : undefined;\n\n    return (\n        <div>\n            <PageHeader\n                title=\"Practice Session\"\n                description=\"Time to train your brain! Review your due cards to build those neural pathways.\"\n            />\n            <Suspense fallback={<div>Loading practice session...</div>}>\n                <PracticeSession deckId={deckId} />\n            </Suspense>\n        </div>\n    )\n}\n\n```\n\n--- /src/app/providers/page.tsx ---\n```typescript\nimport { PageHeader } from \'@/components/page-header\';\nimport { Card, CardContent, CardHeader, CardTitle, CardDescription } from \'@/components/ui/card\';\nimport { Button } from \'@/components/ui/button\';\nimport { ExternalLink, Key, Zap, ShieldCheck, Cpu, Globe, Infinity } from \'lucide-react\';\nimport Link from \'next/link\';\n\nexport default function ProvidersGuidePage() {\n    return (\n        <div className=\"max-w-5xl mx-auto pb-20 blueprint-bg p-4 md:p-8\">\n            <div className=\"mb-12\">\n                <Link href=\"/settings\" className=\"text-xs font-headline text-primary hover:underline mb-4 block\">\342\206\220 BACK TO SYSTEM CONFIG</Link>\n                <PageHeader \n                    title=\"Neural Vision Guide\" \n                    description=\"Expand your Station\'s visual capabilities. Integrate free and premium AI engines to manifest your mnemonics.\"\n                />\n            </div>\n\n            <div className=\"grid grid-cols-1 gap-10\">\n                {/* Free Provider: Pollinations */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-primary/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-primary uppercase\">Pollinations AI</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">The Free Standard</CardDescription>\n                        </div>\n                        <div className=\"bg-success text-white px-4 py-2 rounded-full font-headline text-[8px] border-2 border-black\">NO KEY REQUIRED</div>\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-6\">\n                        <p className=\"text-xl font-serif italic leading-relaxed\">\n                            A high-speed, community-driven visual engine. It is the default provider for the Station because it requires zero configuration.\n                        </p>\n                        <div className=\"flex items-center gap-4 bg-muted/20 p-6 rounded-2xl border-4 border-black border-dashed\">\n                            <Infinity className=\"h-8 w-8 text-primary shrink-0\" />\n                            <p className=\"text-sm\">Unlimited generation for archival use. Perfect for initial deck population.</p>\n                        </div>\n                        <Button asChild variant=\"outline\" className=\"border-2 border-black\">\n                            <a href=\"https://pollinations.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                Visit Site <ExternalLink className=\"ml-2 h-4 w-4\" />\n                            </a>\n                        </Button>\n                    </CardContent>\n                </Card>\n\n                {/* Premium Provider: Hugging Face */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-accent/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-accent uppercase\">Hugging Face</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">Pro-Grade Models (Flux, SDXL)</CardDescription>\n                        </div>\n                        <Key className=\"h-8 w-8 text-accent\" />\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-8\">\n                        <div className=\"space-y-4\">\n                            <h4 className=\"font-headline text-xs uppercase text-primary\">Setup Instructions:</h4>\n                            <ol className=\"list-decimal list-inside space-y-4 font-serif text-lg pl-2\">\n                                <li>Create a free account at <a href=\"https://huggingface.co/join\" target=\"_blank\" className=\"text-accent underline font-bold\">HuggingFace.co</a>.</li>\n                                <li>Navigate to your <strong>Settings -> Access Tokens</strong>.</li>\n                                <li>Generate a new <strong>Read</strong> token.</li>\n                                <li>Paste the token into the <strong>Provider Key</strong> field in the Station Settings.</li>\n                            </ol>\n                        </div>\n                        \n                        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n                            <div className=\"p-6 bg-muted/10 border-2 border-black rounded-2xl space-y-2\">\n                                <Cpu className=\"h-6 w-6 text-primary\" />\n                                <h5 className=\"font-headline text-[10px] uppercase\">Flux.1 [dev]</h5>\n                                <p className=\"text-xs italic\">The current state-of-the-art for prompt adherence and realistic detail.</p>\n                            </div>\n                            <div className=\"p-6 bg-muted/10 border-2 border-black rounded-2xl space-y-2\">\n                                <Zap className=\"h-6 w-6 text-orange-500\" />\n                                <h5 className=\"font-headline text-[10px] uppercase\">SDXL Turbo</h5>\n                                <p className=\"text-xs italic\">Ultra-fast generation for rapid-fire card creation.</p>\n                            </div>\n                        </div>\n                    </CardContent>\n                </Card>\n\n                {/* Premium Provider: OpenAI */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-primary/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-primary uppercase\">OpenAI (DALL-E 3)</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">Highest Visual Consistency</CardDescription>\n                        </div>\n                        <Globe className=\"h-8 w-8 text-primary\" />\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-6\">\n                        <p className=\"text-xl font-serif italic leading-relaxed\">\n                            Requires an active OpenAI API key with credit. Known for its incredible ability to follow complex mnemonic instructions.\n                        </p>\n                        <div className=\"bg-yellow-400/20 p-6 rounded-2xl border-4 border-black border-dashed flex items-start gap-4\">\n                            <ShieldCheck className=\"h-6 w-6 text-yellow-600 shrink-0\" />\n                            <div className=\"space-y-1\">\n                                <p className=\"text-xs font-bold\">Privacy Note:</p>\n                                <p className=\"text-xs italic\">The Station does not store your keys on any server. They remain strictly in your local neural browser cache.</p>\n                            </div>\n                        </div>\n                        <Button asChild variant=\"outline\" className=\"border-2 border-black\">\n                            <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                Get OpenAI Key <ExternalLink className=\"ml-2 h-4 w-4\" />\n                            </a>\n                        </Button>\n                    </CardContent>\n                </Card>\n            </div>\n\n            <div className=\"mt-16 p-10 border-8 border-black border-double bg-primary text-white rounded-[3rem] text-center space-y-6\">\n                <Zap className=\"h-12 w-12 mx-auto animate-pulse\" />\n                <h3 className=\"font-headline text-2xl uppercase tracking-widest\">Neural Recommendation</h3>\n                <p className=\"text-xl font-serif italic leading-relaxed max-w-2xl mx-auto\">\n                    \"Start with <strong>Pollinations</strong> for speed. Move to <strong>Hugging Face</strong> for high-fidelity visions. Always <strong>Upload</strong> your personal masterpieces to ensure archival permanence.\"\n                </p>\n            </div>\n        </div>\n    );\n}\n\n```\n\n--- /src/app/settings/page.tsx ---\n```typescript\nimport { SettingsForm } from \"@/components/features/settings-form\";\nimport { PageHeader } from \"@/components/page-header\";\nimport { Button } from \"@/components/ui/button\";\nimport { Zap } from \"lucide-react\";\nimport Link from \"next/link\";\n\nexport default function SettingsPage() {\n    return (\n        <div className=\"space-y-12\">\n            <div className=\"flex flex-col md:flex-row md:items-end justify-between gap-8\">\n                <PageHeader\n                    title=\"Settings\"\n                    description=\"Customize your learning experience. Adjust the AI style, manage providers, and tweak the interface to your liking.\"\n                    className=\"mb-0\"\n                />\n                <Button asChild variant=\"accent\" className=\"h-16 border-4 border-black ink-shadow-sm rounded-2xl group shrink-0\">\n                    <Link href=\"/providers\">\n                        <Zap className=\"mr-2 h-5 w-5 group-hover:animate-bounce\" />\n                        VIEW VISION GUIDE\n                    </Link>\n                </Button>\n            </div>\n            <SettingsForm />\n        </div>\n    )\n}\n\n```\n\n--- /tsconfig.json ---\n```json\n{\n  \"compilerOptions\": {\n    \"target\": \"ES2017\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"preserve\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./src/*\"]\n    }\n  },\n  \"include\": [\"next-env.d.ts\", \"**/*.ts\", \"**/*.tsx\", \".next/types/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}\n\n```"
+    items {
+      text: "Here is the full initial file tree for the application:\n/.agents/skills/developing-genkit-js/SKILL.md\n/.agents/skills/developing-genkit-js/references/best-practices.md\n/.agents/skills/developing-genkit-js/references/common-errors.md\n/.agents/skills/developing-genkit-js/references/docs-and-cli.md\n/.agents/skills/developing-genkit-js/references/examples.md\n/.agents/skills/developing-genkit-js/references/setup.md\n/.env.example\n/.gitignore\n/.modified\n/README.md\n/apphosting.yaml\n/components.json\n/docs/architecture.md\n/docs/blueprint.md\n/docs/google-translate-mining.md\n/docs/idea-bank.md\n/docs/import-export-guide.md\n/docs/ios-migration.md\n/docs/roadmap.md\n/firebase-blueprint.json\n/firestore.rules\n/metadata.json\n/next-env.d.ts\n/next.config.ts\n/package-lock.json\n/package.json\n/postcss.config.mjs\n/public/manifest.webmanifest\n/skills-lock.json\n/src/ai/dev.ts\n/src/ai/flows/card-suggestions.ts\n/src/ai/flows/generate-image-prompt.ts\n/src/ai/flows/generate-image.ts\n/src/ai/flows/mnemonic-remix.ts\n/src/ai/genkit.ts\n/src/app/_actions/generation.ts\n/src/app/create/page.tsx\n/src/app/deck/[deckId]/page.tsx\n/src/app/edit/[cardId]/page.tsx\n/src/app/favicon.ico\n/src/app/globals.css\n/src/app/layout.tsx\n/src/app/page.tsx\n/src/app/practice/page.tsx\n/src/app/providers/page.tsx\n/src/app/settings/page.tsx\n/src/components/FirebaseErrorListener.tsx\n/src/components/features/card-creator.tsx\n/src/components/features/card-editor.tsx\n/src/components/features/deck-card.tsx\n/src/components/features/deck-drawer.tsx\n/src/components/features/deck-manager.tsx\n/src/components/features/deck-vault.tsx\n/src/components/features/neural-sketch.tsx\n/src/components/features/new-deck-dialog.tsx\n/src/components/features/practice-session.tsx\n/src/components/features/settings-form.tsx\n/src/components/main-nav.tsx\n/src/components/page-header.tsx\n/src/components/site-header.tsx\n/src/components/theme-provider.tsx\n/src/components/theme-toggle.tsx\n/src/components/ui/accordion.tsx\n/src/components/ui/alert-dialog.tsx\n/src/components/ui/alert.tsx\n/src/components/ui/avatar.tsx\n/src/components/ui/badge.tsx\n/src/components/ui/button.tsx\n/src/components/ui/calendar.tsx\n/src/components/ui/card.tsx\n/src/components/ui/carousel.tsx\n/src/components/ui/chart.tsx\n/src/components/ui/checkbox.tsx\n/src/components/ui/collapsible.tsx\n/src/components/ui/dialog.tsx\n/src/components/ui/dropdown-menu.tsx\n/src/components/ui/form.tsx\n/src/components/ui/input.tsx\n/src/components/ui/label.tsx\n/src/components/ui/menubar.tsx\n/src/components/ui/popover.tsx\n/src/components/ui/progress.tsx\n/src/components/ui/radio-group.tsx\n/src/components/ui/scroll-area.tsx\n/src/components/ui/select.tsx\n/src/components/ui/separator.tsx\n/src/components/ui/sheet.tsx\n/src/components/ui/skeleton.tsx\n/src/components/ui/slider.tsx\n/src/components/ui/switch.tsx\n/src/components/ui/table.tsx\n/src/components/ui/tabs.tsx\n/src/components/ui/textarea.tsx\n/src/components/ui/toast.tsx\n/src/components/ui/toaster.tsx\n/src/components/ui/tooltip.tsx\n/src/firebase/client-provider.tsx\n/src/firebase/config.ts\n/src/firebase/error-emitter.ts\n/src/firebase/errors.ts\n/src/firebase/firestore/use-collection.tsx\n/src/firebase/firestore/use-doc.tsx\n/src/firebase/index.ts\n/src/firebase/non-blocking-login.tsx\n/src/firebase/non-blocking-updates.tsx\n/src/firebase/provider.tsx\n/src/hooks/use-toast.ts\n/src/lib/data/image-cache.ts\n/src/lib/data/initial-content.ts\n/src/lib/domain/sm2.ts\n/src/lib/domain/types.ts\n/src/lib/image-providers/gemini-server.ts\n/src/lib/image-providers/gemini.ts\n/src/lib/image-providers/huggingface.ts\n/src/lib/image-providers/index.ts\n/src/lib/image-providers/openai.ts\n/src/lib/image-providers/pollinations.ts\n/src/lib/image-providers/qwen.ts\n/src/lib/image-providers/scavenger.ts\n/src/lib/image-providers/types.ts\n/src/lib/placeholder-images.json\n/src/lib/placeholder-images.ts\n/src/lib/store/app-state-provider.tsx\n/src/lib/store/useDeckStore.ts\n/src/lib/store/useSettingsStore.ts\n/src/lib/store/useStatsStore.ts\n/src/lib/utils.ts\n/tailwind.config.ts\n/tsconfig.json\n\nThe following dependencies are installed:\n@genkit-ai/google-genai: ^1.20.0\n@genkit-ai/next: ^1.20.0\n@hookform/resolvers: ^4.1.3\n@radix-ui/react-accordion: ^1.2.3\n@radix-ui/react-alert-dialog: ^1.1.6\n@radix-ui/react-avatar: ^1.1.3\n@radix-ui/react-checkbox: ^1.1.4\n@radix-ui/react-collapsible: ^1.1.11\n@radix-ui/react-dialog: ^1.1.6\n@radix-ui/react-dropdown-menu: ^2.1.6\n@radix-ui/react-label: ^2.1.2\n@radix-ui/react-menubar: ^1.1.6\n@radix-ui/react-popover: ^1.1.6\n@radix-ui/react-progress: ^1.1.2\n@radix-ui/react-radio-group: ^1.2.3\n@radix-ui/react-scroll-area: ^1.2.3\n@radix-ui/react-select: ^2.1.6\n@radix-ui/react-separator: ^1.1.2\n@radix-ui/react-slider: ^1.2.3\n@radix-ui/react-slot: ^1.2.3\n@radix-ui/react-switch: ^1.1.3\n@radix-ui/react-tabs: ^1.1.3\n@radix-ui/react-toast: ^1.2.6\n@radix-ui/react-tooltip: ^1.1.8\nclass-variance-authority: ^0.7.1\nclsx: ^2.1.1\ndate-fns: ^3.6.0\ndotenv: ^16.5.0\nembla-carousel-react: ^8.6.0\nfirebase: ^11.9.1\ngenkit: ^1.20.0\nlucide-react: ^0.475.0\nnext: 15.5.9\npatch-package: ^8.0.0\nreact: ^19.2.1\nreact-day-picker: ^9.11.3\nreact-dom: ^19.2.1\nreact-hook-form: ^7.54.2\nrecharts: ^2.15.1\ntailwind-merge: ^3.0.1\ntailwindcss-animate: ^1.0.7\nzod: ^3.24.2\nzustand: ^4.5.2\n\nThe following devDependencies are installed:\n@types/node: ^20\n@types/react: ^19.2.1\n@types/react-dom: ^19.2.1\ngenkit-cli: ^1.20.0\npostcss: ^8\ntailwindcss: ^3.4.1\ntypescript: ^5\n\nKey file contents:\n\n--- /.env.example ---\n```\nGOOGLE_GENAI_API_KEY=\n```\n\n--- /components.json ---\n```json\n{\n  \"$schema\": \"https://ui.shadcn.com/schema.json\",\n  \"style\": \"default\",\n  \"rsc\": true,\n  \"tsx\": true,\n  \"tailwind\": {\n    \"config\": \"tailwind.config.ts\",\n    \"css\": \"src/app/globals.css\",\n    \"baseColor\": \"neutral\",\n    \"cssVariables\": true,\n    \"prefix\": \"\"\n  },\n  \"aliases\": {\n    \"components\": \"@/components\",\n    \"utils\": \"@/lib/utils\",\n    \"ui\": \"@/components/ui\",\n    \"lib\": \"@/lib\",\n    \"hooks\": \"@/hooks\"\n  },\n  \"iconLibrary\": \"lucide\"\n}\n```\n\n--- /metadata.json ---\n```json\n{\n  \"name\": \"studio-8296505957\",\n  \"description\": \"App imported from Firebase Studio\"\n}\n\n```\n\n--- /next.config.ts ---\n```typescript\nimport type {NextConfig} from \'next\';\n\nconst nextConfig: NextConfig = {\n  /* config options here */\n  typescript: {\n    ignoreBuildErrors: true,\n  },\n  eslint: {\n    ignoreDuringBuilds: true,\n  },\n  images: {\n    unoptimized: true,\n    remotePatterns: [\n      {\n        protocol: \'https\',\n        hostname: \'placehold.co\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'images.unsplash.com\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'picsum.photos\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n      {\n        protocol: \'https\',\n        hostname: \'image.pollinations.ai\',\n        port: \'\',\n        pathname: \'/**\',\n      },\n    ],\n  },\n};\n\nexport default nextConfig;\n\n```\n\n--- /src/app/create/page.tsx ---\n```typescript\nimport { CardCreator } from \"@/components/features/card-creator\";\nimport { PageHeader } from \"@/components/page-header\";\n\nexport default function CreateCardPage() {\n    return (\n        <div>\n            <PageHeader\n                title=\"Card Creator\"\n                description=\"Craft a new flashcard with a memorable story. The more absurd, the better!\"\n            />\n            <CardCreator />\n        </div>\n    )\n}\n\n```\n\n--- /src/app/deck/[deckId]/page.tsx ---\n```typescript\nimport { DeckManager } from \"@/components/features/deck-manager\";\nimport { Suspense } from \"react\";\n\nexport default async function DeckManagerPage({ params }: { params: Promise<{ deckId: string }> }) {\n    const { deckId } = await params;\n\n    return (\n        <Suspense fallback={\n            <div className=\"flex items-center justify-center h-96\">\n                <div className=\"animate-pulse font-headline text-muted-foreground\">Loading Vault...</div>\n            </div>\n        }>\n            <DeckManager deckId={deckId} />\n        </Suspense>\n    )\n}\n\n```\n\n--- /src/app/edit/[cardId]/page.tsx ---\n```typescript\nimport { CardEditor } from \'@/components/features/card-editor\';\nimport { Suspense } from \'react\';\n\nexport default async function EditCardPage({ params }: { params: Promise<{ cardId: string }> }) {\n    const { cardId } = await params;\n    \n    return (\n        <Suspense fallback={\n            <div className=\"flex items-center justify-center h-96\">\n                <div className=\"animate-pulse font-headline text-muted-foreground\">Initializing Brain Scan...</div>\n            </div>\n        }>\n            <CardEditor cardId={cardId} />\n        </Suspense>\n    )\n}\n\n```\n\n--- /src/app/globals.css ---\n```css\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: 45 100% 95%; /* Candy Yellow */\n    --background-to: 14 100% 80%; /* Juicy Peach */\n    --foreground: 240 10% 4%;\n    --card: 0 0% 100%;\n    --card-foreground: 240 10% 4%;\n    --popover: 45 100% 95%;\n    --popover-foreground: 240 10% 4%;\n    --primary: 220 100% 50%; /* Neural Blue */\n    --primary-foreground: 0 0% 100%;\n    --secondary: 14 100% 75%; /* Neon Coral */\n    --secondary-foreground: 240 10% 4%;\n    --muted: 220 15% 94%;\n    --muted-foreground: 220 10% 40%;\n    --accent: 330 100% 65%; /* Bubblegum Pink */\n    --accent-foreground: 0 0% 100%;\n    --destructive: 0 84% 60%;\n    --destructive-foreground: 0 0% 98%;\n    --success: 160 100% 45%; /* High-Vis Mint */\n    --success-foreground: 0 0% 100%;\n    --border: 0 0% 0%;\n    --input: 330 100% 98%;\n    --ring: 220 100% 50%;\n    --radius: 1.5rem;\n    --shadow-color: #000;\n    --text-shadow-color: hsl(var(--primary));\n    --header-bg: 14 100% 75%; /* Fluorescent Coral */\n    --menu-text: 220 100% 50%;\n\n    /* TCG Styles */\n    --card-border-width: 8px;\n    --card-shine: rgba(255, 255, 255, 0.2);\n  }\n\n  .dark {\n    --background: 220 40% 25%; /* Medium Sunset Blue */\n    --background-to: 230 50% 12%; /* Deep Midnight */\n    --foreground: 180 100% 95%;\n    --card: 240 40% 10%; /* Deep Navy components */\n    --card-foreground: 180 100% 95%;\n    --popover: 240 40% 15%;\n    --popover-foreground: 180 100% 95%;\n    --primary: 160 100% 70%; /* Electric Mint */\n    --primary-foreground: 240 40% 5%;\n    --secondary: 0 100% 60%; /* Racing Red */\n    --secondary-foreground: 0 0% 100%;\n    --muted: 220 30% 20%;\n    --muted-foreground: 180 40% 70%;\n    --accent: 50 100% 50%; /* Neon Tennis Yellow */\n    --accent-foreground: 0 0% 0%;\n    --destructive: 0 80% 60%;\n    --destructive-foreground: 0 0% 98%;\n    --success: 160 100% 75%;\n    --success-foreground: 240 40% 5%;\n    --border: 0 0% 0%;\n    --input: 220 30% 15%;\n    --ring: 50 100% 50%;\n    --shadow-color: #000;\n    --text-shadow-color: #000;\n    --header-bg: 220 40% 25%;\n    --menu-text: 50 100% 50%;\n  }\n}\n\n@layer base {\n  * {\n    @apply border-border;\n    -webkit-tap-highlight-color: transparent;\n  }\n  body {\n    @apply text-foreground transition-colors duration-500 min-h-screen selection:bg-accent selection:text-white overflow-x-hidden;\n    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);\n    background-attachment: fixed;\n    touch-action: manipulation;\n    overscroll-behavior-y: none;\n  }\n}\n\n@layer components {\n    .site-header-custom {\n      background-color: hsla(var(--header-bg) / 0.85);\n    }\n\n    .text-shadow {\n        text-shadow: 4px 4px 0 var(--text-shadow-color);\n    }\n    .ink-shadow-lg {\n        box-shadow: 12px 12px 0px var(--shadow-color);\n    }\n    .ink-shadow-sm {\n        box-shadow: 4px 4px 0px var(--shadow-color);\n    }\n    .backface-hidden {\n      backface-visibility: hidden;\n      -webkit-backface-visibility: hidden;\n    }\n    .perspective-1000 {\n      perspective: 1000px;\n    }\n    .transform-style-3d {\n      transform-style: preserve-3d;\n    }\n    .rotate-y-180 {\n      transform: rotateY(180deg);\n    }\n    \n    .safe-area-padding {\n      padding-top: env(safe-area-inset-top);\n    }\n\n    .pb-safe {\n      padding-bottom: calc(1rem + env(safe-area-inset-bottom));\n    }\n\n    .bubble-text {\n      font-family: var(--font-bubble);\n      @apply uppercase tracking-tighter px-6 py-4;\n      -webkit-text-stroke: 2px black;\n      -webkit-text-fill-color: hsl(var(--primary));\n      text-shadow: \n        1px 1px 0 #000,\n        2px 2px 0 #000,\n        3px 3px 0 #000,\n        4px 4px 0 hsl(var(--accent));\n      display: inline-block;\n      line-height: 1.4;\n      overflow: visible;\n    }\n\n    .hover-lift {\n      @apply transition-transform duration-300 hover:-translate-y-1 active:scale-95 active:translate-y-0;\n    }\n    .hover-pop {\n      @apply transition-all duration-300 hover:scale-105 active:scale-95;\n    }\n    .menu-gradient {\n      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);\n    }\n}\n\n@layer utilities {\n    .blueprint-bg {\n        background-image: \n            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),\n            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);\n        background-size: 32px 32px;\n    }\n    .dark .blueprint-bg {\n        background-image: \n            linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),\n            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);\n    }\n    .animate-float {\n      animation: float 6s ease-in-out infinite;\n    }\n    @keyframes float {\n      0%, 100% { transform: translateY(0); }\n      50% { transform: translateY(-20px); }\n    }\n}\n\n```\n\n--- /src/app/layout.tsx ---\n```typescript\nimport type { Metadata, Viewport } from \'next\';\nimport { Source_Code_Pro, Press_Start_2P, Lora, Permanent_Marker, Luckiest_Guy } from \'next/font/google\';\nimport \'./globals.css\';\nimport { cn } from \'@/lib/utils\';\nimport { Toaster } from \'@/components/ui/toaster\';\nimport { SiteHeader } from \'@/components/site-header\';\nimport { AppStateProvider } from \'@/lib/store/app-state-provider\';\nimport { ThemeProvider } from \'@/components/theme-provider\';\n\nconst fontCode = Source_Code_Pro({\n  subsets: [\'latin\'],\n  variable: \'--font-code\',\n});\n\nconst fontHeadline = Press_Start_2P({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-headline\',\n});\n\nconst fontSerif = Lora({\n  subsets: [\'latin\'],\n  variable: \'--font-serif\',\n  style: [\'normal\', \'italic\'],\n});\n\nconst fontHandwritten = Permanent_Marker({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-handwritten\',\n});\n\nconst fontBubble = Luckiest_Guy({\n  subsets: [\'latin\'],\n  weight: \'400\',\n  variable: \'--font-bubble\',\n});\n\nexport const viewport: Viewport = {\n  themeColor: \'#FF7F50\', // Light Coral base\n  width: \'device-width\',\n  initialScale: 1,\n  maximumScale: 1,\n  userScalable: false,\n  viewportFit: \'cover\',\n};\n\nexport const metadata: Metadata = {\n  title: \'Memorization Station\',\n  description: \'A mnemonic-first Portuguese flashcard app.\',\n  appleWebApp: {\n    capable: true,\n    statusBarStyle: \'black-translucent\',\n    title: \'MemStation\',\n  },\n  manifest: \'/manifest.webmanifest\',\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\" suppressHydrationWarning>\n      <head>\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossOrigin=\"\" />\n        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n        <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\" />\n        <link rel=\"apple-touch-icon\" href=\"/icon-192.png\" />\n      </head>\n      <body\n        className={cn(\n          \'font-code antialiased select-none\',\n          fontCode.variable,\n          fontHeadline.variable,\n          fontSerif.variable,\n          fontHandwritten.variable,\n          fontBubble.variable\n        )}\n      >\n        <AppStateProvider>\n          <ThemeProvider>\n            <div className=\"relative flex min-h-screen flex-col bg-background safe-area-padding\">\n              <SiteHeader />\n              <main className=\"flex-1 p-4 md:p-8 pb-safe\">{children}</main>\n              <Toaster />\n            </div>\n          </ThemeProvider>\n        </AppStateProvider>\n      </body>\n    </html>\n  );\n}\n\n```\n\n--- /src/app/page.tsx ---\n```typescript\nimport { DeckDrawer } from \'@/components/features/deck-drawer\';\nimport { Button } from \'@/components/ui/button\';\nimport { Sparkles, Brain, Zap, Play, Info, BookOpen, Star, LayoutGrid, PlusCircle } from \'lucide-react\';\nimport Link from \'next/link\';\nimport { cn } from \'@/lib/utils\';\n\nexport default function Home() {\n  return (\n    <div className=\"flex flex-col gap-24 pb-32\">\n      {/* Hero / Start Screen Section */}\n      <section className=\"relative min-h-[85vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden rounded-[4rem] border-8 border-black ink-shadow-lg bg-primary/5 blueprint-bg mx-auto w-full max-w-7xl mt-4 animate-in fade-in zoom-in duration-1000\">\n        <div className=\"absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/70 pointer-events-none\" />\n        \n        {/* Animated Background Elements */}\n        <div className=\"absolute top-10 left-10 animate-float opacity-20 hidden md:block\">\n            <Star className=\"h-24 w-24 text-yellow-400 fill-yellow-400 drop-shadow-lg\" />\n        </div>\n        <div className=\"absolute bottom-10 right-10 animate-float opacity-20 hidden md:block\" style={{ animationDelay: \'3s\' }}>\n            <Zap className=\"h-32 w-32 text-accent fill-accent drop-shadow-lg\" />\n        </div>\n\n        <div className=\"relative z-10 flex flex-col items-center justify-center space-y-16 w-full max-w-5xl mx-auto py-12\">\n          <div className=\"flex flex-col items-center space-y-8 w-full px-2\">\n            <div className=\"inline-flex items-center gap-4 bg-black text-white px-10 py-4 rounded-full font-headline text-[11px] animate-pulse border-4 border-accent shadow-xl\">\n                <Zap className=\"h-5 w-5 text-[#d4ff00] fill-[#d4ff00]\" />\n                NEURAL LINK ACTIVE\n            </div>\n            \n            <div className=\"relative group w-full flex justify-center py-6 px-10 overflow-visible\">\n                <h1 className=\"text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.2] uppercase text-center w-full max-w-full tracking-tighter transition-all duration-500 group-hover:scale-105\">\n                    <span className=\"inline-block whitespace-nowrap text-shadow drop-shadow-[6px_6px_0_black] md:drop-shadow-[10px_10px_0_black] text-accent dark:text-primary\">\n                        MEMORIZATION\n                    </span>\n                    <br className=\"hidden sm:block\" /> \n                    <span className=\"inline-block whitespace-nowrap text-shadow drop-shadow-[6px_6px_0_black] md:drop-shadow-[10px_10px_0_black] text-accent dark:text-primary\">\n                        STATION\n                    </span>\n                </h1>\n            </div>\n\n            <p className=\"text-xl md:text-4xl font-serif italic font-black text-muted-foreground mt-6 max-w-3xl text-center px-6 leading-relaxed animate-in slide-in-from-bottom-4 delay-500 duration-1000 fill-mode-both\">\n                \"The most absurd way to conversational mastery.\"\n            </p>\n          </div>\n\n          <div className=\"flex flex-col items-center justify-center gap-10 w-full px-4 max-w-2xl mx-auto\">\n            <Button asChild size=\"lg\" className=\"h-28 sm:h-32 w-full font-headline text-3xl sm:text-4xl bg-accent text-white border-8 border-black ink-shadow-lg hover:scale-105 active:scale-95 transition-all group rounded-[2.5rem] relative overflow-hidden shadow-[12px_12px_0px_black]\">\n                <Link href=\"#drawer\">\n                    <Play className=\"mr-8 h-12 w-12 fill-current group-hover:rotate-12 transition-transform\" />\n                    PRESS START\n                </Link>\n            </Button>\n            \n            <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-8 w-full\">\n              <Button asChild size=\"lg\" variant=\"success\" className=\"h-24 w-full font-headline text-xs border-6 border-black ink-shadow-sm hover:scale-105 hover:bg-accent hover:text-white active:bg-primary transition-all rounded-[1.5rem] group shadow-[6px_6px_0px_black]\">\n                  <Link href=\"#drawer\" className=\"flex items-center justify-center\">\n                      <LayoutGrid className=\"mr-4 h-6 w-6 group-hover:rotate-12 transition-transform\" />\n                      DECK DRAWER\n                  </Link>\n              </Button>\n              <Button asChild size=\"lg\" variant=\"success\" className=\"h-24 w-full font-headline text-xs border-6 border-black ink-shadow-sm hover:scale-105 hover:bg-accent hover:text-white active:bg-primary transition-all rounded-[1.5rem] group shadow-[6px_6px_0px_black]\">\n                  <Link href=\"/create\" className=\"flex items-center justify-center\">\n                      <PlusCircle className=\"mr-4 h-6 w-6 group-hover:scale-125 transition-transform\" />\n                      CREATE CARDS\n                  </Link>\n              </Button>\n            </div>\n          </div>\n        </div>\n      </section>\n\n      {/* How to Play Section */}\n      <section className=\"max-w-6xl mx-auto w-full px-6\">\n        <div className=\"grid grid-cols-1 md:grid-cols-3 gap-12\">\n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-primary h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center -rotate-6 group-hover:rotate-0 transition-transform\">\n                    <Brain className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">1. Discover</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Use <strong>Magic Assist</strong> to build vivid, absurd stories that bridge English to Portuguese effortlessly.\n                </p>\n            </div>\n            \n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-accent h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center rotate-3 group-hover:rotate-0 transition-transform\">\n                    <Zap className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">2. Visualize</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Summon <strong>AI Visions</strong> to cement the mnemonic into your visual cortex forever.\n                </p>\n            </div>\n\n            <div className=\"bg-card p-10 border-8 border-black ink-shadow-sm rounded-[2.5rem] space-y-6 hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group\">\n                <div className=\"bg-success h-20 w-20 rounded-2xl border-4 border-black flex items-center justify-center -rotate-2 group-hover:rotate-0 transition-transform\">\n                    <Star className=\"text-white h-10 w-10\" />\n                </div>\n                <h3 className=\"font-headline text-xl tracking-tighter uppercase\">3. Master</h3>\n                <p className=\"text-xl leading-relaxed font-serif italic\">\n                    Engage in <strong>Neural Sync Sessions</strong>. Spaced-repetition ensures you never forget a single card.\n                </p>\n            </div>\n        </div>\n      </section>\n\n      {/* Main App Entry (The Drawer) */}\n      <section id=\"drawer\" className=\"scroll-mt-32 pt-12\">\n        <div className=\"flex items-center gap-6 mb-16 px-6 max-w-7xl mx-auto\">\n            <div className=\"h-2 bg-black flex-grow rounded-full opacity-20\" />\n            <div className=\"bg-black text-white font-headline text-[11px] px-8 py-3 rounded-full uppercase tracking-[0.2em] shadow-xl border-4 border-accent\">\n                Accessing Deck Drawer\n            </div>\n            <div className=\"h-2 bg-black flex-grow rounded-full opacity-20\" />\n        </div>\n        <DeckDrawer />\n      </section>\n\n      {/* Footer Info */}\n      <footer className=\"max-w-4xl mx-auto px-6 text-center space-y-10 pb-20 opacity-80\">\n          <div className=\"p-10 border-8 border-black border-dashed rounded-[3rem] bg-muted/20 backdrop-blur-md relative overflow-hidden transition-all duration-500 hover:bg-muted/30\">\n            <Info className=\"h-12 w-12 mx-auto mb-6 text-primary\" />\n            <h4 className=\"font-headline text-sm uppercase mb-6 tracking-widest\">Linguistic Protocol</h4>\n            <p className=\"text-2xl font-serif italic text-muted-foreground leading-relaxed font-black\">\n                \"We don\'t study languages here. We inhabit them. Use logical building blocks and Magnetic Memory to build permanence.\"\n            </p>\n          </div>\n          <p className=\"font-headline text-[9px] opacity-40 uppercase tracking-[0.5em] animate-pulse\">\n              V17.0 // Neural Engine Online // Optimized for High-Speed Memory\n          </p>\n      </footer>\n    </div>\n  );\n}\n\n```\n\n--- /src/app/practice/page.tsx ---\n```typescript\nimport { PracticeSession } from \"@/components/features/practice-session\";\nimport { PageHeader } from \"@/components/page-header\";\nimport { Suspense } from \"react\";\n\nexport default function PracticePage({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {\n    const deckId = typeof searchParams.deckId === \'string\' ? searchParams.deckId : undefined;\n\n    return (\n        <div>\n            <PageHeader\n                title=\"Practice Session\"\n                description=\"Time to train your brain! Review your due cards to build those neural pathways.\"\n            />\n            <Suspense fallback={<div>Loading practice session...</div>}>\n                <PracticeSession deckId={deckId} />\n            </Suspense>\n        </div>\n    )\n}\n\n```\n\n--- /src/app/providers/page.tsx ---\n```typescript\nimport { PageHeader } from \'@/components/page-header\';\nimport { Card, CardContent, CardHeader, CardTitle, CardDescription } from \'@/components/ui/card\';\nimport { Button } from \'@/components/ui/button\';\nimport { ExternalLink, Key, Zap, ShieldCheck, Cpu, Globe, Infinity } from \'lucide-react\';\nimport Link from \'next/link\';\n\nexport default function ProvidersGuidePage() {\n    return (\n        <div className=\"max-w-5xl mx-auto pb-20 blueprint-bg p-4 md:p-8\">\n            <div className=\"mb-12\">\n                <Link href=\"/settings\" className=\"text-xs font-headline text-primary hover:underline mb-4 block\">\342\206\220 BACK TO SYSTEM CONFIG</Link>\n                <PageHeader \n                    title=\"Neural Vision Guide\" \n                    description=\"Expand your Station\'s visual capabilities. Integrate free and premium AI engines to manifest your mnemonics.\"\n                />\n            </div>\n\n            <div className=\"grid grid-cols-1 gap-10\">\n                {/* Free Provider: Pollinations */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-primary/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-primary uppercase\">Pollinations AI</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">The Free Standard</CardDescription>\n                        </div>\n                        <div className=\"bg-success text-white px-4 py-2 rounded-full font-headline text-[8px] border-2 border-black\">NO KEY REQUIRED</div>\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-6\">\n                        <p className=\"text-xl font-serif italic leading-relaxed\">\n                            A high-speed, community-driven visual engine. It is the default provider for the Station because it requires zero configuration.\n                        </p>\n                        <div className=\"flex items-center gap-4 bg-muted/20 p-6 rounded-2xl border-4 border-black border-dashed\">\n                            <Infinity className=\"h-8 w-8 text-primary shrink-0\" />\n                            <p className=\"text-sm\">Unlimited generation for archival use. Perfect for initial deck population.</p>\n                        </div>\n                        <Button asChild variant=\"outline\" className=\"border-2 border-black\">\n                            <a href=\"https://pollinations.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                Visit Site <ExternalLink className=\"ml-2 h-4 w-4\" />\n                            </a>\n                        </Button>\n                    </CardContent>\n                </Card>\n\n                {/* Premium Provider: Hugging Face */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-accent/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-accent uppercase\">Hugging Face</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">Pro-Grade Models (Flux, SDXL)</CardDescription>\n                        </div>\n                        <Key className=\"h-8 w-8 text-accent\" />\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-8\">\n                        <div className=\"space-y-4\">\n                            <h4 className=\"font-headline text-xs uppercase text-primary\">Setup Instructions:</h4>\n                            <ol className=\"list-decimal list-inside space-y-4 font-serif text-lg pl-2\">\n                                <li>Create a free account at <a href=\"https://huggingface.co/join\" target=\"_blank\" className=\"text-accent underline font-bold\">HuggingFace.co</a>.</li>\n                                <li>Navigate to your <strong>Settings -> Access Tokens</strong>.</li>\n                                <li>Generate a new <strong>Read</strong> token.</li>\n                                <li>Paste the token into the <strong>Provider Key</strong> field in the Station Settings.</li>\n                            </ol>\n                        </div>\n                        \n                        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n                            <div className=\"p-6 bg-muted/10 border-2 border-black rounded-2xl space-y-2\">\n                                <Cpu className=\"h-6 w-6 text-primary\" />\n                                <h5 className=\"font-headline text-[10px] uppercase\">Flux.1 [dev]</h5>\n                                <p className=\"text-xs italic\">The current state-of-the-art for prompt adherence and realistic detail.</p>\n                            </div>\n                            <div className=\"p-6 bg-muted/10 border-2 border-black rounded-2xl space-y-2\">\n                                <Zap className=\"h-6 w-6 text-orange-500\" />\n                                <h5 className=\"font-headline text-[10px] uppercase\">SDXL Turbo</h5>\n                                <p className=\"text-xs italic\">Ultra-fast generation for rapid-fire card creation.</p>\n                            </div>\n                        </div>\n                    </CardContent>\n                </Card>\n\n                {/* Premium Provider: OpenAI */}\n                <Card className=\"border-4 border-black ink-shadow-lg rounded-[2.5rem] overflow-hidden bg-card\">\n                    <CardHeader className=\"bg-primary/10 p-8 border-b-4 border-black flex flex-row items-center justify-between\">\n                        <div className=\"space-y-1\">\n                            <CardTitle className=\"font-headline text-xl text-primary uppercase\">OpenAI (DALL-E 3)</CardTitle>\n                            <CardDescription className=\"font-serif italic text-lg\">Highest Visual Consistency</CardDescription>\n                        </div>\n                        <Globe className=\"h-8 w-8 text-primary\" />\n                    </CardHeader>\n                    <CardContent className=\"p-8 space-y-6\">\n                        <p className=\"text-xl font-serif italic leading-relaxed\">\n                            Requires an active OpenAI API key with credit. Known for its incredible ability to follow complex mnemonic instructions.\n                        </p>\n                        <div className=\"bg-yellow-400/20 p-6 rounded-2xl border-4 border-black border-dashed flex items-start gap-4\">\n                            <ShieldCheck className=\"h-6 w-6 text-yellow-600 shrink-0\" />\n                            <div className=\"space-y-1\">\n                                <p className=\"text-xs font-bold\">Privacy Note:</p>\n                                <p className=\"text-xs italic\">The Station does not store your keys on any server. They remain strictly in your local neural browser cache.</p>\n                            </div>\n                        </div>\n                        <Button asChild variant=\"outline\" className=\"border-2 border-black\">\n                            <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                Get OpenAI Key <ExternalLink className=\"ml-2 h-4 w-4\" />\n                            </a>\n                        </Button>\n                    </CardContent>\n                </Card>\n            </div>\n\n            <div className=\"mt-16 p-10 border-8 border-black border-double bg-primary text-white rounded-[3rem] text-center space-y-6\">\n                <Zap className=\"h-12 w-12 mx-auto animate-pulse\" />\n                <h3 className=\"font-headline text-2xl uppercase tracking-widest\">Neural Recommendation</h3>\n                <p className=\"text-xl font-serif italic leading-relaxed max-w-2xl mx-auto\">\n                    \"Start with <strong>Pollinations</strong> for speed. Move to <strong>Hugging Face</strong> for high-fidelity visions. Always <strong>Upload</strong> your personal masterpieces to ensure archival permanence.\"\n                </p>\n            </div>\n        </div>\n    );\n}\n\n```\n\n--- /src/app/settings/page.tsx ---\n```typescript\nimport { SettingsForm } from \"@/components/features/settings-form\";\nimport { PageHeader } from \"@/components/page-header\";\nimport { Button } from \"@/components/ui/button\";\nimport { Zap } from \"lucide-react\";\nimport Link from \"next/link\";\n\nexport default function SettingsPage() {\n    return (\n        <div className=\"space-y-12\">\n            <div className=\"flex flex-col md:flex-row md:items-end justify-between gap-8\">\n                <PageHeader\n                    title=\"Settings\"\n                    description=\"Customize your learning experience. Adjust the AI style, manage providers, and tweak the interface to your liking.\"\n                    className=\"mb-0\"\n                />\n                <Button asChild variant=\"accent\" className=\"h-16 border-4 border-black ink-shadow-sm rounded-2xl group shrink-0\">\n                    <Link href=\"/providers\">\n                        <Zap className=\"mr-2 h-5 w-5 group-hover:animate-bounce\" />\n                        VIEW VISION GUIDE\n                    </Link>\n                </Button>\n            </div>\n            <SettingsForm />\n        </div>\n    )\n}\n\n```\n\n--- /tsconfig.json ---\n```json\n{\n  \"compilerOptions\": {\n    \"target\": \"ES2017\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"preserve\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./src/*\"]\n    }\n  },\n  \"include\": [\"next-env.d.ts\", \"**/*.ts\", \"**/*.tsx\", \".next/types/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}\n\n```"
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006925
+      nanos: 985809586
+    }
+    source: CORTEX_STEP_SOURCE_USER_EXPLICIT
+    internal_metadata {
+      status_transitions {
+        updated_status: CORTEX_STEP_STATUS_DONE
+        timestamp {
+          seconds: 1775006925
+          nanos: 985815956
+        }
+      }
+    }
+  }
+  user_input {
+    user_response: "This project was imported from Firebase Studio. Make the following fixes and get the app running:\n\n1. Transform the firebaseConfig object in src/firebase/config.ts into the firebase-applet-config.json. Make sure to import the firebase-applet-config.json file in place of the firebaseConfig object, and set the firestoreDatabaseId to `(default)` unless the user has specified a custom database ID in their code.\n2. Update the NextConfig at next.config.ts to add `output: \"standalone\"`, so that applets can build for sharing and publishing\n3. Analyze the application for situations where errors are swallowed and make sure that all application errors are logged in console.error."
+    items {
+      text: "This project was imported from Firebase Studio. Make the following fixes and get the app running:\n\n1. Transform the firebaseConfig object in src/firebase/config.ts into the firebase-applet-config.json. Make sure to import the firebase-applet-config.json file in place of the firebaseConfig object, and set the firestoreDatabaseId to `(default)` unless the user has specified a custom database ID in their code.\n2. Update the NextConfig at next.config.ts to add `output: \"standalone\"`, so that applets can build for sharing and publishing\n3. Analyze the application for situations where errors are swallowed and make sure that all application errors are logged in console.error."
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006925
+      nanos: 987125486
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1775006926
+      nanos: 40840211
+    }
+    finished_generating_at {
+      seconds: 1775006926
+      nanos: 40839741
+    }
+    completed_at {
+      seconds: 1775006926
+      nanos: 40839741
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_2_5_PRO
+    execution_id: "fa42046d-75ea-4176-bce8-e9e48ed177ab"
+    source_trajectory_step_info {
+      step_index: 3
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    internal_metadata {
+      status_transitions {
+        updated_status: CORTEX_STEP_STATUS_DONE
+        timestamp {
+          seconds: 1775006926
+          nanos: 40863551
+        }
+      }
+    }
+    started_at {
+      seconds: 1775006926
+      nanos: 40839741
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006927
+      nanos: 50408166
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_2_5_PRO
+    execution_id: "fa42046d-75ea-4176-bce8-e9e48ed177ab"
+    source_trajectory_step_info {
+      step_index: 4
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    internal_metadata {
+      status_transitions {
+        updated_status: CORTEX_STEP_STATUS_DONE
+        timestamp {
+          seconds: 1775006927
+          nanos: 50418946
+        }
+      }
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro"
+      full_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. : generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n(1) tags: map[stream_receive_count:0 streaming_duration:0s]\nWraps: (2) attached stack trace\n  -- stack trace:\n  | google3/third_party/gemini_coder/framework/generator/generator.(*streamResponseHandler).processStream\n  | \tthird_party/gemini_coder/framework/generator/stream_handler.go:329\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).attemptGenerate\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:451\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).generateWithAPIRetry\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:286\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).generateWithModelOutputRetry\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:148\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).Generate\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:91\n  | google3/third_party/gemini_coder/framework/executor/executor.(*Executor).executeLoop\n  | \tthird_party/gemini_coder/framework/executor/executor.go:358\n  | google3/third_party/gemini_coder/framework/executor/executor.(*Executor).Execute\n  | \tthird_party/gemini_coder/framework/executor/executor.go:278\n  | google3/third_party/gemini_coder/framework/executor/executor.(*SimpleExecutor).Execute\n  | \tthird_party/gemini_coder/framework/executor/simple_executor.go:48\n  | google3/devtools/jetski/boq/agent_service/agent.(*Service).executeAgent\n  | \tdevtools/jetski/boq/agent_service/agent.go:409\n  | google3/devtools/jetski/boq/agent_service/agent.(*Service).InvokeAgent\n  | \tdevtools/jetski/boq/agent_service/agent.go:279\n  | google3/devtools/jetski/boq/agent_service/proto/agent_go_proto._JetskiAgentService_InvokeAgent_Handler\n  | \tblaze-out/k8-opt/bin/devtools/jetski/boq/agent_service/proto/agent.pb.go:2197\n  | google3/net/rpc/go/rpc.(*ServeMux).RegisterMethod.func5\n  | \tnet/rpc/go/server.go:814\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest.func6\n  | \tnet/rpc/go/server.go:2561\n  | google3/net/goa/rpc/rpchandler.ExecHandlerSubset\n  | \tnet/goa/rpc/rpchandler.go:100\n  | google3/net/goa/rpc/rpchandler.(*closedRegistry).hook\n  | \tnet/goa/rpc/rpchandler.go:327\n  | google3/production/fireaxe/go/filters/rpcserverinterceptor.(*Interceptor).MakeHook-fm.(*Interceptor).MakeHook.func2\n  | \tproduction/fireaxe/go/filters/rpcserverinterceptor.go:62\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest.func8\n  | \tnet/rpc/go/server.go:2621\n  | google3/net/rpc/go/rpc.runStreamHandler\n  | \tnet/rpc/go/stream.go:1157\n  | google3/net/rpc/go/rpc.(*streamImpl).serverHandler\n  | \tnet/rpc/go/stream.go:1140\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest\n  | \tnet/rpc/go/server.go:2640\n  | runtime.goexit\n  | \tthird_party/go/gc/src/runtime/asm_amd64.s:1774\nWraps: (3) generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n  | * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro\nWraps: (4) generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n  | * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro\nError types: (1) *go_utils.withTags (2) *withstack.withStack (3) *errutil.withPrefix (4) *status.statusError"
+      error_code: 8
+      model_error_message: "The model API is currently overloaded and may experience intermittent errors."
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006927
+      nanos: 52690485
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1775006927
+      nanos: 114959300
+    }
+    finished_generating_at {
+      seconds: 1775006927
+      nanos: 114958550
+    }
+    completed_at {
+      seconds: 1775006927
+      nanos: 114958550
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_2_5_PRO
+    execution_id: "fa42046d-75ea-4176-bce8-e9e48ed177ab"
+    source_trajectory_step_info {
+      step_index: 5
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    internal_metadata {
+      status_transitions {
+        updated_status: CORTEX_STEP_STATUS_DONE
+        timestamp {
+          seconds: 1775006927
+          nanos: 114978920
+        }
+      }
+    }
+    started_at {
+      seconds: 1775006927
+      nanos: 114958550
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1775006928
+      nanos: 956168155
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_2_5_PRO
+    execution_id: "fa42046d-75ea-4176-bce8-e9e48ed177ab"
+    source_trajectory_step_info {
+      step_index: 6
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    internal_metadata {
+      status_transitions {
+        updated_status: CORTEX_STEP_STATUS_DONE
+        timestamp {
+          seconds: 1775006928
+          nanos: 956181035
+        }
+      }
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro"
+      full_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. : generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n(1) tags: map[stream_receive_count:0 streaming_duration:0s]\nWraps: (2) attached stack trace\n  -- stack trace:\n  | google3/third_party/gemini_coder/framework/generator/generator.(*streamResponseHandler).processStream\n  | \tthird_party/gemini_coder/framework/generator/stream_handler.go:329\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).attemptGenerate\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:451\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).generateWithAPIRetry\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:286\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).generateWithModelOutputRetry\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:148\n  | google3/third_party/gemini_coder/framework/generator/generator.(*PlannerGenerator).Generate\n  | \tthird_party/gemini_coder/framework/generator/planner_generator.go:91\n  | google3/third_party/gemini_coder/framework/executor/executor.(*Executor).executeLoop\n  | \tthird_party/gemini_coder/framework/executor/executor.go:358\n  | google3/third_party/gemini_coder/framework/executor/executor.(*Executor).Execute\n  | \tthird_party/gemini_coder/framework/executor/executor.go:278\n  | google3/third_party/gemini_coder/framework/executor/executor.(*SimpleExecutor).Execute\n  | \tthird_party/gemini_coder/framework/executor/simple_executor.go:48\n  | google3/devtools/jetski/boq/agent_service/agent.(*Service).executeAgent\n  | \tdevtools/jetski/boq/agent_service/agent.go:409\n  | google3/devtools/jetski/boq/agent_service/agent.(*Service).InvokeAgent\n  | \tdevtools/jetski/boq/agent_service/agent.go:279\n  | google3/devtools/jetski/boq/agent_service/proto/agent_go_proto._JetskiAgentService_InvokeAgent_Handler\n  | \tblaze-out/k8-opt/bin/devtools/jetski/boq/agent_service/proto/agent.pb.go:2197\n  | google3/net/rpc/go/rpc.(*ServeMux).RegisterMethod.func5\n  | \tnet/rpc/go/server.go:814\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest.func6\n  | \tnet/rpc/go/server.go:2561\n  | google3/net/goa/rpc/rpchandler.ExecHandlerSubset\n  | \tnet/goa/rpc/rpchandler.go:100\n  | google3/net/goa/rpc/rpchandler.(*closedRegistry).hook\n  | \tnet/goa/rpc/rpchandler.go:327\n  | google3/production/fireaxe/go/filters/rpcserverinterceptor.(*Interceptor).MakeHook-fm.(*Interceptor).MakeHook.func2\n  | \tproduction/fireaxe/go/filters/rpcserverinterceptor.go:62\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest.func8\n  | \tnet/rpc/go/server.go:2621\n  | google3/net/rpc/go/rpc.runStreamHandler\n  | \tnet/rpc/go/stream.go:1157\n  | google3/net/rpc/go/rpc.(*streamImpl).serverHandler\n  | \tnet/rpc/go/stream.go:1140\n  | google3/net/rpc/go/rpc.(*serverConn).bgHandleRequest\n  | \tnet/rpc/go/server.go:2640\n  | runtime.goexit\n  | \tthird_party/go/gc/src/runtime/asm_amd64.s:1774\nWraps: (3) generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n  | * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro\nWraps: (4) generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n  | * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_tokens_per_model_per_user, limit: 2000000, model: gemini-2.5-pro\nError types: (1) *go_utils.withTags (2) *withstack.withStack (3) *errutil.withPrefix (4) *status.statusError"
+      error_code: 8
+      model_error_message: "The model API is currently overloaded and may experience intermittent errors."
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785288809
+      nanos: 534900168
+    }
+    source: CORTEX_STEP_SOURCE_USER_EXPLICIT
+  }
+  user_input {
+    user_response: "i\'d like you to review this entire project and suggest improvements in architecture, design, responsiveness, UI/UX, playability, useability, user experience, etc. with experts in each field guided by John Carmack as chief architect auditor so we can devise a plan to get this in the best shape possible before then syncing it to github and locally for continued development outside of google AI studio"
+    items {
+      text: "i\'d like you to review this entire project and suggest improvements in architecture, design, responsiveness, UI/UX, playability, useability, user experience, etc. with experts in each field guided by John Carmack as chief architect auditor so we can devise a plan to get this in the best shape possible before then syncing it to github and locally for continued development outside of google AI studio"
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785288809
+      nanos: 535671858
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785288809
+      nanos: 571083255
+    }
+    finished_generating_at {
+      seconds: 1785288809
+      nanos: 571082875
+    }
+    completed_at {
+      seconds: 1785288809
+      nanos: 571082875
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 7
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785288809
+      nanos: 571082875
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785288810
+      nanos: 572510080
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 8
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h26m30.436729144s.: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h26m30.436729144s."
+      error_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860-8"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785288810
+      nanos: 573038370
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785288810
+      nanos: 606304755
+    }
+    finished_generating_at {
+      seconds: 1785288810
+      nanos: 606304005
+    }
+    completed_at {
+      seconds: 1785288810
+      nanos: 606304005
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 9
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785288810
+      nanos: 606304005
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289060
+      nanos: 152696330
+    }
+    source: CORTEX_STEP_SOURCE_USER_EXPLICIT
+  }
+  user_input {
+    user_response: "i\'d like you to review this entire project and suggest improvements in architecture, design, responsiveness, UI/UX, playability, useability, user experience, etc. with experts in each field guided by John Carmack as chief architect auditor so we can devise a plan to get this in the best shape possible before then syncing it to github and locally for continued development outside of google AI studio"
+    items {
+      text: "i\'d like you to review this entire project and suggest improvements in architecture, design, responsiveness, UI/UX, playability, useability, user experience, etc. with experts in each field guided by John Carmack as chief architect auditor so we can devise a plan to get this in the best shape possible before then syncing it to github and locally for continued development outside of google AI studio"
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289060
+      nanos: 153588422
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785289060
+      nanos: 182828119
+    }
+    finished_generating_at {
+      seconds: 1785289060
+      nanos: 182827536
+    }
+    completed_at {
+      seconds: 1785289060
+      nanos: 182827536
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 11
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785289060
+      nanos: 182827536
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289061
+      nanos: 183747459
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 12
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h22m19.823943549s.: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h22m19.823943549s."
+      error_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860-12"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289061
+      nanos: 184298027
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785289061
+      nanos: 220425745
+    }
+    finished_generating_at {
+      seconds: 1785289061
+      nanos: 220425100
+    }
+    completed_at {
+      seconds: 1785289061
+      nanos: 220425100
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 13
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785289061
+      nanos: 220425100
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_USER_INPUT
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289072
+      nanos: 64923231
+    }
+    source: CORTEX_STEP_SOURCE_USER_EXPLICIT
+  }
+  user_input {
+    user_response: "Implement global keyboard shortcuts (e.g., Space to flip card, Arrow keys to navigate) in the PracticeSession component to improve study speed and accessibility."
+    items {
+      text: "Implement global keyboard shortcuts (e.g., Space to flip card, Arrow keys to navigate) in the PracticeSession component to improve study speed and accessibility."
+    }
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289072
+      nanos: 65998360
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785289072
+      nanos: 105708434
+    }
+    finished_generating_at {
+      seconds: 1785289072
+      nanos: 105708014
+    }
+    completed_at {
+      seconds: 1785289072
+      nanos: 105708014
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 15
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785289072
+      nanos: 105708014
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_ERROR_MESSAGE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289073
+      nanos: 106227298
+    }
+    source: CORTEX_STEP_SOURCE_SYSTEM
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 16
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+  }
+  error_message {
+    error {
+      user_error_message: "Encountered retryable error from model provider: Agent execution terminated due to error."
+      short_error: "generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h22m7.902627057s.: generic::resource_exhausted: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 10000, model: gemini-3.6-flash\nPlease retry in 22h22m7.902627057s."
+      error_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860-16"
+      error_code: 8
+    }
+    should_show_model: true
+  }
+}
+steps {
+  type: CORTEX_STEP_TYPE_PLANNER_RESPONSE
+  status: CORTEX_STEP_STATUS_DONE
+  metadata {
+    created_at {
+      seconds: 1785289073
+      nanos: 106827958
+    }
+    source: CORTEX_STEP_SOURCE_MODEL
+    viewable_at {
+      seconds: 1785289073
+      nanos: 146362302
+    }
+    finished_generating_at {
+      seconds: 1785289073
+      nanos: 146361892
+    }
+    completed_at {
+      seconds: 1785289073
+      nanos: 146361892
+    }
+    generator_model: MODEL_GOOGLE_GEMINI_INTERNAL_BYOM
+    execution_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    source_trajectory_step_info {
+      trajectory_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+      step_index: 17
+      cascade_id: "42a6edfb-4417-4c2c-acec-dc0b225c0860"
+    }
+    step_generation_version: 1
+    model_info {
+      model_name: "gemini-3.6-flash"
+      thinking_budget: 4000
+    }
+    started_at {
+      seconds: 1785289073
+      nanos: 146361892
+    }
+  }
+  planner_response {
+    stop_reason: STOP_REASON_CLIENT_STREAM_ERROR
+  }
+}

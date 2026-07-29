@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 95%; /* Candy Yellow */
+    --background-to: 14 100% 80%; /* Juicy Peach */
+    --foreground: 240 10% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 4%;
+    --popover: 45 100% 95%;
+    --popover-foreground: 240 10% 4%;
+    --primary: 220 100% 50%; /* Neural Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 14 100% 75%; /* Neon Coral */
+    --secondary-foreground: 240 10% 4%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 330 100% 65%; /* Bubblegum Pink */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 160 100% 45%; /* High-Vis Mint */
+    --success-foreground: 0 0% 100%;
+    --border: 0 0% 0%;
+    --input: 330 100% 98%;
+    --ring: 220 100% 50%;
+    --radius: 1.5rem;
+    --shadow-color: #000;
+    --text-shadow-color: hsl(var(--primary));
+    --header-bg: 14 100% 75%; /* Fluorescent Coral */
+    --menu-text: 220 100% 50%;
+
+    /* TCG Styles */
+    --card-border-width: 8px;
+    --card-shine: rgba(255, 255, 255, 0.2);
+  }
+
+  .dark {
+    --background: 220 40% 25%; /* Medium Sunset Blue */
+    --background-to: 230 50% 12%; /* Deep Midnight */
+    --foreground: 180 100% 95%;
+    --card: 240 40% 10%; /* Deep Navy components */
+    --card-foreground: 180 100% 95%;
+    --popover: 240 40% 15%;
+    --popover-foreground: 180 100% 95%;
+    --primary: 160 100% 70%; /* Electric Mint */
+    --primary-foreground: 240 40% 5%;
+    --secondary: 0 100% 60%; /* Racing Red */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 30% 20%;
+    --muted-foreground: 180 40% 70%;
+    --accent: 50 100% 50%; /* Neon Tennis Yellow */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 80% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 160 100% 75%;
+    --success-foreground: 240 40% 5%;
+    --border: 0 0% 0%;
+    --input: 220 30% 15%;
+    --ring: 50 100% 50%;
+    --shadow-color: #000;
+    --text-shadow-color: #000;
+    --header-bg: 220 40% 25%;
+    --menu-text: 50 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply text-foreground transition-colors duration-500 min-h-screen selection:bg-accent selection:text-white overflow-x-hidden;
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);
+    background-attachment: fixed;
+    touch-action: manipulation;
+    overscroll-behavior-y: none;
+  }
+}
+
+@layer components {
+    .site-header-custom {
+      background-color: hsla(var(--header-bg) / 0.85);
+    }
+
+    .text-shadow {
+        text-shadow: 4px 4px 0 var(--text-shadow-color);
+    }
+    .ink-shadow-lg {
+        box-shadow: 12px 12px 0px var(--shadow-color);
+    }
+    .ink-shadow-sm {
+        box-shadow: 4px 4px 0px var(--shadow-color);
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    
+    .safe-area-padding {
+      padding-top: env(safe-area-inset-top);
+    }
+
+    .pb-safe {
+      padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    }
+
+    .bubble-text {
+      font-family: var(--font-bubble);
+      @apply uppercase tracking-tighter px-6 py-4;
+      -webkit-text-stroke: 2px black;
+      -webkit-text-fill-color: hsl(var(--primary));
+      text-shadow: 
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 hsl(var(--accent));
+      display: inline-block;
+      line-height: 1.4;
+      overflow: visible;
+    }
+
+    .hover-lift {
+      @apply transition-transform duration-300 hover:-translate-y-1 active:scale-95 active:translate-y-0;
+    }
+    .hover-pop {
+      @apply transition-all duration-300 hover:scale-105 active:scale-95;
+    }
+    .menu-gradient {
+      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-to)) 100%);
+    }
+}
+
+@layer utilities {
+    .blueprint-bg {
+        background-image: 
+            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+        background-size: 32px 32px;
+    }
+    .dark .blueprint-bg {
+        background-image: 
+            linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+}
