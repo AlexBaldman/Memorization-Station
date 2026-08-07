@@ -10,39 +10,9 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
-    let mounted = true;
-
-    const checkHydration = () => {
-      if (!mounted) return;
-
-      try {
-        const deckHydrated = useDeckStore.persist.hasHydrated();
-        const settingsHydrated = useSettingsStore.persist.hasHydrated();
-        const statsHydrated = useStatsStore.persist.hasHydrated();
-
-        if (deckHydrated && settingsHydrated && statsHydrated) {
-          setIsHydrated(true);
-        } else {
-          setTimeout(checkHydration, 50);
-        }
-      } catch (err) {
-        console.error("Hydration Error:", err);
-        // Force hydration on catch to prevent bricked UI
-        setIsHydrated(true);
-      }
-    };
-
-    checkHydration();
-
-    // Safety Timeout: Force load after 2.5 seconds no matter what
-    const safetyTimeout = setTimeout(() => {
-      if (mounted) setIsHydrated(true);
-    }, 2500);
-
-    return () => {
-      mounted = false;
-      clearTimeout(safetyTimeout);
-    };
+    // With synchronous localStorage, Zustand hydrates immediately on the client.
+    // We just need to wait for the first client-side mount to avoid SSR mismatches.
+    setIsHydrated(true);
   }, []);
 
   if (!isHydrated) {

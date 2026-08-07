@@ -90,9 +90,15 @@ export function DeckCard({ card }: { card: CardType }) {
             {/* TCG Collectible Card Aesthetic */}
             <Card className="flex flex-col overflow-hidden group border-8 border-black relative transition-all duration-300 hover:scale-[1.05] hover:-rotate-1 ink-shadow-lg rounded-[2rem] bg-card h-full">
                 {/* Interval Badge (Power Level) */}
-                <div className="absolute top-4 right-4 z-20 flex flex-col items-center justify-center bg-accent text-accent-foreground px-3 py-1 border-4 border-black font-code text-[10px] font-black ink-shadow-sm rotate-6 group-hover:rotate-0 transition-transform">
-                    <span className="text-[6px] uppercase opacity-70">INT</span>
-                    {card.interval}D
+                <div className="absolute top-4 right-4 z-20 flex gap-2">
+                    <div className="flex flex-col items-center justify-center bg-primary text-primary-foreground px-3 py-1 border-4 border-black font-code text-[10px] font-black ink-shadow-sm rotate-3 group-hover:rotate-0 transition-transform">
+                        <span className="text-[6px] uppercase opacity-70">MASTERY</span>
+                        {Math.max(0, Math.min(100, Math.round(((card.easiness - 1.3) / (3.0 - 1.3)) * 100)))}%
+                    </div>
+                    <div className="flex flex-col items-center justify-center bg-accent text-accent-foreground px-3 py-1 border-4 border-black font-code text-[10px] font-black ink-shadow-sm -rotate-3 group-hover:rotate-0 transition-transform">
+                        <span className="text-[6px] uppercase opacity-70">INT</span>
+                        {card.interval}D
+                    </div>
                 </div>
 
                 <CardHeader className="p-4 flex-row items-center justify-between border-b-4 border-black bg-primary/10 min-h-[80px]">
