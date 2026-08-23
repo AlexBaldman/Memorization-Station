@@ -146,7 +146,7 @@ export function DeckCard({ card }: { card: CardType }) {
                                         </AlertDialogHeader>
                                         <AlertDialogFooter className="mt-10 gap-4">
                                             <AlertDialogCancel className="border-4 border-black h-14 font-headline text-[10px]">ABORT</AlertDialogCancel>
-                                            <AlertDialogAction onClick={handleDelete} variant="destructive" className="border-4 border-black h-14 font-headline text-[10px]">PURGE NOW</AlertDialogAction>
+                                            <AlertDialogAction onClick={handleDelete} className="border-4 border-black h-14 font-headline text-[10px] bg-destructive text-destructive-foreground hover:bg-accent hover:text-white">PURGE NOW</AlertDialogAction>
                                         </AlertDialogFooter>
                                     </AlertDialogContent>
                                 </AlertDialog>

@@ -190,7 +190,7 @@ export function DeckManager({ deckId }: { deckId: string }) {
                                 </AlertDialogHeader>
                                 <AlertDialogFooter className="mt-10">
                                 <AlertDialogCancel className="border-4 border-black h-14 font-headline text-[10px] rounded-xl">CANCEL</AlertDialogCancel>
-                                <AlertDialogAction onClick={handleDeleteDeck} variant="destructive" className="border-4 border-black h-14 font-headline text-[10px] rounded-xl ink-shadow-sm">
+                                <AlertDialogAction onClick={handleDeleteDeck} className="border-4 border-black h-14 font-headline text-[10px] rounded-xl ink-shadow-sm bg-destructive text-destructive-foreground hover:bg-accent hover:text-white">
                                     PURGE ARCHIVE
                                 </AlertDialogAction>
                                 </AlertDialogFooter>

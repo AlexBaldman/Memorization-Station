@@ -2,8 +2,9 @@ import { PracticeSession } from "@/components/features/practice-session";
 import { PageHeader } from "@/components/page-header";
 import { Suspense } from "react";
 
-export default function PracticePage({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
-    const deckId = typeof searchParams.deckId === 'string' ? searchParams.deckId : undefined;
+export default async function PracticePage({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+    const params = await searchParams;
+    const deckId = typeof params.deckId === 'string' ? params.deckId : undefined;
 
     return (
         <div>
