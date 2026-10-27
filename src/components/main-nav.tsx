@@ -3,12 +3,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { BookCopy, PlusCircle, Settings, Sparkles } from 'lucide-react';
+import { BookCopy, PlusCircle, Settings, Sparkles, Dices } from 'lucide-react';
 
 const navItems = [
   { href: '/', label: 'DRAWER', icon: BookCopy },
   { href: '/create', label: 'CREATOR', icon: PlusCircle },
   { href: '/practice', label: 'TRAIN', icon: Sparkles },
+  { href: '/pao', label: 'PAO // 99', icon: Dices },
   { href: '/settings', label: 'CONFIG', icon: Settings },
 ];
 
