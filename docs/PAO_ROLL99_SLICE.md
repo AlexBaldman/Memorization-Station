@@ -1,7 +1,7 @@
 # PAO / ROLL//99 — integration decision (2026-10-27)
 
 ## Status
-Implementing a self-contained PAO practice vertical slice in the Next.js `main` application. This is **not** a repo merger or a promotion of legacy person associations to shared canon. The older apps and their branches stay untouched.
+Implementing a hidden backstage PAO practice vertical slice in the Next.js `main` application. This is **not** a repo merger or a promotion of legacy person associations to shared canon. The older apps and their branches stay untouched.
 
 ## Source and provenance
 - Original snapshot: [memorAIzation-stAItion/data/memory-people.json](https://github.com/AlexBaldman/memorAIzation-stAItion/blob/8b48d4c13ff1da0ed0d2374f429d89cc8c520ab2/data/memory-people.json)
@@ -16,10 +16,10 @@ Implementing a self-contained PAO practice vertical slice in the Next.js `main` 
 - `roster.ts`: validates the complete snapshot and attaches stable source-specific binding IDs.
 - `review.ts`: append-only recall events and deterministic SM-2 scheduling keyed by binding ID.
 - `ledger.ts`: versioned local-only storage, merge-safe JSON import/export, CSV export, rejection of duplicate ID conflicts or malformed records.
-- `/pao`: random percentile roll, due queue, reveal, three-level grading, progress and history.
+- `/backstage/pao`: hidden experimental training route, random percentile roll, due queue, reveal, three-level grading, progress and history.
 
 ## Manual acceptance checklist
-1. Visit `/pao` using a secure browser context. Roll repeatedly; `00` and `09` must remain two digits.
+1. Visit `/backstage/pao` using a secure browser context. Roll repeatedly; `00` and `09` must remain two digits.
 2. Reveal each result, grade Again/Hard/Good, and verify the history counter increases once.
 3. Refresh: event count, dates and due queue persist in the same browser.
 4. Download JSON and CSV; import the same JSON twice. No duplicate event IDs or inflated history.

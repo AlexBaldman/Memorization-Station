@@ -1,6 +1,6 @@
 import { DeckDrawer } from '@/components/features/deck-drawer';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Brain, Zap, Play, Info, BookOpen, Star, LayoutGrid, PlusCircle, Dices } from 'lucide-react';
+import { Sparkles, Brain, Zap, Play, Info, BookOpen, Star, LayoutGrid, PlusCircle } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
@@ -65,9 +65,6 @@ export default function Home() {
                   </Link>
               </Button>
             </div>
-            <Button asChild variant="accent" size="lg" className="mt-5 min-h-16 w-full border-4 border-black rounded-2xl shadow-[6px_6px_0px_black]">
-              <Link href="/pao"><Dices className="mr-3 h-6 w-6" /> ROLL//99 · PAO MEMORY LAB</Link>
-            </Button>
           </div>
         </div>
       </section>

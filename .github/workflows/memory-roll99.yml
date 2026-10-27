@@ -5,9 +5,7 @@ on:
     paths:
       - 'src/lib/memory/**'
       - 'src/components/features/pao-roll99.tsx'
-      - 'src/app/pao/**'
-      - 'src/app/page.tsx'
-      - 'src/components/main-nav.tsx'
+      - 'src/app/backstage/pao/**'
       - 'package.json'
       - 'tests/memory-core.test.mjs'
       - '.github/workflows/memory-roll99.yml'
