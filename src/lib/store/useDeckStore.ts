@@ -126,7 +126,7 @@ export const useDeckStore = create<DeckState>()(
             return !isInitial || isUserModified;
           });
           
-          const keptIds = new Set(keptCards.map(c => c.id));
+          const keptIds = new Set(keptCards.map((c: Card) => c.id));
           const freshFactoryCards = INITIAL_CARDS.filter(c => !keptIds.has(c.id));
 
           return {

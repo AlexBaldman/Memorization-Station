@@ -1,0 +1,30 @@
+name: PAO Roll99 checks
+
+on:
+  pull_request:
+    paths:
+      - 'src/lib/memory/**'
+      - 'src/components/features/pao-roll99.tsx'
+      - 'src/app/backstage/pao/**'
+      - 'package.json'
+      - 'tests/memory-core.test.mjs'
+      - '.github/workflows/memory-roll99.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/memory/**'
+      - 'tests/memory-core.test.mjs'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run test:memory
+      - run: npm run typecheck
+      - run: npm run build
