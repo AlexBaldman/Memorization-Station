@@ -81,3 +81,33 @@ export function playFlipSound() {
   osc.start();
   osc.stop(ctx.currentTime + 0.05);
 }
+
+export function playDiceRollSound() {
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  // Tri-tone cyber tumble chime
+  const tones = [
+    { offset: 0, freq: 220 },
+    { offset: 0.09, freq: 340 },
+    { offset: 0.19, freq: 560 },
+  ];
+
+  for (const { offset, freq } of tones) {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(freq, ctx.currentTime + offset);
+
+    gain.gain.setValueAtTime(0.0001, ctx.currentTime + offset);
+    gain.gain.exponentialRampToValueAtTime(0.06, ctx.currentTime + offset + 0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + offset + 0.09);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start(ctx.currentTime + offset);
+    osc.stop(ctx.currentTime + offset + 0.1);
+  }
+}

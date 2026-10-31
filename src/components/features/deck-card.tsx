@@ -110,6 +110,14 @@ export function DeckCard({ card }: { card: CardType }) {
                         <CardTitle className="font-headline text-[10px] md:text-[12px] text-primary leading-tight break-words uppercase">
                             {card.portuguese}
                         </CardTitle>
+                        {card.pao && (
+                            <div className="flex items-center gap-1.5 mt-0.5">
+                                <span className="font-mono text-[8px] font-bold px-1.5 py-0.5 bg-yellow-300 text-black border border-black rounded-sm">
+                                    PAO #{card.pao.number}
+                                </span>
+                                {card.pao.emoji && <span className="text-xs">{card.pao.emoji}</span>}
+                            </div>
+                        )}
                     </div>
                     <div className="flex items-center">
                         <DropdownMenu>

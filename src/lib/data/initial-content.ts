@@ -1,4 +1,11 @@
-import type { Deck, Card, ConjugationMatrix } from '../domain/types';
+import type { Deck, Card, ConjugationMatrix, PaoData } from '../domain/types';
+import paoDataJson from './pao-data.json';
+import pegsDataJson from './pegs-data.json';
+import playingCardsDataJson from './playing-cards-data.json';
+
+export const PAO_DICTIONARY: Record<string, PaoData> = paoDataJson as Record<string, PaoData>;
+export const PEGS_LIST = pegsDataJson as Array<{ number: number; name: string; emoji: string }>;
+export const PLAYING_CARDS_DATA = playingCardsDataJson;
 
 const stylePreset = 'Mad Magazine, R. Crumb style, cross-hatched, satirical, underground comix, exaggerated features, bold ink lines, vibrant saturated colors, dramatic lighting';
 
@@ -110,8 +117,98 @@ export const INITIAL_DECKS: Deck[] = [
     description: 'Essential people, places, and things to populate your mental map.',
     createdAt: Date.now(),
     theme: 'primary'
+  },
+  {
+    id: 'mt-pao',
+    name: 'PAO 00–99 System',
+    description: 'Person-Action-Object memory anchors for 00 to 99 with real portrait visual anchors.',
+    createdAt: Date.now(),
+    theme: 'secondary'
+  },
+  {
+    id: 'mt-pegs',
+    name: 'Peg System (0–9)',
+    description: 'Foundational single-digit visual hooks (Donut, Pencil, Swan, Sailboat...).',
+    createdAt: Date.now(),
+    theme: 'accent'
+  },
+  {
+    id: 'mt-cards',
+    name: 'Playing Cards (52-Card System)',
+    description: 'Deck of cards mnemonic stories, suits, and blackjack reference rules.',
+    createdAt: Date.now(),
+    theme: 'primary'
   }
 ];
+
+const paoCards: Card[] = Object.entries(PAO_DICTIONARY).map(([num, p]) => ({
+  id: `pao_${num}`,
+  deckId: 'mt-pao',
+  portuguese: `${num} · ${p.initials || num}`,
+  english: p.name,
+  mnemonic: `${p.action} [${p.object}] ${p.emoji || ''}`,
+  imageUrl: p.imageUrl,
+  pao: {
+    number: num,
+    initials: p.initials,
+    name: p.name,
+    action: p.action,
+    object: p.object,
+    emoji: p.emoji,
+    emojiStory: p.emojiStory,
+    imageUrl: p.imageUrl,
+  },
+  createdAt: Date.now(),
+  repetitions: 0,
+  easiness: 2.5,
+  interval: 0,
+  nextReview: Date.now(),
+  lastReviewed: null,
+}));
+
+const pegCards: Card[] = PEGS_LIST.map((peg) => ({
+  id: `peg_${peg.number}`,
+  deckId: 'mt-pegs',
+  portuguese: `Digit #${peg.number}`,
+  english: `${peg.name} ${peg.emoji}`,
+  mnemonic: `Visual anchor for #${peg.number}: ${peg.name} ${peg.emoji}`,
+  imageUrl: createAiUrl(`giant anthropomorphic ${peg.name} representing digit ${peg.number}`, 5000 + peg.number),
+  createdAt: Date.now(),
+  repetitions: 0,
+  easiness: 2.5,
+  interval: 0,
+  nextReview: Date.now(),
+  lastReviewed: null,
+}));
+
+const cardList: Card[] = [];
+const rawCards = PLAYING_CARDS_DATA as Record<string, any>;
+for (const suit of Object.keys(rawCards)) {
+  const suitCards = rawCards[suit];
+  for (const rank of Object.keys(suitCards)) {
+    const c = suitCards[rank];
+    cardList.push({
+      id: `card_${suit}_${rank}`,
+      deckId: 'mt-cards',
+      portuguese: `${c.rank} of ${c.suit.toUpperCase()} ${c.suitSymbol || ''}`,
+      english: c.pao?.person || `${c.rank} of ${c.suit}`,
+      mnemonic: `${c.pao?.action || ''} [${c.pao?.object || ''}] - ${c.pao?.story || ''}`,
+      imageUrl: createAiUrl(`playing card ${c.rank} of ${c.suit} surreal fantasy artwork`, 6000 + cardList.length),
+      createdAt: Date.now(),
+      repetitions: 0,
+      easiness: 2.5,
+      interval: 0,
+      nextReview: Date.now(),
+      lastReviewed: null,
+      metadata: {
+        suit: c.suit,
+        rank: c.rank,
+        value: c.value,
+        blackjack: c.blackjack
+      }
+    });
+  }
+}
 
 export const INITIAL_CARDS: Card[] = [
     ...verbsData.map((v, i) => ({
@@ -170,5 +267,8 @@ export const INITIAL_CARDS: Card[] = [
         interval: 0,
         nextReview: Date.now(),
         lastReviewed: null,
-    }))
+    })),
+    ...paoCards,
+    ...pegCards,
+    ...cardList
 ];

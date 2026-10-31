@@ -25,7 +25,7 @@ interface DeckState {
   importDeck: (json: string) => void;
 }
 
-const STORAGE_VERSION = 17;
+const STORAGE_VERSION = 18;
 
 export const useDeckStore = create<DeckState>()(
   persist(
@@ -111,17 +111,17 @@ export const useDeckStore = create<DeckState>()(
       }
     }),
     {
-      name: 'memorization-station-storage-v17',
+      name: 'memorization-station-storage-v18',
       storage: createJSONStorage(() => localStorage),
       version: STORAGE_VERSION,
       migrate: (persistedState: any, version: number) => {
-        if (!persistedState || version < 17) {
-          // Guardian Migration Protocol:
+        if (!persistedState || version < 18) {
+          // Guardian Migration Protocol V18:
           // 1. Keep cards that are user-created (no initial prefixes)
           // 2. Keep initial cards if they have been reviewed or given a custom imageKey
           const existingCards = persistedState?.cards || [];
           const keptCards = existingCards.filter((c: Card) => {
-            const isInitial = c.id.startsWith('verb_') || c.id.startsWith('noun_') || c.id.startsWith('cognate_') || c.id.startsWith('survival_');
+            const isInitial = c.id.startsWith('verb_') || c.id.startsWith('noun_') || c.id.startsWith('cognate_') || c.id.startsWith('survival_') || c.id.startsWith('pao_') || c.id.startsWith('peg_') || c.id.startsWith('card_');
             const isUserModified = !!c.imageKey || c.lastReviewed !== null || c.repetitions > 0;
             return !isInitial || isUserModified;
           });

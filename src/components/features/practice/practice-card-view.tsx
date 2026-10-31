@@ -184,6 +184,27 @@ export function PracticeCardView({
                                  {card.english}
                              </p>
                           </div>
+
+                          {card.pao && (
+                            <div className="grid grid-cols-2 gap-2.5 text-left bg-white/90 dark:bg-card border-3 border-black p-4 rounded-xl ink-shadow-sm">
+                              <div className="p-2.5 bg-yellow-100 dark:bg-yellow-950/40 border border-black/20 rounded-lg">
+                                <span className="font-mono text-[8px] font-bold text-muted-foreground uppercase block mb-0.5">
+                                  ACTION
+                                </span>
+                                <span className="font-sans text-xs font-semibold text-foreground leading-snug block">
+                                  {card.pao.action}
+                                </span>
+                              </div>
+                              <div className="p-2.5 bg-yellow-100 dark:bg-yellow-950/40 border border-black/20 rounded-lg">
+                                <span className="font-mono text-[8px] font-bold text-muted-foreground uppercase block mb-0.5">
+                                  OBJECT
+                                </span>
+                                <span className="font-sans text-xs font-semibold text-foreground leading-snug block">
+                                  {card.pao.object}
+                                </span>
+                              </div>
+                            </div>
+                          )}
                           
                           {showPronunciation && card.pronunciation && (
                               <div className="flex flex-col items-center gap-2">

@@ -11,6 +11,17 @@ export interface ConjugationMatrix {
   future: TenseConjugation;
 }
 
+export interface PaoData {
+  number: string;
+  initials?: string;
+  name: string;
+  action: string;
+  object: string;
+  emoji?: string;
+  emojiStory?: string;
+  imageUrl?: string;
+}
+
 export interface Card {
   id: string;
   deckId: string;
@@ -22,6 +33,8 @@ export interface Card {
   imagePrompt?: string;
   imageKey?: string; // Key to find image in IndexedDB
   conjugations?: ConjugationMatrix;
+  pao?: PaoData;
+  metadata?: Record<string, any>;
   createdAt: number;
   
   // SM-2 algorithm fields

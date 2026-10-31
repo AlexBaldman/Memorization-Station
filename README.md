@@ -1,36 +1,23 @@
-# Memorization Station: Portuguese Edition
+# Memorization Station 🧠⚡
 
-This is a production-grade, mnemonic-first Portuguese flashcard and visual association app with a distinctive "Mad Magazine × R. Crumb" underground comix aesthetic.
+> *"Memory is the treasury and guardian of all things." — Cicero*
 
-It's built with Next.js, TypeScript, Tailwind CSS, and Zustand for state management. It features offline support via IndexedDB for image caching and a PWA setup.
+This is the unified **Voltron Edition** of **Memorization Station** — a mnemonic-first cognitive training compound and visual association engine with a distinctive "Mad Magazine × R. Crumb" underground comix aesthetic.
 
-## 🚀 Collaborative Development & GitHub Integration
+It brings together classical memory systems (PAO 00–99, Peg anchors, Playing Cards) with high-speed linguistic flashcards (Portuguese Edition), interactive percentile dice reflex training (`ROLL//99`), SM-2 spaced repetition, and generative AI visual anchors.
 
-You can easily push this project to your own GitHub repository to work collaboratively with other humans, AI agents, and automated tools.
+Built with **Next.js 15, TypeScript, Tailwind CSS, Zustand, Framer Motion, and Web Audio API**, with offline IndexedDB caching.
 
-### 1. Initialize Git & Push to GitHub
-If you are working locally after exporting from Firebase Studio:
-```bash
-git init
-git add .
-git commit -m "Initialize Memorization Station"
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-git branch -M main
-git push -u origin main
-```
+---
 
-### 2. Collaborative Features
-- **Agentic Workflows**: Other AI agents can read the `docs/architecture.md` and `docs/backend.json` to understand the system architecture and data structures.
-- **CI/CD**: Integrate with GitHub Actions for automated deployment to Firebase App Hosting or Vercel.
-- **Issue Tracking**: Use GitHub Issues to manage the "Idea Bank" and roadmap tasks.
+## ⚡ Station Modules (The Voltron Compound)
 
-## Core Features
-
-*   **Card Creator**: Craft flashcards with mnemonics and AI-generated imagery.
-*   **Deck Vault**: Manage your decks, view cards, and track progress.
-*   **Gamified Practice**: Reinforce your learning with a spaced-repetition-based practice mode.
-*   **Offline First**: Access your cards and cached images even without an internet connection.
-*   **Pluggable Image Providers**: Support for Neural Link (Gemini), Pollinations, Hugging Face (Flux/SDXL), and OpenAI.
+*   **🗂️ The Deck Drawer & Vault (`/`)**: Manage linguistic decks (Verbs, Cognates, Nouns, Survival) alongside the canonical **PAO 00–99 Matrix**, **Peg System (0–9)**, and **Playing Cards (52-Card System)**. Track SM-2 card mastery and review intervals.
+*   **🎲 ROLL//99 Dice Station (`/roll`)**: Dual D10 percentile dice rolling machine with cryptographic randomness (`crypto.getRandomValues`), 3D SVG tumble physics, Web Audio tri-tone chime, multiple cyber finishes (*Afterburn, Phosphor, Goldrush, Ultraviolet, Comix Ink*), and instant active recall testing against the 100-character PAO palace.
+*   **🎭 PAO Matrix (`/pao`)**: Interactive, filterable, and searchable visual compound for all 100 Person-Action-Object nodes (00–99) with real curated portrait anchors, test modes, and rapid-recall drills.
+*   **⚡ Spaced Repetition Practice (`/practice`)**: SM-2 spaced repetition with three practice modes (Classic, Visual, Bridge), procedural audio SFX, interactive conjugation matrices, and action/object manifests.
+*   **🎨 Card Creator Lab (`/create`)**: Craft custom cards and mnemonics with AI vision generation (Gemini, Pollinations Flux, Hugging Face, OpenAI).
+*   **⚙️ Station Config (`/settings`)**: Configure audio FX, dark/light underground comix themes, and AI provider credentials.
 
 ## Setup & Development
 
